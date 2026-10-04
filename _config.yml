@@ -1,0 +1,9 @@
+# GitHub Pages baut diese Seiten mit Jekyll. Das Theme sorgt nur dafür, dass
+# sie lesbar sind; ohne eines kommt rohes HTML ohne Stil heraus.
+#
+# Wichtig: Jede Seite braucht YAML-Frontmatter. Eine Markdown-Datei OHNE
+# Frontmatter behandelt Jekyll als statische Datei und liefert sie unverändert
+# aus — dann steht die Datenschutzerklärung als Markdown-Quelltext im Browser.
+theme: jekyll-theme-primer
+title: Apps von Carl Maurice Pötter
+description: Datenschutzerklärung und Support
