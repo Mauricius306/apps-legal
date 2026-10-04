@@ -239,4 +239,4 @@ angepasst.
 
 ---
 
-[Support](support.html)
+[Support](support.html) · [Impressum](impressum.html)

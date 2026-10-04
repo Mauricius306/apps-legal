@@ -34,3 +34,7 @@ auch nichts für dich wiederherstellen. Ein Backup machst du unter
 einzige sichere Weg.
 
 Einzelheiten dazu in der [Datenschutzerklärung](index.html).
+
+---
+
+[Datenschutzerklärung](index.html) · [Impressum](impressum.html)
