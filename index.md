@@ -139,6 +139,19 @@ aufgerufenen Seite.
 **Datei importieren:** Die App liest nur die eine Datei, die du im
 iOS-Dateifenster auswählst, und greift auf keine anderen zu.
 
+**Fehlerbericht per E-Mail (freiwillig):** Stürzt die App ab, erscheint ein
+Knopf „Fehlerbericht per E-Mail senden". Er öffnet eine **vorausgefüllte
+E-Mail in deiner Mail-App** — du siehst den Text, kannst ihn ändern und
+entscheidest, ob du ihn abschickst. Die App selbst sendet nichts.
+
+Darin stehen die Fehlermeldung, ein gekürzter technischer Ablauf, der
+Bildschirm, auf dem es passierte, sowie App-Version, iOS-Version und
+Gerätemodell. **Keine Trainingsdaten, keine Notizen, kein Name** — auch nicht
+der Name deines Geräts. Ist keine Mail-App eingerichtet, landet der Text
+stattdessen in der Zwischenablage. Rechtsgrundlage ist deine Einwilligung
+durch das Abschicken (Art. 6 Abs. 1 lit. a DSGVO); die Mail landet im
+Postfach der oben genannten Adresse und wird nur zur Fehlersuche benutzt.
+
 **Entwicklerbereich:** In der aus dem App Store geladenen Fassung ist er
 **nicht erreichbar**. In Testfassungen über TestFlight schaltet siebenmaliges
 Tippen auf die Versionsnummer im Mehr-Tab einen Bereich mit Diagnose,
