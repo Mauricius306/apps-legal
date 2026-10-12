@@ -5,7 +5,7 @@ title: Datenschutzerklärung
 
 # Datenschutzerklärung
 
-**Stand:** 4. Oktober 2026
+**Stand:** 12. Oktober 2026
 
 Diese Erklärung gilt für die iPhone-App, auf die von ihrer Seite im App Store
 verwiesen wird — im Folgenden „diese App".
@@ -42,6 +42,11 @@ Alles, was du selbst eingibst:
   Benchmark-Kategorie, Farbschema
 - Dein Name, sofern du im Onboarding einen eingibst — er dient allein der
   Anrede in der App
+- Deine Antworten aus der Einrichtung, sofern du sie beim ersten Start gibst:
+  dein Trainingsziel, die Ausstattung, mit der du trainierst, und die Zahl der
+  Trainingstage pro Woche. Sie werden verwendet, um dir beim ersten Start
+  passende Vorlagen und einen Wochenplan vorzuschlagen, und bleiben als
+  Einstellung gespeichert, damit die Einrichtung nicht erneut fragt
 
 Welche Messwerte pro Satz erfasst werden, legst du pro Übung selbst fest:
 Wiederholungen, Gewicht (kg), Dauer (Sekunden), Distanz (Meter), Gerätestufen,
@@ -109,14 +114,14 @@ Datenschutzerklärung von Apple.
 
 ## Wann Daten das Gerät verlassen — immer nur auf dein Auslösen
 
-**Backup exportieren** („Mehr → Daten"): Dein vollständiger Bestand als
+**Backup erstellen** („Mehr → Daten"): Dein vollständiger Bestand als
 JSON-Datei oder als Textcode. Die Datei wird in einen temporären Ordner
 geschrieben, über das iOS-Teilen-Fenster übergeben und danach wieder gelöscht.
 Wohin sie geht — AirDrop, Mail, iCloud Drive, eine andere App — entscheidest du
 im Teilen-Fenster. Der Export enthält alle oben genannten Daten, einschließlich
 der Pulswerte und deines Namens. Der Anbieter erfährt davon nichts.
 
-**Plan teilen** („Mehr → Daten"): Nur die von dir gewählten Workout-Vorlagen
+**Workouts teilen** („Mehr → Daten"): Nur die von dir gewählten Workout-Vorlagen
 und die Übungen, die sie brauchen — keine Trainingssitzungen, keine Pulswerte,
 keinen Namen, keine Einstellungen, keinen Wochenplan.
 
@@ -126,9 +131,14 @@ den Rohzustand als JSON. Was in der Zwischenablage liegt, kann von anderen Apps
 gelesen werden; iOS fragt bei einem Einfügeversuch in der Regel um Erlaubnis.
 
 **Trainingsplan mit KI erstellen:** Die App kopiert einen vorformulierten Text
-in die Zwischenablage. Dieser Text ist eine feste Vorlage und enthält **keine
-deiner Daten**. Welchen KI-Dienst du damit benutzt, entscheidest du; die App
-nennt nur Beispiele und öffnet selbst keinen Dienst und keine Internetseite.
+in die Zwischenablage. Er enthält eine feste Vorlage und zusätzlich **die
+Namen der Übungen in deiner App** — der mitgelieferten und der, die du selbst
+angelegt hast —, damit die KI vorhandene Übungen wiederverwendet statt sie
+doppelt anzulegen. Weitere Daten enthält er nicht: keine Trainingssitzungen,
+keine Satzwerte, keine Pulswerte, keine Notizen, nicht deinen Namen. Welchen
+KI-Dienst du damit benutzt, entscheidest du; die App nennt nur Beispiele und
+öffnet selbst keinen Dienst und keine Internetseite. Übertragen wird der Text
+erst, wenn du ihn selbst dort einfügst.
 Was du dort eingibst, gibst du dort ein — dafür gilt die Datenschutzerklärung
 dieses Dienstes.
 

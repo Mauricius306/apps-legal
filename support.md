@@ -30,7 +30,7 @@ Wenn es damit nicht klappt, schreib mir.
 
 Alles bleibt auf deinem Gerät; ich habe keinen Zugriff darauf und kann deshalb
 auch nichts für dich wiederherstellen. Ein Backup machst du unter
-„Mehr → Daten → Backup exportieren" — vor einem Gerätewechsel ist das der
+„Mehr → Daten → Backup erstellen" — vor einem Gerätewechsel ist das der
 einzige sichere Weg.
 
 Einzelheiten dazu in der [Datenschutzerklärung](index.html).
