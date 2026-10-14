@@ -26,12 +26,32 @@ angemeldet bist.
 
 Wenn es damit nicht klappt, schreib mir.
 
-## Deine Daten
+## Deine Daten sichern
 
-Alles bleibt auf deinem Gerät; ich habe keinen Zugriff darauf und kann deshalb
-auch nichts für dich wiederherstellen. Ein Backup machst du unter
-„Mehr → Daten → Backup erstellen" — vor einem Gerätewechsel ist das der
-einzige sichere Weg.
+Ich habe keinen Zugriff auf deine Trainingsdaten und kann deshalb nichts für
+dich wiederherstellen. Gesichert wird bei dir:
+
+- **iCloud-Backup:** Nach deinem ersten Training fragt die App, ob sie in
+  iCloud sichern soll. Danach liegt nach jedem Training eine Kopie in deinem
+  iCloud Drive, Ordner „Moveset" in der Dateien-App. Ein- und ausschalten unter
+  „Mehr → Daten → iCloud-Backup".
+- **Von Hand:** „Mehr → Daten → Backup erstellen" und die Datei über Teilen
+  ablegen, etwa in der Dateien-App oder per Mail an dich selbst.
+
+## App neu installiert — Daten zurückholen
+
+Findet die frisch installierte App ein Backup in deinem iCloud Drive, bietet
+sie das Wiederherstellen von selbst an. Das kann nach der Installation einen
+Moment dauern, bis iOS die Datei kennt. Sonst:
+
+**Mehr → Daten → „Aus iCloud wiederherstellen"** oder **„Backup einspielen"**
+für eine Backup-Datei. Beides ersetzt alle Daten auf dem Gerät.
+
+## Widget „Nächstes Training"
+
+Homescreen lange drücken → „Bearbeiten" → „Widget hinzufügen" → Moveset →
+„Nächstes Training", klein oder mittel. Es zeigt das nächste Training aus
+deinem Wochenplan.
 
 Einzelheiten dazu in der [Datenschutzerklärung](index.html).
 
