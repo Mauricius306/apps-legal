@@ -5,7 +5,7 @@ title: Datenschutzerklärung
 
 # Datenschutzerklärung
 
-**Stand:** 12. Oktober 2026
+**Stand:** 14. Oktober 2026
 
 Diese Erklärung gilt für die iPhone-App, auf die von ihrer Seite im App Store
 verwiesen wird — im Folgenden „diese App".
@@ -52,6 +52,11 @@ Welche Messwerte pro Satz erfasst werden, legst du pro Übung selbst fest:
 Wiederholungen, Gewicht (kg), Dauer (Sekunden), Distanz (Meter), Gerätestufen,
 angestrebte und erreichte Anstrengung (Reps in Reserve) sowie **Puls in
 Schlägen pro Minute**.
+
+Außerdem merkt sich die App auf dem Gerät, **wann du zuletzt ein Backup
+erstellt hast**, damit sie dich unter „Mehr" erinnern kann, wenn das länger
+als sieben Tage her ist. Dieser Zeitpunkt ist nicht Teil des Backups und
+verlässt das Gerät nicht.
 
 Kann die App beim Start einen Trainingsstand nicht lesen, legt sie vorher eine
 unveränderte Sicherung davon auf dem Gerät ab. Sie dient allein der Rettung
