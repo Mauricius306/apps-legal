@@ -58,7 +58,9 @@ Außerdem merkt sich die App auf dem Gerät, **wann du zuletzt ein Backup
 erstellt hast**, damit sie dich unter „Mehr" erinnern kann, wenn das länger
 als sieben Tage her ist. Dieser Zeitpunkt ist nicht Teil des Backups und
 verlässt das Gerät nicht. Ebenfalls nur auf dem Gerät liegen die Einstellung
-zum iCloud-Backup und die Angabe, für welche App-Version die App bereits um
+zum iCloud-Backup, der Abgleichstand dazu (welche Einheiten dieses iPhone
+zuletzt gesichert hat und wann — damit es kein fremdes oder größeres Backup
+überschreibt) und die Angabe, für welche App-Version die App bereits um
 eine Bewertung gebeten hat.
 
 Kann die App beim Start einen Trainingsstand nicht lesen, legt sie vorher eine
