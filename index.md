@@ -20,14 +20,13 @@ Ravensberger Str. 51
 E-Mail: mp.appstudio@gmail.com
 ```
 
-## Deine Daten bleiben bei dir
+## Alles bleibt auf deinem Gerät
 
 Diese App hat keinen Server und kein Benutzerkonto. Es gibt keine
 Registrierung, keine Anmeldung und keine Synchronisierung zwischen Geräten.
-Deine Trainingsdaten liegen im geschützten Speicherbereich der App auf deinem
-iPhone. Sie verlassen das Gerät nur, wenn du sie selbst exportierst oder
-teilst — und, wenn du zustimmst, als Sicherungskopie in **deinem eigenen
-iCloud Drive** (siehe „iCloud-Backup").
+Deine Trainingsdaten liegen ausschließlich im geschützten Speicherbereich der
+App auf deinem iPhone. Sie verlassen das Gerät nur, wenn du sie selbst
+exportierst oder teilst.
 
 Der Anbieter hat zu keinem Zeitpunkt Zugriff auf deine Trainingsdaten.
 
@@ -57,9 +56,7 @@ Schlägen pro Minute**.
 Außerdem merkt sich die App auf dem Gerät, **wann du zuletzt ein Backup
 erstellt hast**, damit sie dich unter „Mehr" erinnern kann, wenn das länger
 als sieben Tage her ist. Dieser Zeitpunkt ist nicht Teil des Backups und
-verlässt das Gerät nicht. Ebenfalls nur auf dem Gerät liegen die Einstellung
-zum iCloud-Backup und die Angabe, für welche App-Version die App bereits um
-eine Bewertung gebeten hat.
+verlässt das Gerät nicht.
 
 Kann die App beim Start einen Trainingsstand nicht lesen, legt sie vorher eine
 unveränderte Sicherung davon auf dem Gerät ab. Sie dient allein der Rettung
@@ -88,10 +85,7 @@ Berechtigung an deiner Apple-ID und teilt dem Anbieter weder deinen Namen noch
 deine Zahlungsdaten mit. Auf dem Gerät wird allein gespeichert, **dass** der
 Kauf besteht; dafür gilt Apples Datenschutzerklärung.
 
-## Update-Prüfung bei Expo
-
-Abgesehen vom iCloud-Backup in dein eigenes iCloud-Konto (siehe unten) ist
-das die einzige Verbindung, die diese App von sich aus aufbaut.
+## Die einzige Verbindung, die diese App von sich aus aufbaut
 
 Diese App kann App-Aktualisierungen außerhalb des App Stores nachladen. Beim
 Start wird dazu ein Server von Expo abgefragt. Übertragen werden dabei nur die
@@ -117,53 +111,13 @@ Datenschutzerklärung: <https://expo.dev/privacy>
   Gerät. Die Sekunden zählt iOS selbst aus zwei Zeitstempeln herunter. Beendest
   oder verwirfst du das Training, verschwindet die Anzeige; nach einem Absturz
   räumt die App beim nächsten Start auf.
-- **Das Widget überträgt nichts.** Fügst du das Widget „Nächstes Training" zu
-  deinem Homescreen hinzu, zeigt es dein nächstes geplantes Training. Dafür
-  legt die App in einem geschützten Speicherbereich auf deinem iPhone, den nur
-  die App und ihr Widget lesen können, für die nächsten Tage ab, was laut
-  deinem Wochenplan ansteht: Tag, Name des Workouts, Zahl der Übungen und
-  Sätze, bis zu drei Übungsnamen und die geschätzte Dauer. Keine Satzwerte,
-  keine Pulswerte, kein Name.
 
 Unabhängig von dieser App erhebt Apple eigene Daten, wenn du eine App aus dem
 App Store lädst, und stellt Entwicklern aggregierte Absturzstatistiken bereit.
 Darauf hat der Anbieter dieser App keinen Einfluss; dafür gilt die
 Datenschutzerklärung von Apple.
 
-## Wann Daten das Gerät verlassen
-
-### iCloud-Backup (nur nach deiner Zustimmung)
-
-Nach deinem ersten abgeschlossenen Training fragt die App einmal, ob sie deine
-Trainings in iCloud sichern soll. Erst wenn du zustimmst und auf deinem iPhone
-iCloud Drive eingeschaltet ist, legt sie automatisch eine Sicherungskopie deiner Trainingsdaten in **deinem eigenen iCloud Drive**
-ab, im Ordner „Moveset". Das geschieht nach jeder abgeschlossenen Einheit und
-wenn du die App verlässt (dann höchstens alle zehn Minuten). Es gibt eine
-Datei mit dem neuesten Stand und je eine Datei für jeden der letzten sieben
-Tage.
-
-Die Kopie enthält dieselben Daten wie ein manuelles Backup — Übungen,
-Workouts, Trainingssitzungen einschließlich der Pulswerte, Wochenplan,
-Einstellungen und deinen Namen —, nicht aber deinen Kaufstatus. Sie dient
-dazu, dass deine Daten erhalten bleiben, wenn du die App löschst und neu
-installierst: Startet die App ohne Daten und findet ein iCloud-Backup, fragt
-sie, ob sie es wiederherstellen soll.
-
-Die Dateien liegen ausschließlich in deinem iCloud-Konto. iCloud Drive wird
-von Apple betrieben; dafür gilt die Datenschutzerklärung von Apple. Der
-Anbieter dieser App hat **keinen Zugriff** auf diese Dateien, und sie werden
-weder an ihn noch an Dritte übertragen.
-
-Lehnst du ab, schreibt die App nichts nach iCloud. Ändern kannst du deine
-Wahl jederzeit unter „Mehr → Daten → iCloud-Backup". Stellst du nach einer
-Neuinstallation einen Stand aus iCloud wieder her, schaltet die App das
-iCloud-Backup damit ein; auch das kannst du dort wieder abschalten.
-Die vorhandenen Dateien bleiben auch nach dem Löschen der App in deinem
-iCloud Drive; du löschst sie in der Dateien-App unter iCloud Drive → Moveset
-oder in den iPhone-Einstellungen unter „Apple-ID → iCloud → Speicher
-verwalten".
-
-### Auf dein Auslösen
+## Wann Daten das Gerät verlassen — immer nur auf dein Auslösen
 
 **Backup erstellen** („Mehr → Daten"): Dein vollständiger Bestand als
 JSON-Datei oder als Textcode. Die Datei wird in einen temporären Ordner
@@ -213,13 +167,6 @@ stattdessen in der Zwischenablage. Rechtsgrundlage ist deine Einwilligung
 durch das Abschicken (Art. 6 Abs. 1 lit. a DSGVO); die Mail landet im
 Postfach der oben genannten Adresse und wird nur zur Fehlersuche benutzt.
 
-**Bewertung im App Store:** Nachdem du einige Trainings abgeschlossen hast,
-kann die App einmal pro Version Apples Standardfenster zur Bewertung
-anzeigen; ob es erscheint, entscheidet iOS. Das Fenster wird von Apple
-angezeigt und verarbeitet. Der Anbieter erfährt nicht, ob es angezeigt wurde,
-ob du bewertet hast oder wie. „Mehr → Moveset bewerten" öffnet die Seite der
-App im App Store; dort gilt die Datenschutzerklärung von Apple.
-
 **Entwicklerbereich:** In der aus dem App Store geladenen Fassung ist er
 **nicht erreichbar**. In Testfassungen über TestFlight schaltet siebenmaliges
 Tippen auf die Versionsnummer im Mehr-Tab einen Bereich mit Diagnose,
@@ -250,8 +197,6 @@ automatische Löschung und keine Aufbewahrung beim Anbieter.
 - **Alles:** „Mehr → Daten → App zurücksetzen", mit zweistufiger Bestätigung
 - **Vollständig:** die App vom Gerät löschen. iOS entfernt dabei den gesamten
   Speicherbereich der App, einschließlich des Bereichs für die Live Activity
-  und das Widget. **Nicht** gelöscht wird dabei das iCloud-Backup in deinem
-  iCloud Drive — wie du es entfernst, steht unter „iCloud-Backup"
 
 ### iPhone-Backup
 
@@ -316,7 +261,8 @@ Diese App richtet sich nicht an Kinder.
 ## Änderungen dieser Erklärung
 
 Ändert sich an der Datenverarbeitung etwas — insbesondere, falls eine
-Synchronisierung, ein Konto oder eine Auswertung hinzukommt — wird diese Erklärung vor der Veröffentlichung der betreffenden Version
+Synchronisierung, ein Konto, ein iCloud-Backup oder eine Auswertung hinzukommt
+— wird diese Erklärung vor der Veröffentlichung der betreffenden Version
 angepasst.
 
 ---
