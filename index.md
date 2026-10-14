@@ -26,8 +26,8 @@ Diese App hat keinen Server und kein Benutzerkonto. Es gibt keine
 Registrierung, keine Anmeldung und keine Synchronisierung zwischen Geräten.
 Deine Trainingsdaten liegen im geschützten Speicherbereich der App auf deinem
 iPhone. Sie verlassen das Gerät nur, wenn du sie selbst exportierst oder
-teilst — und als automatische Sicherungskopie in **deinem eigenen iCloud
-Drive**, die du abschalten kannst (siehe „iCloud-Backup").
+teilst — und, wenn du zustimmst, als Sicherungskopie in **deinem eigenen
+iCloud Drive** (siehe „iCloud-Backup").
 
 Der Anbieter hat zu keinem Zeitpunkt Zugriff auf deine Trainingsdaten.
 
@@ -132,10 +132,11 @@ Datenschutzerklärung von Apple.
 
 ## Wann Daten das Gerät verlassen
 
-### iCloud-Backup (automatisch, abschaltbar)
+### iCloud-Backup (nur nach deiner Zustimmung)
 
-Ist auf deinem iPhone iCloud Drive eingeschaltet, legt die App automatisch
-eine Sicherungskopie deiner Trainingsdaten in **deinem eigenen iCloud Drive**
+Nach deinem ersten abgeschlossenen Training fragt die App einmal, ob sie deine
+Trainings in iCloud sichern soll. Erst wenn du zustimmst und auf deinem iPhone
+iCloud Drive eingeschaltet ist, legt sie automatisch eine Sicherungskopie deiner Trainingsdaten in **deinem eigenen iCloud Drive**
 ab, im Ordner „Moveset". Das geschieht nach jeder abgeschlossenen Einheit und
 wenn du die App verlässt (dann höchstens alle zehn Minuten). Es gibt eine
 Datei mit dem neuesten Stand und je eine Datei für jeden der letzten sieben
@@ -153,7 +154,10 @@ von Apple betrieben; dafür gilt die Datenschutzerklärung von Apple. Der
 Anbieter dieser App hat **keinen Zugriff** auf diese Dateien, und sie werden
 weder an ihn noch an Dritte übertragen.
 
-Abschalten kannst du das iCloud-Backup unter „Mehr → Daten → iCloud-Backup".
+Lehnst du ab, schreibt die App nichts nach iCloud. Ändern kannst du deine
+Wahl jederzeit unter „Mehr → Daten → iCloud-Backup". Stellst du nach einer
+Neuinstallation einen Stand aus iCloud wieder her, schaltet die App das
+iCloud-Backup damit ein; auch das kannst du dort wieder abschalten.
 Die vorhandenen Dateien bleiben auch nach dem Löschen der App in deinem
 iCloud Drive; du löschst sie in der Dateien-App unter iCloud Drive → Moveset
 oder in den iPhone-Einstellungen unter „Apple-ID → iCloud → Speicher
