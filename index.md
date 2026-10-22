@@ -5,7 +5,7 @@ title: Datenschutzerklärung
 
 # Datenschutzerklärung
 
-**Stand:** 14. Oktober 2026
+**Stand:** 22. Oktober 2026
 
 Diese Erklärung gilt für die iPhone-App, auf die von ihrer Seite im App Store
 verwiesen wird — im Folgenden „diese App".
@@ -178,6 +178,15 @@ der Pulswerte und deines Namens. Der Anbieter erfährt davon nichts.
 und die Übungen, die sie brauchen — keine Trainingssitzungen, keine Pulswerte,
 keinen Namen, keine Einstellungen, keinen Wochenplan.
 
+**Verlauf als CSV exportieren** („Mehr → Daten → Als CSV exportieren"): Dein
+Trainingsverlauf als Tabellendatei (CSV), etwa um ihn in eine andere
+Trainings-App oder eine Tabellenkalkulation zu übernehmen. Die Datei enthält
+je erledigtem Satz Datum, Name und Dauer der Einheit, Übung, Gewicht,
+Wiederholungen, Distanz, Zeit, RPE und deine Notizen — keine Pulswerte, nicht
+deinen Namen und keine Einstellungen. Sie wird wie das Backup nur über das
+iOS-Teilen-Fenster an das Ziel übergeben, das du dort auswählst. Der Anbieter
+erfährt davon nichts.
+
 **Zwischenablage:** An drei Stellen schreibt die App Text in die Zwischenablage
 — den Backup-Code, den Prompt des Plan-Generators und, im Entwicklerbereich,
 den Rohzustand als JSON. Was in der Zwischenablage liegt, kann von anderen Apps
@@ -201,6 +210,14 @@ aufgerufenen Seite.
 
 **Datei importieren:** Die App liest nur die eine Datei, die du im
 iOS-Dateifenster auswählst, und greift auf keine anderen zu.
+
+**Import aus Strong oder Hevy** („Mehr → Daten → Aus Strong / Hevy
+importieren"): Du wählst eine CSV-Datei, die du vorher in Strong oder Hevy
+exportiert hast. Die App übernimmt daraus deine Trainingseinheiten (Datum,
+Dauer, Übungen, Sätze, RPE und Notizen) in deinen Verlauf. Die Auswertung
+geschieht ausschließlich auf deinem Gerät; die Daten werden wie selbst
+eingetragene lokal gespeichert. Es wird nichts übertragen, und die App
+verbindet sich weder mit Strong noch mit Hevy.
 
 **Fehlerbericht per E-Mail (freiwillig):** Stürzt die App ab, erscheint ein
 Knopf „Fehlerbericht per E-Mail senden". Er öffnet eine **vorausgefüllte
