@@ -5,7 +5,7 @@ title: Datenschutzerklärung
 
 # Datenschutzerklärung
 
-**Stand:** 14. Oktober 2026
+**Stand:** 23. Oktober 2026
 
 Diese Erklärung gilt für die iPhone-App, auf die von ihrer Seite im App Store
 verwiesen wird — im Folgenden „diese App".
@@ -67,6 +67,16 @@ Kann die App beim Start einen Trainingsstand nicht lesen, legt sie vorher eine
 unveränderte Sicherung davon auf dem Gerät ab. Sie dient allein der Rettung
 deiner Daten und ist unter „Mehr → Daten" erreichbar.
 
+**Körpergewicht (freiwillig).** Wenn du in den Einstellungen dein
+Körpergewicht einträgst, speichert die App diesen einen Wert in Kilogramm auf
+deinem Gerät — ohne Datum und ohne Verlauf. Sie nutzt ihn ausschließlich, um
+bei Übungen mit Körpergewicht und Zusatzgewicht (etwa Dips oder Klimmzüge mit
+Gewicht) die vorgeschlagene Steigerung zu berechnen. Der Wert gehört zu deinem
+Trainingsbestand und ist damit in deinen Backups enthalten (Backup-Datei,
+iCloud-Backup, sofern du es eingeschaltet hast, und iPhone-Backup), nicht aber
+im CSV-Export und nicht in geteilten Plänen. Du kannst ihn jederzeit löschen,
+indem du das Feld leerst und speicherst.
+
 ### Gesundheitsdaten
 
 Die Pulswerte, die du erfassen kannst, sind Gesundheitsdaten im Sinne von
@@ -81,6 +91,11 @@ vorgegeben.
 
 Diese App greift **nicht** auf Apple Health zu — sie liest dort nichts und
 schreibt dort nichts hinein.
+
+Auch dein Körpergewicht ist, wenn du es einträgst, ein Gesundheitsdatum. Für
+es gilt dasselbe wie für Puls und Trainingswerte: Es wird nur lokal auf deinem
+Gerät gespeichert und vom Anbieter nicht verarbeitet. Die Angabe ist
+freiwillig; die App fragt sie nirgends ab und funktioniert ohne sie wie bisher.
 
 ## Der Kauf von „Pro"
 
