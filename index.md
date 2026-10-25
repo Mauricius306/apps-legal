@@ -182,8 +182,9 @@ keinen Namen, keine Einstellungen, keinen Wochenplan.
 Trainingsverlauf als Tabellendatei (CSV), etwa um ihn in eine andere
 Trainings-App oder eine Tabellenkalkulation zu übernehmen. Die Datei enthält
 je erledigtem Satz Datum, Name und Dauer der Einheit, Übung, Gewicht,
-Wiederholungen, Distanz, Zeit, RPE und deine Notizen — keine Pulswerte, nicht
-deinen Namen und keine Einstellungen. Sie wird wie das Backup nur über das
+Wiederholungen, Distanz, Zeit, RPE und deine Notizen, und — wenn du einen
+Kalibrierungssatz gemacht hast — eine Spalte, die ihn kennzeichnet. Keine
+Pulswerte, nicht deinen Namen und keine Einstellungen. Sie wird wie das Backup nur über das
 iOS-Teilen-Fenster an das Ziel übergeben, das du dort auswählst. Der Anbieter
 erfährt davon nichts.
 
