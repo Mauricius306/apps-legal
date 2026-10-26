@@ -5,7 +5,7 @@ title: Datenschutzerklärung
 
 # Datenschutzerklärung
 
-**Stand:** 23. Oktober 2026
+**Stand:** 26. Oktober 2026 (Version 1.0)
 
 Diese Erklärung gilt für die iPhone-App, auf die von ihrer Seite im App Store
 verwiesen wird — im Folgenden „diese App".
@@ -14,8 +14,7 @@ verwiesen wird — im Folgenden „diese App".
 
 ```
 Carl Maurice Pötter
-Ravensberger Str. 51
-42117 Wuppertal
+<!-- ADRESSE FOLGT -->
 
 E-Mail: mp.appstudio@gmail.com
 ```
@@ -41,6 +40,11 @@ Alles, was du selbst eingibst:
 - Notizen zu einer Sitzung oder einem einzelnen Satz
 - Einstellungen: verfügbare Hantelscheiben, Stangengewicht, Aufwärmschemata,
   Benchmark-Kategorie, Farbschema
+- Was sich die Trainingslogik merkt, damit sie dich nicht doppelt fragt: ob
+  und wann du eine Entlastungswoche begonnen, verschoben oder abgelehnt hast, ob du
+  einen Kalibrierungssatz gemacht oder „Nicht mehr fragen" gewählt hast, für
+  welche Muskelgruppe du einen Hinweis auf zusätzliche Sätze abgelehnt hast
+  (mit Datum) und ob die App schon nach Mitteilungen gefragt hat
 - Dein Name, sofern du im Onboarding einen eingibst — er dient allein der
   Anrede in der App
 - Deine Antworten aus der Einrichtung, sofern du sie beim ersten Start gibst:
@@ -105,10 +109,16 @@ Berechtigung an deiner Apple-ID und teilt dem Anbieter weder deinen Namen noch
 deine Zahlungsdaten mit. Auf dem Gerät wird allein gespeichert, **dass** der
 Kauf besteht; dafür gilt Apples Datenschutzerklärung.
 
+Damit die Kaufseite den Preis zeigen und die App erkennen kann, ob der Kauf
+besteht, fragt sie beim Start und auf der Kaufseite Apples App Store über
+StoreKit ab. Diese Abfrage geht an Apple, nicht an den Anbieter, und enthält
+keine Trainingsdaten.
+
 ## Update-Prüfung bei Expo
 
-Abgesehen vom iCloud-Backup in dein eigenes iCloud-Konto (siehe unten) ist
-das die einzige Verbindung, die diese App von sich aus aufbaut.
+Abgesehen von der Abfrage bei Apple für den Kauf (siehe oben) und dem
+iCloud-Backup in dein eigenes iCloud-Konto (siehe unten) ist das die einzige
+Verbindung, die diese App von sich aus aufbaut.
 
 Diese App kann App-Aktualisierungen außerhalb des App Stores nachladen. Beim
 Start wird dazu ein Server von Expo abgefragt. Übertragen werden dabei nur die
@@ -124,8 +134,10 @@ Datenschutzerklärung: <https://expo.dev/privacy>
 
 ### Was nicht stattfindet
 
-- **Keine Push-Nachrichten.** Diese App holt kein Push-Token. Die Mitteilung
-  zum Pausen-Timer wird ausschließlich lokal auf dem Gerät geplant.
+- **Keine Push-Nachrichten.** Diese App holt kein Push-Token. Ihre beiden
+  Mitteilungen — „Pause vorbei" zum Pausen-Timer und „Training noch aktiv?",
+  wenn in einem laufenden Training eine Viertelstunde lang nichts eingetragen wurde — werden ausschließlich
+  lokal auf dem Gerät geplant.
 - **Keine Analyse, kein Tracking, keine Werbung, keine Absturzberichte.** Es ist
   keine entsprechende Bibliothek enthalten, es werden keine Nutzungsprofile
   erstellt und keine Werbe-Identifier gelesen.
@@ -203,9 +215,10 @@ Pulswerte, nicht deinen Namen und keine Einstellungen. Sie wird wie das Backup n
 iOS-Teilen-Fenster an das Ziel übergeben, das du dort auswählst. Der Anbieter
 erfährt davon nichts.
 
-**Zwischenablage:** An drei Stellen schreibt die App Text in die Zwischenablage
-— den Backup-Code, den Prompt des Plan-Generators und, im Entwicklerbereich,
-den Rohzustand als JSON. Was in der Zwischenablage liegt, kann von anderen Apps
+**Zwischenablage:** An vier Stellen schreibt die App Text in die Zwischenablage
+— den Backup-Code, den Prompt für deine KI, den Fehlerbericht, wenn keine
+Mail-App eingerichtet ist (siehe unten), und, im Entwicklerbereich, den
+Rohzustand als JSON. Was in der Zwischenablage liegt, kann von anderen Apps
 gelesen werden; iOS fragt bei einem Einfügeversuch in der Regel um Erlaubnis.
 
 **Trainingsplan mit deiner KI:** Die App kopiert einen vorformulierten Text
@@ -224,6 +237,13 @@ dieses Dienstes.
 als Link dargestellt. Tippst du darauf, geht der Aufruf an den Betreiber der
 aufgerufenen Seite.
 
+**Seiten im eingebauten Browser:** Die Einträge zu Datenschutz, Support und
+Impressum öffnen diese Seiten, die über GitHub Pages veröffentlicht sind; die
+Nutzungsbedingungen auf der Kaufseite öffnen Apples Standardseite. Dabei
+erhält der Betreiber der jeweiligen Seite (GitHub bzw. Apple) die üblichen
+technischen Daten eines Seitenaufrufs, etwa die IP-Adresse. Trainingsdaten
+gehen dabei nicht mit.
+
 **Datei importieren:** Die App liest nur die eine Datei, die du im
 iOS-Dateifenster auswählst, und greift auf keine anderen zu.
 
@@ -241,8 +261,8 @@ E-Mail in deiner Mail-App** — du siehst den Text, kannst ihn ändern und
 entscheidest, ob du ihn abschickst. Die App selbst sendet nichts.
 
 Darin stehen die Fehlermeldung, ein gekürzter technischer Ablauf, der
-Bildschirm, auf dem es passierte, sowie App-Version, iOS-Version und
-Gerätemodell. **Keine Trainingsdaten, keine Notizen, kein Name** — auch nicht
+Bildschirm, auf dem es passierte, sowie App-Version und Buildnummer, die
+Version der App-Laufzeit, iOS-Version und Gerätemodell. **Keine Trainingsdaten, keine Notizen, kein Name** — auch nicht
 der Name deines Geräts. Ist keine Mail-App eingerichtet, landet der Text
 stattdessen in der Zwischenablage. Rechtsgrundlage ist deine Einwilligung
 durch das Abschicken (Art. 6 Abs. 1 lit. a DSGVO); die Mail landet im
@@ -266,7 +286,7 @@ Zwischenablage.
 
 | Berechtigung     | Wofür                                                                 | Wann gefragt                          |
 | ---------------- | --------------------------------------------------------------------- | ------------------------------------- |
-| **Mitteilungen** | Hinweis, wenn der Pausen-Timer abläuft und die App im Hintergrund ist | Beim ersten Start eines Pausen-Timers |
+| **Mitteilungen** | Hinweis, wenn der Pausen-Timer abläuft und die App im Hintergrund ist, und Rückfrage „Training noch aktiv?", wenn ein laufendes Training länger ruht | Am Ende der Einrichtung, wenn du dort auf den Knopf dafür tippst — sonst beim ersten Start eines Pausen-Timers |
 
 Das ist die einzige Berechtigung. Diese App fragt **nicht** nach Kamera,
 Mikrofon, Fotos, Standort, Kontakten, Kalender, Bluetooth, Bewegungsdaten oder

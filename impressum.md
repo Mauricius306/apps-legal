@@ -11,8 +11,7 @@ Angaben gemäß § 5 DDG.
 
 ```
 Carl Maurice Pötter
-Ravensberger Str. 51
-42117 Wuppertal
+<!-- ADRESSE FOLGT -->
 Deutschland
 ```
 
