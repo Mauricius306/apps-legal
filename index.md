@@ -183,7 +183,7 @@ keinen Namen, keine Einstellungen, keinen Wochenplan.
 den Rohzustand als JSON. Was in der Zwischenablage liegt, kann von anderen Apps
 gelesen werden; iOS fragt bei einem Einfügeversuch in der Regel um Erlaubnis.
 
-**Trainingsplan mit KI erstellen:** Die App kopiert einen vorformulierten Text
+**Trainingsplan mit deiner KI:** Die App kopiert einen vorformulierten Text
 in die Zwischenablage. Er enthält eine feste Vorlage und zusätzlich **die
 Namen der Übungen in deiner App** — der mitgelieferten und der, die du selbst
 angelegt hast —, damit die KI vorhandene Übungen wiederverwendet statt sie
