@@ -5,7 +5,7 @@ title: Datenschutzerklärung
 
 # Datenschutzerklärung
 
-**Stand:** 14. Oktober 2026
+**Stand:** 29. Oktober 2026 (Version 1.0)
 
 Diese Erklärung gilt für die iPhone-App, auf die von ihrer Seite im App Store
 verwiesen wird — im Folgenden „diese App".
@@ -14,8 +14,7 @@ verwiesen wird — im Folgenden „diese App".
 
 ```
 Carl Maurice Pötter
-Ravensberger Str. 51
-42117 Wuppertal
+<!-- ADRESSE FOLGT -->
 
 E-Mail: mp.appstudio@gmail.com
 ```
@@ -40,7 +39,13 @@ Alles, was du selbst eingibst:
 - Trainingssitzungen mit Datum, Dauer, Pausen und allen erfassten Satzwerten
 - Notizen zu einer Sitzung oder einem einzelnen Satz
 - Einstellungen: verfügbare Hantelscheiben, Stangengewicht, Aufwärmschemata,
-  Benchmark-Kategorie, Farbschema
+  Benchmark-Kategorie, Farbschema und die gewählte App-Sprache (Deutsch oder
+  Englisch)
+- Was sich die Trainingslogik merkt, damit sie dich nicht doppelt fragt: ob
+  und wann du eine Entlastungswoche begonnen, verschoben oder abgelehnt hast, ob du
+  einen Kalibrierungssatz gemacht oder „Nicht mehr fragen" gewählt hast, für
+  welche Muskelgruppe du einen Hinweis auf zusätzliche Sätze abgelehnt hast
+  (mit Datum) und ob die App schon nach Mitteilungen gefragt hat
 - Dein Name, sofern du im Onboarding einen eingibst — er dient allein der
   Anrede in der App
 - Deine Antworten aus der Einrichtung, sofern du sie beim ersten Start gibst:
@@ -67,6 +72,16 @@ Kann die App beim Start einen Trainingsstand nicht lesen, legt sie vorher eine
 unveränderte Sicherung davon auf dem Gerät ab. Sie dient allein der Rettung
 deiner Daten und ist unter „Mehr → Daten" erreichbar.
 
+**Körpergewicht (freiwillig).** Wenn du in den Einstellungen dein
+Körpergewicht einträgst, speichert die App diesen einen Wert in Kilogramm auf
+deinem Gerät — ohne Datum und ohne Verlauf. Sie nutzt ihn ausschließlich, um
+bei Übungen mit Körpergewicht und Zusatzgewicht (etwa Dips oder Klimmzüge mit
+Gewicht) die vorgeschlagene Steigerung zu berechnen. Der Wert gehört zu deinem
+Trainingsbestand und ist damit in deinen Backups enthalten (Backup-Datei,
+iCloud-Backup, sofern du es eingeschaltet hast, und iPhone-Backup), nicht aber
+im CSV-Export und nicht in geteilten Plänen. Du kannst ihn jederzeit löschen,
+indem du das Feld leerst und speicherst.
+
 ### Gesundheitsdaten
 
 Die Pulswerte, die du erfassen kannst, sind Gesundheitsdaten im Sinne von
@@ -82,6 +97,11 @@ vorgegeben.
 Diese App greift **nicht** auf Apple Health zu — sie liest dort nichts und
 schreibt dort nichts hinein.
 
+Auch dein Körpergewicht ist, wenn du es einträgst, ein Gesundheitsdatum. Für
+es gilt dasselbe wie für Puls und Trainingswerte: Es wird nur lokal auf deinem
+Gerät gespeichert und vom Anbieter nicht verarbeitet. Die Angabe ist
+freiwillig; die App fragt sie nirgends ab und funktioniert ohne sie wie bisher.
+
 ## Der Kauf von „Pro"
 
 Der einmalige Kauf, der die zusätzlichen Funktionen freischaltet, läuft
@@ -90,16 +110,37 @@ Berechtigung an deiner Apple-ID und teilt dem Anbieter weder deinen Namen noch
 deine Zahlungsdaten mit. Auf dem Gerät wird allein gespeichert, **dass** der
 Kauf besteht; dafür gilt Apples Datenschutzerklärung.
 
+Damit die Kaufseite den Preis zeigen und die App erkennen kann, ob der Kauf
+besteht, fragt sie beim Start und auf der Kaufseite Apples App Store über
+StoreKit ab. Diese Abfrage geht an Apple, nicht an den Anbieter, und enthält
+keine Trainingsdaten.
+
 ## Update-Prüfung bei Expo
 
-Abgesehen vom iCloud-Backup in dein eigenes iCloud-Konto (siehe unten) ist
-das die einzige Verbindung, die diese App von sich aus aufbaut.
+Abgesehen von der Abfrage bei Apple für den Kauf (siehe oben) und dem
+iCloud-Backup in dein eigenes iCloud-Konto (siehe unten) ist das die einzige
+Verbindung, die diese App von sich aus aufbaut.
 
-Diese App kann App-Aktualisierungen außerhalb des App Stores nachladen. Beim
-Start wird dazu ein Server von Expo abgefragt. Übertragen werden dabei nur die
-technischen Daten, die für die Zustellung des richtigen Update-Pakets nötig
-sind: die IP-Adresse des Geräts, die Plattform, die Laufzeit-Version der App
-und der konfigurierte Kanal. **Trainingsdaten werden dabei nicht übertragen.**
+Diese App kann App-Aktualisierungen außerhalb des App Stores nachladen. Bei
+jedem Start wird dazu ein Server von Expo abgefragt. Übertragen werden dabei
+die technischen Daten, die für die Zustellung des richtigen Update-Pakets
+nötig sind: die IP-Adresse des Geräts, die Plattform, die Laufzeit-Version der
+App, der konfigurierte Kanal und die Kennungen der Update-Pakete, die auf dem
+Gerät liegen.
+
+Außerdem erhält Expo bei jeder Prüfung eine **zufällige Installationskennung**
+(„EAS-Client-ID"). Die App erzeugt sie beim ersten Start, speichert sie auf
+dem Gerät und sendet danach immer dieselbe. Sie wird nicht mit deinem Namen,
+deiner Apple-ID oder einem Konto verknüpft — ein Konto gibt es nicht. Löschst
+du die App und installierst sie neu, entsteht eine neue Kennung.
+
+Stürzt die App kurz nach dem Start mit einem schweren Fehler ab — etwa weil
+ein Update fehlerhaft ist —, sendet sie bei der nächsten Prüfung die
+**Fehlermeldung** mit (höchstens 1.024 Zeichen, „Expo-Fatal-Error"), damit ein
+fehlerhaftes Update erkannt und ersetzt werden kann. Sie beschreibt den
+technischen Fehler; Trainingsdaten fügt die App nicht hinzu.
+
+**Trainingsdaten werden bei der Update-Prüfung nicht übertragen.**
 
 Empfänger ist Expo (Expo Project, 650 Mission St, San Francisco, CA, USA); die
 Übermittlung erfolgt in die USA. Rechtsgrundlage ist das berechtigte Interesse
@@ -109,11 +150,16 @@ Datenschutzerklärung: <https://expo.dev/privacy>
 
 ### Was nicht stattfindet
 
-- **Keine Push-Nachrichten.** Diese App holt kein Push-Token. Die Mitteilung
-  zum Pausen-Timer wird ausschließlich lokal auf dem Gerät geplant.
-- **Keine Analyse, kein Tracking, keine Werbung, keine Absturzberichte.** Es ist
-  keine entsprechende Bibliothek enthalten, es werden keine Nutzungsprofile
-  erstellt und keine Werbe-Identifier gelesen.
+- **Keine Push-Nachrichten.** Diese App holt kein Push-Token. Ihre beiden
+  Mitteilungen — „Pause vorbei" zum Pausen-Timer und „Training noch aktiv?",
+  wenn in einem laufenden Training eine Viertelstunde lang nichts eingetragen wurde — werden ausschließlich
+  lokal auf dem Gerät geplant.
+- **Keine Analyse, kein Tracking, keine Werbung.** Es ist keine
+  entsprechende Bibliothek enthalten, es werden keine Nutzungsprofile
+  erstellt und keine Werbe-Identifier gelesen. Absturzberichte gehen nur in
+  den zwei beschriebenen Fällen hinaus: die Fehlermeldung bei der
+  Update-Prüfung (oben) und der Fehlerbericht per E-Mail, den du selbst
+  abschickst (unten).
 - **Die Live Activity überträgt nichts.** Der Pausen-Timer und der nächste Satz
   auf dem Sperrbildschirm und in der Dynamic Island laufen vollständig auf dem
   Gerät. Die Sekunden zählt iOS selbst aus zwei Zeitstempeln herunter. Beendest
@@ -178,12 +224,23 @@ der Pulswerte und deines Namens. Der Anbieter erfährt davon nichts.
 und die Übungen, die sie brauchen — keine Trainingssitzungen, keine Pulswerte,
 keinen Namen, keine Einstellungen, keinen Wochenplan.
 
-**Zwischenablage:** An drei Stellen schreibt die App Text in die Zwischenablage
-— den Backup-Code, den Prompt des Plan-Generators und, im Entwicklerbereich,
-den Rohzustand als JSON. Was in der Zwischenablage liegt, kann von anderen Apps
+**Verlauf als CSV exportieren** („Mehr → Daten → Als CSV exportieren"): Dein
+Trainingsverlauf als Tabellendatei (CSV), etwa um ihn in eine andere
+Trainings-App oder eine Tabellenkalkulation zu übernehmen. Die Datei enthält
+je erledigtem Satz Datum, Name und Dauer der Einheit, Übung, Gewicht,
+Wiederholungen, Distanz, Zeit, RPE und deine Notizen, und — wenn du einen
+Kalibrierungssatz gemacht hast — eine Spalte, die ihn kennzeichnet. Keine
+Pulswerte, nicht deinen Namen und keine Einstellungen. Sie wird wie das Backup nur über das
+iOS-Teilen-Fenster an das Ziel übergeben, das du dort auswählst. Der Anbieter
+erfährt davon nichts.
+
+**Zwischenablage:** An vier Stellen schreibt die App Text in die Zwischenablage
+— den Backup-Code, den Prompt für deine KI, den Fehlerbericht, wenn keine
+Mail-App eingerichtet ist (siehe unten), und, im Entwicklerbereich, den
+Rohzustand als JSON. Was in der Zwischenablage liegt, kann von anderen Apps
 gelesen werden; iOS fragt bei einem Einfügeversuch in der Regel um Erlaubnis.
 
-**Trainingsplan mit KI erstellen:** Die App kopiert einen vorformulierten Text
+**Trainingsplan mit deiner KI:** Die App kopiert einen vorformulierten Text
 in die Zwischenablage. Er enthält eine feste Vorlage und zusätzlich **die
 Namen der Übungen in deiner App** — der mitgelieferten und der, die du selbst
 angelegt hast —, damit die KI vorhandene Übungen wiederverwendet statt sie
@@ -199,8 +256,23 @@ dieses Dienstes.
 als Link dargestellt. Tippst du darauf, geht der Aufruf an den Betreiber der
 aufgerufenen Seite.
 
+**Seiten im eingebauten Browser:** Die Einträge zu Datenschutz, Support und
+Impressum öffnen diese Seiten, die über GitHub Pages veröffentlicht sind; die
+Nutzungsbedingungen auf der Kaufseite öffnen Apples Standardseite. Dabei
+erhält der Betreiber der jeweiligen Seite (GitHub bzw. Apple) die üblichen
+technischen Daten eines Seitenaufrufs, etwa die IP-Adresse. Trainingsdaten
+gehen dabei nicht mit.
+
 **Datei importieren:** Die App liest nur die eine Datei, die du im
 iOS-Dateifenster auswählst, und greift auf keine anderen zu.
+
+**Import aus einer anderen Trainings-App** („Mehr → Daten → Aus anderer
+Trainings-App importieren"): Du wählst den CSV-Export einer anderen
+Trainings-App, den du dort vorher erstellt hast. Die App übernimmt daraus
+deine Trainingseinheiten (Datum, Dauer, Übungen, Sätze, RPE und Notizen) in
+deinen Verlauf. Die Datei wird ausschließlich auf deinem Gerät gelesen; die
+Daten werden wie selbst eingetragene lokal gespeichert. Es wird nichts
+übertragen, und die App verbindet sich mit keiner anderen App.
 
 **Fehlerbericht per E-Mail (freiwillig):** Stürzt die App ab, erscheint ein
 Knopf „Fehlerbericht per E-Mail senden". Er öffnet eine **vorausgefüllte
@@ -208,8 +280,8 @@ E-Mail in deiner Mail-App** — du siehst den Text, kannst ihn ändern und
 entscheidest, ob du ihn abschickst. Die App selbst sendet nichts.
 
 Darin stehen die Fehlermeldung, ein gekürzter technischer Ablauf, der
-Bildschirm, auf dem es passierte, sowie App-Version, iOS-Version und
-Gerätemodell. **Keine Trainingsdaten, keine Notizen, kein Name** — auch nicht
+Bildschirm, auf dem es passierte, sowie App-Version und Buildnummer, die
+Version der App-Laufzeit, iOS-Version und Gerätemodell. **Keine Trainingsdaten, keine Notizen, kein Name** — auch nicht
 der Name deines Geräts. Ist keine Mail-App eingerichtet, landet der Text
 stattdessen in der Zwischenablage. Rechtsgrundlage ist deine Einwilligung
 durch das Abschicken (Art. 6 Abs. 1 lit. a DSGVO); die Mail landet im
@@ -233,7 +305,7 @@ Zwischenablage.
 
 | Berechtigung     | Wofür                                                                 | Wann gefragt                          |
 | ---------------- | --------------------------------------------------------------------- | ------------------------------------- |
-| **Mitteilungen** | Hinweis, wenn der Pausen-Timer abläuft und die App im Hintergrund ist | Beim ersten Start eines Pausen-Timers |
+| **Mitteilungen** | Hinweis, wenn der Pausen-Timer abläuft und die App im Hintergrund ist, und Rückfrage „Training noch aktiv?", wenn ein laufendes Training länger ruht | Am Ende der Einrichtung, wenn du dort auf den Knopf dafür tippst — sonst beim ersten Start eines Pausen-Timers |
 
 Das ist die einzige Berechtigung. Diese App fragt **nicht** nach Kamera,
 Mikrofon, Fotos, Standort, Kontakten, Kalender, Bluetooth, Bewegungsdaten oder
