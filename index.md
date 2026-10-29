@@ -5,7 +5,7 @@ title: Datenschutzerklärung
 
 # Datenschutzerklärung
 
-**Stand:** 26. Oktober 2026 (Version 1.0)
+**Stand:** 29. Oktober 2026 (Version 1.0)
 
 Diese Erklärung gilt für die iPhone-App, auf die von ihrer Seite im App Store
 verwiesen wird — im Folgenden „diese App".
@@ -39,7 +39,8 @@ Alles, was du selbst eingibst:
 - Trainingssitzungen mit Datum, Dauer, Pausen und allen erfassten Satzwerten
 - Notizen zu einer Sitzung oder einem einzelnen Satz
 - Einstellungen: verfügbare Hantelscheiben, Stangengewicht, Aufwärmschemata,
-  Benchmark-Kategorie, Farbschema
+  Benchmark-Kategorie, Farbschema und die gewählte App-Sprache (Deutsch oder
+  Englisch)
 - Was sich die Trainingslogik merkt, damit sie dich nicht doppelt fragt: ob
   und wann du eine Entlastungswoche begonnen, verschoben oder abgelehnt hast, ob du
   einen Kalibrierungssatz gemacht oder „Nicht mehr fragen" gewählt hast, für
@@ -120,11 +121,26 @@ Abgesehen von der Abfrage bei Apple für den Kauf (siehe oben) und dem
 iCloud-Backup in dein eigenes iCloud-Konto (siehe unten) ist das die einzige
 Verbindung, die diese App von sich aus aufbaut.
 
-Diese App kann App-Aktualisierungen außerhalb des App Stores nachladen. Beim
-Start wird dazu ein Server von Expo abgefragt. Übertragen werden dabei nur die
-technischen Daten, die für die Zustellung des richtigen Update-Pakets nötig
-sind: die IP-Adresse des Geräts, die Plattform, die Laufzeit-Version der App
-und der konfigurierte Kanal. **Trainingsdaten werden dabei nicht übertragen.**
+Diese App kann App-Aktualisierungen außerhalb des App Stores nachladen. Bei
+jedem Start wird dazu ein Server von Expo abgefragt. Übertragen werden dabei
+die technischen Daten, die für die Zustellung des richtigen Update-Pakets
+nötig sind: die IP-Adresse des Geräts, die Plattform, die Laufzeit-Version der
+App, der konfigurierte Kanal und die Kennungen der Update-Pakete, die auf dem
+Gerät liegen.
+
+Außerdem erhält Expo bei jeder Prüfung eine **zufällige Installationskennung**
+(„EAS-Client-ID"). Die App erzeugt sie beim ersten Start, speichert sie auf
+dem Gerät und sendet danach immer dieselbe. Sie wird nicht mit deinem Namen,
+deiner Apple-ID oder einem Konto verknüpft — ein Konto gibt es nicht. Löschst
+du die App und installierst sie neu, entsteht eine neue Kennung.
+
+Stürzt die App kurz nach dem Start mit einem schweren Fehler ab — etwa weil
+ein Update fehlerhaft ist —, sendet sie bei der nächsten Prüfung die
+**Fehlermeldung** mit (höchstens 1.024 Zeichen, „Expo-Fatal-Error"), damit ein
+fehlerhaftes Update erkannt und ersetzt werden kann. Sie beschreibt den
+technischen Fehler; Trainingsdaten fügt die App nicht hinzu.
+
+**Trainingsdaten werden bei der Update-Prüfung nicht übertragen.**
 
 Empfänger ist Expo (Expo Project, 650 Mission St, San Francisco, CA, USA); die
 Übermittlung erfolgt in die USA. Rechtsgrundlage ist das berechtigte Interesse
@@ -138,9 +154,12 @@ Datenschutzerklärung: <https://expo.dev/privacy>
   Mitteilungen — „Pause vorbei" zum Pausen-Timer und „Training noch aktiv?",
   wenn in einem laufenden Training eine Viertelstunde lang nichts eingetragen wurde — werden ausschließlich
   lokal auf dem Gerät geplant.
-- **Keine Analyse, kein Tracking, keine Werbung, keine Absturzberichte.** Es ist
-  keine entsprechende Bibliothek enthalten, es werden keine Nutzungsprofile
-  erstellt und keine Werbe-Identifier gelesen.
+- **Keine Analyse, kein Tracking, keine Werbung.** Es ist keine
+  entsprechende Bibliothek enthalten, es werden keine Nutzungsprofile
+  erstellt und keine Werbe-Identifier gelesen. Absturzberichte gehen nur in
+  den zwei beschriebenen Fällen hinaus: die Fehlermeldung bei der
+  Update-Prüfung (oben) und der Fehlerbericht per E-Mail, den du selbst
+  abschickst (unten).
 - **Die Live Activity überträgt nichts.** Der Pausen-Timer und der nächste Satz
   auf dem Sperrbildschirm und in der Dynamic Island laufen vollständig auf dem
   Gerät. Die Sekunden zählt iOS selbst aus zwei Zeitstempeln herunter. Beendest
@@ -247,13 +266,13 @@ gehen dabei nicht mit.
 **Datei importieren:** Die App liest nur die eine Datei, die du im
 iOS-Dateifenster auswählst, und greift auf keine anderen zu.
 
-**Import aus Strong oder Hevy** („Mehr → Daten → Aus Strong / Hevy
-importieren"): Du wählst eine CSV-Datei, die du vorher in Strong oder Hevy
-exportiert hast. Die App übernimmt daraus deine Trainingseinheiten (Datum,
-Dauer, Übungen, Sätze, RPE und Notizen) in deinen Verlauf. Die Auswertung
-geschieht ausschließlich auf deinem Gerät; die Daten werden wie selbst
-eingetragene lokal gespeichert. Es wird nichts übertragen, und die App
-verbindet sich weder mit Strong noch mit Hevy.
+**Import aus einer anderen Trainings-App** („Mehr → Daten → Aus anderer
+Trainings-App importieren"): Du wählst den CSV-Export einer anderen
+Trainings-App, den du dort vorher erstellt hast. Die App übernimmt daraus
+deine Trainingseinheiten (Datum, Dauer, Übungen, Sätze, RPE und Notizen) in
+deinen Verlauf. Die Datei wird ausschließlich auf deinem Gerät gelesen; die
+Daten werden wie selbst eingetragene lokal gespeichert. Es wird nichts
+übertragen, und die App verbindet sich mit keiner anderen App.
 
 **Fehlerbericht per E-Mail (freiwillig):** Stürzt die App ab, erscheint ein
 Knopf „Fehlerbericht per E-Mail senden". Er öffnet eine **vorausgefüllte
