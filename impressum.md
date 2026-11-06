@@ -11,8 +11,7 @@ Angaben gemäß § 5 DDG.
 
 ```
 Carl Maurice Pötter
-Ravensberger Str. 51
-42117 Wuppertal
+<!-- ADRESSE FOLGT -->
 Deutschland
 ```
 
@@ -20,20 +19,7 @@ Deutschland
 
 E-Mail: <mp.appstudio@gmail.com>
 
-<!--
-  Telefonnummer kommt später — hier eintragen, sobald sie steht:
-
-  Telefon: +49 ...
-
-  Warum sie hier vorgesehen ist, obwohl § 5 Abs. 1 Nr. 2 DDG nur
-  "schnelle elektronische Kontaktaufnahme und unmittelbare Kommunikation
-  ... einschließlich der Adresse der elektronischen Post" verlangt und die
-  Telefonnummer nicht ausdrücklich nennt: Es gibt Rechtsprechung, die eine
-  E-Mail-Adresse allein genügen lässt, wenn ein zweiter schneller Weg
-  besteht — die gängige Praxis und die verbreiteten Ratgeber empfehlen die
-  Nummer trotzdem, um eine Abmahnung nicht zu riskieren. Das ist der eine
-  strittige Punkt dieser Seite.
--->
+Telefon: +49 178 49766296
 
 ## Verantwortlich für den Inhalt
 
