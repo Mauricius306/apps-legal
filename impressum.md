@@ -11,7 +11,9 @@ Angaben gemäß § 5 DDG.
 
 ```
 Carl Maurice Pötter
-<!-- ADRESSE FOLGT -->
+c/o Impressumservice Dein-Impressum
+Stettiner Str. 41
+35410 Hungen
 Deutschland
 ```
 

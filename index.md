@@ -14,7 +14,9 @@ verwiesen wird — im Folgenden „diese App".
 
 ```
 Carl Maurice Pötter
-<!-- ADRESSE FOLGT -->
+c/o Impressumservice Dein-Impressum
+Stettiner Str. 41
+35410 Hungen
 
 E-Mail: mp.appstudio@gmail.com
 Telefon: +49 178 49766296
