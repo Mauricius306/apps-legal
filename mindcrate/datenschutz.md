@@ -204,8 +204,10 @@ wandern nach sieben Tagen ins Archiv, werden dabei aber nicht gelöscht.
 
 - **Einzelne Aufgaben, Unteraufgaben, Projekte:** direkt in der App löschen.
   Die Löschung wird beim nächsten Abgleich auf dem Server ausgeführt.
-- **Konto vollständig löschen:** per E-Mail an die oben genannte Adresse. Mit
-  dem Konto werden alle Aufgaben, Unteraufgaben und Projekte gelöscht.
+- **Konto vollständig löschen:** in der App unter *Mehr → Konto löschen* oder
+  per E-Mail an die oben genannte Adresse. Mit dem Konto werden alle Aufgaben,
+  Unteraufgaben und Projekte sowie die Freigaben für Claude oder ChatGPT
+  gelöscht; die App entfernt außerdem die Kopie dieser Daten vom Gerät.
 
 Sicherungskopien beim Dienstleister können gelöschte Daten noch für kurze
 Zeit enthalten, bis sie im normalen Ablauf überschrieben werden.
