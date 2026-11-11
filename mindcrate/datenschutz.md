@@ -5,7 +5,7 @@ title: Datenschutzerklärung Mindcrate
 
 # Datenschutzerklärung Mindcrate
 
-**Stand:** 11. November 2026 (Fokus-Timer ergänzt)
+**Stand:** 11. November 2026 (Fokus-Timer, Web-App bei Cloudflare, Verbindung mit Claude/ChatGPT ergänzt)
 
 Diese Erklärung gilt für **Mindcrate**, eine Aufgaben-App für iPhone und als
 Web-App im Browser. Für die anderen Apps des Anbieters gilt die
@@ -26,8 +26,11 @@ E-Mail: mp.appstudio@gmail.com
 Mindcrate speichert deine Aufgaben in einer Datenbank, damit sie auf iPhone und
 Computer gleich sind. Dafür brauchst du ein Konto mit E-Mail-Adresse und
 Passwort. Die Datenbank betreibt der Dienstleister **Supabase**, die Daten
-liegen in einem Rechenzentrum in **Frankfurt am Main**. Es gibt keine Werbung,
-kein Tracking und keine Auswertung deines Verhaltens.
+liegen in einem Rechenzentrum in **Frankfurt am Main**. Die Web-App wird über
+**Cloudflare** ausgeliefert. Verbindest du Mindcrate selbst mit **Claude** oder
+**ChatGPT**, liest und ändert der gewählte Dienst deine Aufgaben – nur nach deiner
+Zustimmung und bis du sie widerrufst. Es gibt keine Werbung, kein Tracking und
+keine Auswertung deines Verhaltens.
 
 ## Welche Daten verarbeitet werden
 
@@ -40,7 +43,8 @@ kein Tracking und keine Auswertung deines Verhaltens.
 ### Inhalte, die du eingibst
 
 - Aufgaben mit Titel, Notizen, Status, Priorität, Frist, Wiederholung,
-  Reihenfolge und dem Weg, auf dem sie angelegt wurden (App, Web, Import)
+  Reihenfolge und dem Weg, auf dem sie angelegt wurden (App, Web, Import,
+  Claude, ChatGPT)
 - Unteraufgaben
 - Projekte mit Name, Farbe und Reihenfolge
 - Zeitpunkte des Anlegens, Änderns und Erledigens
@@ -78,6 +82,9 @@ anmeldest oder die App löschst bzw. die Website-Daten im Browser entfernst.
   zwischen deinen Geräten abzugleichen (Art. 6 Abs. 1 lit. b DSGVO).
 - **Protokolle mit IP-Adresse:** für den sicheren Betrieb und um Missbrauch
   zu erkennen; berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO.
+- **Verbindung mit Claude oder ChatGPT:** nur, wenn du sie selbst einrichtest
+  und zustimmst, um die Funktion bereitzustellen, die du angefordert hast
+  (Art. 6 Abs. 1 lit. b DSGVO).
 
 ## Empfänger: Supabase
 
@@ -93,6 +100,43 @@ Teil des Auftragsverarbeitungsvertrags von Supabase sind:
 E-Mails zur Bestätigung der Adresse oder zum Zurücksetzen des Passworts
 verschickt ebenfalls Supabase.
 
+## Empfänger: Cloudflare (Web-App)
+
+Die Dateien der Web-App liefert **Cloudflare, Inc.**, 101 Townsend Street,
+San Francisco, CA 94107, USA, über den Dienst Cloudflare Pages aus. Beim Aufruf
+fallen dort technisch IP-Adresse, Zeitpunkt, aufgerufene Adresse und
+Browserkennung an; Cloudflare verarbeitet sie für Auslieferung und Schutz vor
+Angriffen. Deine Aufgaben laufen **nicht** über Cloudflare, sondern direkt
+zwischen Browser und Supabase. Cloudflare ist unter dem EU-US Data Privacy
+Framework zertifiziert (Art. 45 DSGVO); zusätzlich gelten die
+Standardvertragsklauseln im Auftragsverarbeitungsvertrag:
+<https://www.cloudflare.com/dpa/>. Rechtsgrundlage ist das berechtigte Interesse
+an einer sicheren und schnellen Bereitstellung (Art. 6 Abs. 1 lit. f DSGVO).
+
+## Verbindung mit Claude oder ChatGPT (freiwillig)
+
+Du kannst Mindcrate als Connector in **Claude** (Anthropic) oder **ChatGPT**
+(OpenAI) eintragen. Ohne dein Zutun passiert das nie.
+
+- **Anmeldung:** Der Dienst leitet dich zur Zustimmungsseite von Mindcrate. Dort
+  siehst du, wer zugreifen will und was erlaubt ist. Erst mit „Zulassen" erhält
+  der Dienst einen Zugangsschlüssel, ausgestellt von Supabase. Dein Passwort
+  bekommt der Dienst nicht.
+- **Was der Dienst darf:** Aufgaben und Projekte lesen, Aufgaben anlegen,
+  ändern und als erledigt markieren. **Löschen kann er nichts**, an Konto und
+  Passwort kommt er nicht.
+- **Welche Daten fließen:** Fragst du den Dienst nach deinen Aufgaben, gehen
+  die abgefragten Inhalte (Titel, Notizen, Status, Priorität, Frist, Projekt)
+  an ihn. Neue Aufgaben werden mit der Herkunft „Claude" bzw. „ChatGPT"
+  gespeichert.
+- **Verantwortung:** Was Anthropic bzw. OpenAI mit diesen Inhalten tun, richtet
+  sich nach deinem Vertrag mit dem jeweiligen Dienst und dessen
+  Datenschutzerklärung; der Anbieter von Mindcrate hat darauf keinen Einfluss.
+  Beide Unternehmen sitzen in den USA.
+- **Widerruf:** jederzeit in der App unter *Mehr → Verknüpfungen → Trennen*.
+  Danach ist der Schlüssel ungültig. Verbundene Dienste und den Zeitpunkt der
+  Zustimmung speichert Supabase, bis du sie trennst.
+
 Andere Empfänger gibt es nicht. Der Anbieter verkauft keine Daten und gibt sie
 nicht weiter.
 
@@ -105,8 +149,8 @@ nicht weiter.
   Betrieb nötig sind.
 - **Keine Push-Nachrichten vom Server, kein Standort, keine Kontakte, kein
   Kalender, keine Kamera.**
-- **Keine Weitergabe an KI-Dienste.** Eine Anbindung an Claude oder ChatGPT
-  ist geplant; vorher wird diese Erklärung ergänzt.
+- **Keine Weitergabe an KI-Dienste ohne dich.** Nur ein Dienst, den du selbst
+  verbindest, bekommt Zugriff (siehe oben).
 
 ### Fokus-Timer
 
@@ -174,9 +218,8 @@ Diese App richtet sich nicht an Kinder.
 ## Änderungen dieser Erklärung
 
 Ändert sich an der Datenverarbeitung etwas – insbesondere durch die Anbindung
-an KI-Dienste, an Google Kalender oder durch die Veröffentlichung der Web-App
-bei einem Hosting-Anbieter –, wird diese Erklärung vor der betreffenden
-Version angepasst.
+an Google Kalender –, wird diese Erklärung vor der betreffenden Version
+angepasst.
 
 ---
 
