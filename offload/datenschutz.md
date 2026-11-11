@@ -159,4 +159,4 @@ Version angepasst.
 
 ---
 
-[Impressum](../impressum.html) · [Datenschutzerklärung der anderen Apps](../index.html)
+[Support](support.html) · [Impressum](../impressum.html) · [Datenschutzerklärung der anderen Apps](../index.html)
