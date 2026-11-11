@@ -5,7 +5,7 @@ title: Datenschutzerklärung Mindcrate
 
 # Datenschutzerklärung Mindcrate
 
-**Stand:** 11. November 2026 (Fokus-Timer, Web-App bei Cloudflare, Verbindung mit Claude/ChatGPT ergänzt)
+**Stand:** 11. November 2026 (Fokus-Timer, Web-App bei Cloudflare, Verbindung mit Claude/ChatGPT, Google Kalender ergänzt)
 
 Diese Erklärung gilt für **Mindcrate**, eine Aufgaben-App für iPhone und als
 Web-App im Browser. Für die anderen Apps des Anbieters gilt die
@@ -137,6 +137,27 @@ Du kannst Mindcrate als Connector in **Claude** (Anthropic) oder **ChatGPT**
   Danach ist der Schlüssel ungültig. Verbundene Dienste und den Zeitpunkt der
   Zustimmung speichert Supabase, bis du sie trennst.
 
+## Google Kalender anzeigen (nur lesend)
+
+Der Kalender-Tab kann Termine aus einem Google Kalender anzeigen. Diese
+Funktion ist derzeit nur für das Konto des Anbieters freigeschaltet; für alle
+anderen Konten ist sie ohne Wirkung.
+
+- **Quelle:** die private iCal-Adresse des Kalenders. Sie liegt ausschließlich
+  als Geheimnis auf dem Server (Supabase, Frankfurt), nie in der App.
+- **Ablauf:** Eine Server-Funktion ruft die Adresse bei Google ab, wertet die
+  Termine aus und gibt nur **Titel, Tag und Uhrzeiten** an die App weiter. Ort,
+  Beschreibung und Teilnehmer bleiben auf dem Server und werden verworfen.
+- **Speicherung:** Termine werden nicht in der Datenbank gespeichert. Der
+  Server hält die Abfrage höchstens fünf Minuten im Arbeitsspeicher. Auf dem
+  Gerät liegt eine Kopie der zuletzt geladenen Termine (etwa zwei Monate
+  zurück, vier voraus), damit der Kalender auch ohne Netz etwas zeigt.
+- **Google:** Beim Abruf der Adresse erhält Google die Anfrage vom Server von
+  Supabase, nicht von deinem Gerät. Für den Kalender selbst gilt die
+  Datenschutzerklärung von Google.
+- **Rechtsgrundlage:** Bereitstellung der angeforderten Funktion
+  (Art. 6 Abs. 1 lit. b DSGVO).
+
 Andere Empfänger gibt es nicht. Der Anbieter verkauft keine Daten und gibt sie
 nicht weiter.
 
@@ -148,7 +169,7 @@ nicht weiter.
   lokalen Speicher des Browsers für die oben genannten Zwecke, die für den
   Betrieb nötig sind.
 - **Keine Push-Nachrichten vom Server, kein Standort, keine Kontakte, kein
-  Kalender, keine Kamera.**
+  Zugriff auf den Kalender des Geräts, keine Kamera.**
 - **Keine Weitergabe an KI-Dienste ohne dich.** Nur ein Dienst, den du selbst
   verbindest, bekommt Zugriff (siehe oben).
 
@@ -217,9 +238,9 @@ Diese App richtet sich nicht an Kinder.
 
 ## Änderungen dieser Erklärung
 
-Ändert sich an der Datenverarbeitung etwas – insbesondere durch die Anbindung
-an Google Kalender –, wird diese Erklärung vor der betreffenden Version
-angepasst.
+Ändert sich an der Datenverarbeitung etwas – etwa wenn die Kalender-Anzeige
+für weitere Konten geöffnet wird oder die App Termine in den Kalender
+schreibt –, wird diese Erklärung vor der betreffenden Version angepasst.
 
 ---
 
