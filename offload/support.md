@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Support Offload
+title: Support Mindcrate
 ---
 
-# Support Offload
+# Support Mindcrate
 
 Fragen, Fehler oder ein Vorschlag? Schreib mir eine E-Mail:
 
@@ -14,7 +14,7 @@ Versionsnummer der App – die steht unter „Mehr → Über → Version".
 
 ## Aufgaben schnell erfassen
 
-Im Eingabefeld versteht Offload ein paar Kürzel, alles andere bleibt Titel:
+Im Eingabefeld versteht Mindcrate ein paar Kürzel, alles andere bleibt Titel:
 
 | Eingabe | Wirkung |
 |---|---|
@@ -25,7 +25,7 @@ Im Eingabefeld versteht Offload ein paar Kürzel, alles andere bleibt Titel:
 
 ## Synchronisierung
 
-Offload speichert jede Eingabe zuerst auf dem Gerät und überträgt sie, sobald
+Mindcrate speichert jede Eingabe zuerst auf dem Gerät und überträgt sie, sobald
 eine Verbindung besteht. Steht unter „Mehr → Konto & Sync" eine Zahl
 wartender Änderungen, ist das Gerät gerade offline – nichts geht verloren.
 

@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Datenschutzerklärung Offload
+title: Datenschutzerklärung Mindcrate
 ---
 
-# Datenschutzerklärung Offload
+# Datenschutzerklärung Mindcrate
 
 **Stand:** 11. November 2026
 
-Diese Erklärung gilt für **Offload**, eine Aufgaben-App für iPhone und als
+Diese Erklärung gilt für **Mindcrate**, eine Aufgaben-App für iPhone und als
 Web-App im Browser. Für die anderen Apps des Anbieters gilt die
 [allgemeine Datenschutzerklärung](../index.html).
 
@@ -23,7 +23,7 @@ E-Mail: mp.appstudio@gmail.com
 
 ## Kurz gesagt
 
-Offload speichert deine Aufgaben in einer Datenbank, damit sie auf iPhone und
+Mindcrate speichert deine Aufgaben in einer Datenbank, damit sie auf iPhone und
 Computer gleich sind. Dafür brauchst du ein Konto mit E-Mail-Adresse und
 Passwort. Die Datenbank betreibt der Dienstleister **Supabase**, die Daten
 liegen in einem Rechenzentrum in **Frankfurt am Main**. Es gibt keine Werbung,
