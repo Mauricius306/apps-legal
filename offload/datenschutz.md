@@ -39,8 +39,8 @@ kein Tracking und keine Auswertung deines Verhaltens.
 
 ### Inhalte, die du eingibst
 
-- Aufgaben mit Titel, Notizen, Status, Priorität, Frist, Reihenfolge und dem
-  Weg, auf dem sie angelegt wurden (App, Web, Import)
+- Aufgaben mit Titel, Notizen, Status, Priorität, Frist, Wiederholung,
+  Reihenfolge und dem Weg, auf dem sie angelegt wurden (App, Web, Import)
 - Unteraufgaben
 - Projekte mit Name, Farbe und Reihenfolge
 - Zeitpunkte des Anlegens, Änderns und Erledigens
