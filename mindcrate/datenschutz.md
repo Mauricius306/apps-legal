@@ -5,7 +5,7 @@ title: Datenschutzerklärung Mindcrate
 
 # Datenschutzerklärung Mindcrate
 
-**Stand:** 11. November 2026
+**Stand:** 11. November 2026 (Fokus-Timer ergänzt)
 
 Diese Erklärung gilt für **Mindcrate**, eine Aufgaben-App für iPhone und als
 Web-App im Browser. Für die anderen Apps des Anbieters gilt die
@@ -65,6 +65,9 @@ liegen auf dem Gerät (iPhone: App-Speicher, Browser: lokaler Speicher):
 - Änderungen, die noch nicht übertragen sind
 - Einstellungen: Farbschema, Hell/Dunkel, Bedienhand, Ansicht und Sortierung
   der Liste
+- der Fokus-Timer: Einstellungen, aktuelle Phase, Restzeit, Zahl der Runden und
+  die gewählte Aufgabe. Er wird **nicht** an den Server übertragen; es gibt
+  keine Auswertung oder Statistik darüber.
 
 Nach dem Abmelden bleibt die lokale Kopie auf dem Gerät, bis du dich wieder
 anmeldest oder die App löschst bzw. die Website-Daten im Browser entfernst.
@@ -100,10 +103,31 @@ nicht weiter.
 - **Keine Cookies zu Werbe- oder Analysezwecken.** Die Web-App nutzt nur den
   lokalen Speicher des Browsers für die oben genannten Zwecke, die für den
   Betrieb nötig sind.
-- **Keine Push-Nachrichten, kein Standort, keine Kontakte, kein Kalender,
-  keine Kamera.** Die App fragt keine Berechtigungen an.
+- **Keine Push-Nachrichten vom Server, kein Standort, keine Kontakte, kein
+  Kalender, keine Kamera.**
 - **Keine Weitergabe an KI-Dienste.** Eine Anbindung an Claude oder ChatGPT
   ist geplant; vorher wird diese Erklärung ergänzt.
+
+### Fokus-Timer
+
+- **Mitteilungen:** Beim ersten Start des Timers fragt die App, ob sie dir
+  Mitteilungen senden darf. Sie plant damit **auf dem Gerät** eine Mitteilung
+  für das Ende der Fokus- oder Pausenzeit. Es geht dafür nichts an einen
+  Server. Lehnst du ab, läuft der Timer trotzdem.
+- **Lagesensor:** Ist „Nur wenn das Handy liegt" eingeschaltet, liest die App
+  während einer Fokus-Phase den Beschleunigungssensor, um zu erkennen, ob das
+  Handy liegt. Die Werte werden nur in diesem Moment ausgewertet, weder
+  gespeichert noch übertragen. iOS fragt dafür keine Berechtigung ab.
+- **Bildschirm bleibt an:** In dieser Einstellung verhindert die App während
+  der Fokus-Phase die automatische Sperre, weil iOS bei gesperrtem Gerät keine
+  Sensorwerte liefert.
+- **Live Activity:** Läuft der Timer, zeigt das iPhone Restzeit, Phase und den
+  Titel der gewählten Aufgabe auf dem Sperrbildschirm und in der Dynamic
+  Island. Dafür legt die App diese Angaben in einem geschützten Speicherbereich
+  ab, den nur die App und ihre Erweiterung lesen. Die Anzeige läuft vollständig
+  auf dem Gerät. Ob Live-Aktivitäten erscheinen, steuerst du in den
+  iOS-Einstellungen der App. Beachte: Auf dem Sperrbildschirm ist der
+  Aufgabentitel auch ohne Entsperren sichtbar.
 
 ### Links in Notizen
 
