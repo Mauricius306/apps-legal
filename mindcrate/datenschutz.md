@@ -114,13 +114,10 @@ nicht weiter.
   Mitteilungen senden darf. Sie plant damit **auf dem Gerät** eine Mitteilung
   für das Ende der Fokus- oder Pausenzeit. Es geht dafür nichts an einen
   Server. Lehnst du ab, läuft der Timer trotzdem.
-- **Lagesensor:** Ist „Nur wenn das Handy liegt" eingeschaltet, liest die App
-  während einer Fokus-Phase den Beschleunigungssensor, um zu erkennen, ob das
-  Handy liegt. Die Werte werden nur in diesem Moment ausgewertet, weder
-  gespeichert noch übertragen. iOS fragt dafür keine Berechtigung ab.
-- **Bildschirm bleibt an:** In dieser Einstellung verhindert die App während
-  der Fokus-Phase die automatische Sperre, weil iOS bei gesperrtem Gerät keine
-  Sensorwerte liefert.
+- **iOS-Fokus („Nicht stören"):** Schaltest du es ein, öffnet die App beim
+  Start einer Fokus-Phase die Kurzbefehle-App von iOS und übergibt ihr den
+  Namen des Kurzbefehls und die Minuten bis zum Phasenende. Was der
+  Kurzbefehl tut, legst du selbst fest; die App liest von dort nichts zurück.
 - **Live Activity:** Läuft der Timer, zeigt das iPhone Restzeit, Phase und den
   Titel der gewählten Aufgabe auf dem Sperrbildschirm und in der Dynamic
   Island. Dafür legt die App diese Angaben in einem geschützten Speicherbereich
