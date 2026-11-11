@@ -103,7 +103,7 @@ verschickt ebenfalls Supabase.
 ## Empfänger: Cloudflare (Web-App)
 
 Die Dateien der Web-App liefert **Cloudflare, Inc.**, 101 Townsend Street,
-San Francisco, CA 94107, USA, über den Dienst Cloudflare Pages aus. Beim Aufruf
+San Francisco, CA 94107, USA, über den Dienst Cloudflare Workers aus. Beim Aufruf
 fallen dort technisch IP-Adresse, Zeitpunkt, aufgerufene Adresse und
 Browserkennung an; Cloudflare verarbeitet sie für Auslieferung und Schutz vor
 Angriffen. Deine Aufgaben laufen **nicht** über Cloudflare, sondern direkt
