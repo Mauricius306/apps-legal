@@ -5,7 +5,7 @@ title: Datenschutzerklärung Mindcrate
 
 # Datenschutzerklärung Mindcrate
 
-**Stand:** 12. November 2026 (Erinnerungen, Datenexport, Problem melden, mehrere Kalender, Löschen der lokalen Kopie beim Abmelden ergänzt)
+**Stand:** 12. November 2026, zweite Fassung (Papierkorb, Sicherung zurückspielen, Sicherheitsprüfung Turnstile, Passwort zurücksetzen, Morgen-Übersicht, Offline-Start der Web-App, Bewertungsanfrage, Grenzen je Konto, Kalender für alle Konten ergänzt)
 
 Diese Erklärung gilt für **Mindcrate**, eine Aufgaben-App für iPhone und als
 Web-App im Browser. Für die anderen Apps des Anbieters gilt die
@@ -68,7 +68,11 @@ liegen auf dem Gerät (iPhone: App-Speicher, Browser: lokaler Speicher):
 - eine Kopie deiner Aufgaben, Unteraufgaben und Projekte
 - Änderungen, die noch nicht übertragen sind
 - Einstellungen: Farbschema, Hell/Dunkel, Bedienhand, Ansicht und Sortierung
-  der Liste, Erinnerungen und Zahl am App-Symbol
+  der Liste, Erinnerungen, Morgen-Übersicht und Zahl am App-Symbol
+- ein Zähler erledigter Aufgaben und ob schon nach einer Bewertung gefragt wurde
+  (iPhone, siehe unten)
+- im Browser: die Dateien der Web-App selbst (Service Worker), damit sie auch
+  ohne Netz startet – keine Aufgaben, die liegen wie oben im lokalen Speicher
 - die Fokus-Zeit je Aufgabe (Summe der abgeschlossenen Fokus-Minuten), nur
   zur Anzeige in der Aufgabe
 - der Fokus-Timer: Einstellungen, aktuelle Phase, Restzeit, Zahl der Runden und
@@ -101,8 +105,10 @@ Standardvertragsklauseln der EU-Kommission (Art. 46 Abs. 2 lit. c DSGVO), die
 Teil des Auftragsverarbeitungsvertrags von Supabase sind:
 <https://supabase.com/legal/dpa>
 
-E-Mails zur Bestätigung der Adresse oder zum Zurücksetzen des Passworts
-verschickt ebenfalls Supabase.
+E-Mails zur Bestätigung der Adresse, zum Ändern der Adresse oder zum
+Zurücksetzen des Passworts verschickt Supabase. Der Link darin öffnet die
+Web-App. Wird dafür ein eigener Mailversand-Dienst eingesetzt, steht er hier
+vor dessen Einsatz.
 
 ## Empfänger: Cloudflare (Web-App)
 
@@ -116,6 +122,19 @@ Framework zertifiziert (Art. 45 DSGVO); zusätzlich gelten die
 Standardvertragsklauseln im Auftragsverarbeitungsvertrag:
 <https://www.cloudflare.com/dpa/>. Rechtsgrundlage ist das berechtigte Interesse
 an einer sicheren und schnellen Bereitstellung (Art. 6 Abs. 1 lit. f DSGVO).
+
+### Sicherheitsprüfung bei Anmeldung und Registrierung
+
+Um automatisierte Registrierungen und Anmeldeversuche abzuwehren, kann beim
+Anmelden, Registrieren und Zurücksetzen des Passworts **Cloudflare Turnstile**
+(Cloudflare, Inc., Anschrift oben) eingebunden sein. Turnstile prüft im Browser
+bzw. in einem eingebetteten Browserfenster der App technische Merkmale des
+Geräts und Browsers (z. B. IP-Adresse, Browserkennung, Bildschirmgröße) und
+gibt der App ein Prüfzeichen, das Supabase bestätigt. Turnstile setzt nach
+Angabe von Cloudflare keine Cookies zu Werbezwecken und verwendet die Daten
+nicht für Werbung. Rechtsgrundlage ist das berechtigte Interesse am Schutz der
+Konten und des Dienstes vor Missbrauch (Art. 6 Abs. 1 lit. f DSGVO). Datenschutz
+bei Cloudflare: <https://www.cloudflare.com/turnstile-privacy-policy/>
 
 ## Verbindung mit Claude oder ChatGPT (freiwillig)
 
@@ -141,24 +160,29 @@ Du kannst Mindcrate als Connector in **Claude** (Anthropic) oder **ChatGPT**
   Danach ist der Schlüssel ungültig. Verbundene Dienste und den Zeitpunkt der
   Zustimmung speichert Supabase, bis du sie trennst.
 
-## Google Kalender anzeigen (nur lesend)
+## Kalender anzeigen (nur lesend)
 
-Der Kalender-Tab kann Termine aus einem oder mehreren Google Kalendern anzeigen. Diese
-Funktion ist derzeit nur für das Konto des Anbieters freigeschaltet; für alle
-anderen Konten ist sie ohne Wirkung.
+Der Kalender-Tab kann Termine aus bis zu fünf eigenen Kalendern anzeigen
+(Google Kalender, iCloud, Outlook). Du verbindest sie selbst unter
+Mehr → Kalender; ohne verbundenen Kalender passiert nichts.
 
-- **Quelle:** die private iCal-Adresse je Kalender. Sie liegt ausschließlich
-  als Geheimnis auf dem Server (Supabase, Frankfurt), nie in der App.
-- **Ablauf:** Eine Server-Funktion ruft die Adresse bei Google ab, wertet die
+- **Quelle:** die private iCal-Adresse je Kalender, die du einfügst, und ein
+  Name, den du vergibst. Beides wird in Supabase (Frankfurt) zu deinem Konto
+  gespeichert. Die App kann die Adresse danach **nicht mehr auslesen** –
+  gelesen wird sie nur von der Server-Funktion, die die Termine abruft.
+  Angenommen werden nur Adressen der genannten Anbieter.
+- **Ablauf:** Die Server-Funktion ruft die Adresse beim Anbieter ab, wertet die
   Termine aus und gibt nur **Titel, Tag und Uhrzeiten** an die App weiter. Ort,
   Beschreibung und Teilnehmer bleiben auf dem Server und werden verworfen.
 - **Speicherung:** Termine werden nicht in der Datenbank gespeichert. Der
   Server hält die Abfrage höchstens fünf Minuten im Arbeitsspeicher. Auf dem
   Gerät liegt eine Kopie der zuletzt geladenen Termine (etwa zwei Monate
   zurück, vier voraus), damit der Kalender auch ohne Netz etwas zeigt.
-- **Google:** Beim Abruf der Adresse erhält Google die Anfrage vom Server von
-  Supabase, nicht von deinem Gerät. Für den Kalender selbst gilt die
-  Datenschutzerklärung von Google.
+- **Löschen:** Entfernst du einen Kalender, wird seine Adresse sofort
+  gelöscht. Beim Löschen des Kontos werden alle Kalender-Einträge mitgelöscht.
+- **Anbieter des Kalenders:** Beim Abruf erhält Google, Apple bzw. Microsoft
+  die Anfrage vom Server von Supabase, nicht von deinem Gerät. Für den Kalender
+  selbst gilt die Datenschutzerklärung des jeweiligen Anbieters.
 - **Rechtsgrundlage:** Bereitstellung der angeforderten Funktion
   (Art. 6 Abs. 1 lit. b DSGVO).
 
@@ -204,12 +228,31 @@ fällig oder überfällig sind. Beides berechnet das Gerät selbst; es gibt kein
 Push-Server. Standardmäßig ist beides aus. Beachte: Mitteilungen können je
 nach iOS-Einstellung auf dem Sperrbildschirm sichtbar sein.
 
+### Morgen-Übersicht (iPhone)
+
+Auf Wunsch zeigt eine Mitteilung morgens, wie viele Aufgaben an dem Tag
+anstehen. Auch sie plant das Gerät selbst; es geht nichts an einen Server.
+Standardmäßig ist sie aus.
+
+### Bewertung im App Store (iPhone)
+
+Nach 50 erledigten Aufgaben, frühestens eine Woche nach dem ersten Start, fragt
+die App **einmal** über das Fenster von Apple nach einer Bewertung. Ob und wie
+du bewertest, erfährt die App nicht; die Bewertung verarbeitet Apple.
+
 ### Daten exportieren
 
 Unter *Mehr → Daten exportieren* erzeugt die App auf dem Gerät eine Datei
 (JSON oder CSV) mit deinen Projekten, Aufgaben und Unteraufgaben. Im Browser
 wird sie heruntergeladen, auf dem iPhone über das Teilen-Menü ausgegeben. Wohin
 sie geht, entscheidest du; die App sendet sie nirgendwohin.
+
+### Sicherung zurückspielen
+
+Unter *Mehr → Sicherung zurückspielen* liest die App eine zuvor exportierte
+JSON-Datei, die du auswählst, und legt daraus nur an, was in deinem Konto fehlt.
+Die Datei selbst wird nicht hochgeladen, nur die daraus angelegten Einträge wie
+bei jeder anderen Eingabe.
 
 ### Problem melden
 
@@ -222,7 +265,10 @@ keine Aufgaben. Gesendet wird nur, was du selbst abschickst.
 
 Die Server-Funktionen (Verbindung mit Claude/ChatGPT, Kalender, Konto löschen)
 zählen für etwa eine Minute im Arbeitsspeicher, wie viele Anfragen ein Konto
-stellt, und bremsen bei zu vielen. Gespeichert wird dabei nichts.
+stellt, und bremsen bei zu vielen. Gespeichert wird dabei nichts. Außerdem gelten
+je Konto Obergrenzen (5 000 Aufgaben, 200 Projekte, 100 Schritte je Aufgabe,
+Notizen bis 20 000 Zeichen), damit ein einzelnes Konto den Dienst nicht für alle
+anderen auslastet.
 
 ### Links in Notizen
 
@@ -235,8 +281,13 @@ die Datenschutzerklärung ihres Betreibers.
 Deine Inhalte bleiben gespeichert, bis du sie löschst. Erledigte Aufgaben
 wandern nach sieben Tagen ins Archiv, werden dabei aber nicht gelöscht.
 
-- **Einzelne Aufgaben, Unteraufgaben, Projekte:** direkt in der App löschen.
-  Die Löschung wird beim nächsten Abgleich auf dem Server ausgeführt.
+- **Aufgaben** kommen beim Löschen zuerst in den **Papierkorb** und lassen sich
+  dort 30 Tage wiederherstellen. Danach – oder sofort über „Endgültig löschen“
+  bzw. „Papierkorb leeren“ – werden sie endgültig gelöscht, samt Unteraufgaben.
+- **Unteraufgaben und Projekte:** direkt in der App löschen. Die Löschung wird
+  beim nächsten Abgleich auf dem Server ausgeführt.
+- Erledigte Aufgaben, die älter als 90 Tage sind, lädt die App erst auf Wunsch
+  („Älteres Archiv laden“); auf dem Server bleiben sie bis zur Löschung.
 - **Konto vollständig löschen:** in der App unter *Mehr → Konto löschen* oder
   per E-Mail an die oben genannte Adresse. Mit dem Konto werden alle Aufgaben,
   Unteraufgaben und Projekte sowie die Freigaben für Claude oder ChatGPT
@@ -273,9 +324,9 @@ Diese App richtet sich nicht an Kinder.
 
 ## Änderungen dieser Erklärung
 
-Ändert sich an der Datenverarbeitung etwas – etwa wenn die Kalender-Anzeige
-für weitere Konten geöffnet wird oder die App Termine in den Kalender
-schreibt –, wird diese Erklärung vor der betreffenden Version angepasst.
+Ändert sich an der Datenverarbeitung etwas – etwa wenn die App Termine in den
+Kalender schreibt oder Kalender über eine Google-Anmeldung verbindet –, wird
+diese Erklärung vor der betreffenden Version angepasst.
 
 ---
 
