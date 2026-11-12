@@ -5,7 +5,7 @@ title: Datenschutzerklärung Mindcrate
 
 # Datenschutzerklärung Mindcrate
 
-**Stand:** 12. November 2026, zweite Fassung (Papierkorb, Sicherung zurückspielen, Sicherheitsprüfung Turnstile, Passwort zurücksetzen, Morgen-Übersicht, Offline-Start der Web-App, Bewertungsanfrage, Grenzen je Konto ergänzt)
+**Stand:** 12. November 2026, zweite Fassung (Papierkorb, Sicherung zurückspielen, Sicherheitsprüfung Turnstile, Passwort zurücksetzen, Morgen-Übersicht, Offline-Start der Web-App, Bewertungsanfrage, Grenzen je Konto, Kalender für alle Konten ergänzt)
 
 Diese Erklärung gilt für **Mindcrate**, eine Aufgaben-App für iPhone und als
 Web-App im Browser. Für die anderen Apps des Anbieters gilt die
@@ -160,24 +160,29 @@ Du kannst Mindcrate als Connector in **Claude** (Anthropic) oder **ChatGPT**
   Danach ist der Schlüssel ungültig. Verbundene Dienste und den Zeitpunkt der
   Zustimmung speichert Supabase, bis du sie trennst.
 
-## Google Kalender anzeigen (nur lesend)
+## Kalender anzeigen (nur lesend)
 
-Der Kalender-Tab kann Termine aus einem oder mehreren Google Kalendern anzeigen. Diese
-Funktion ist derzeit nur für das Konto des Anbieters freigeschaltet; für alle
-anderen Konten ist sie ohne Wirkung.
+Der Kalender-Tab kann Termine aus bis zu fünf eigenen Kalendern anzeigen
+(Google Kalender, iCloud, Outlook). Du verbindest sie selbst unter
+Mehr → Kalender; ohne verbundenen Kalender passiert nichts.
 
-- **Quelle:** die private iCal-Adresse je Kalender. Sie liegt ausschließlich
-  als Geheimnis auf dem Server (Supabase, Frankfurt), nie in der App.
-- **Ablauf:** Eine Server-Funktion ruft die Adresse bei Google ab, wertet die
+- **Quelle:** die private iCal-Adresse je Kalender, die du einfügst, und ein
+  Name, den du vergibst. Beides wird in Supabase (Frankfurt) zu deinem Konto
+  gespeichert. Die App kann die Adresse danach **nicht mehr auslesen** –
+  gelesen wird sie nur von der Server-Funktion, die die Termine abruft.
+  Angenommen werden nur Adressen der genannten Anbieter.
+- **Ablauf:** Die Server-Funktion ruft die Adresse beim Anbieter ab, wertet die
   Termine aus und gibt nur **Titel, Tag und Uhrzeiten** an die App weiter. Ort,
   Beschreibung und Teilnehmer bleiben auf dem Server und werden verworfen.
 - **Speicherung:** Termine werden nicht in der Datenbank gespeichert. Der
   Server hält die Abfrage höchstens fünf Minuten im Arbeitsspeicher. Auf dem
   Gerät liegt eine Kopie der zuletzt geladenen Termine (etwa zwei Monate
   zurück, vier voraus), damit der Kalender auch ohne Netz etwas zeigt.
-- **Google:** Beim Abruf der Adresse erhält Google die Anfrage vom Server von
-  Supabase, nicht von deinem Gerät. Für den Kalender selbst gilt die
-  Datenschutzerklärung von Google.
+- **Löschen:** Entfernst du einen Kalender, wird seine Adresse sofort
+  gelöscht. Beim Löschen des Kontos werden alle Kalender-Einträge mitgelöscht.
+- **Anbieter des Kalenders:** Beim Abruf erhält Google, Apple bzw. Microsoft
+  die Anfrage vom Server von Supabase, nicht von deinem Gerät. Für den Kalender
+  selbst gilt die Datenschutzerklärung des jeweiligen Anbieters.
 - **Rechtsgrundlage:** Bereitstellung der angeforderten Funktion
   (Art. 6 Abs. 1 lit. b DSGVO).
 
@@ -319,9 +324,9 @@ Diese App richtet sich nicht an Kinder.
 
 ## Änderungen dieser Erklärung
 
-Ändert sich an der Datenverarbeitung etwas – etwa wenn die Kalender-Anzeige
-für weitere Konten geöffnet wird oder die App Termine in den Kalender
-schreibt –, wird diese Erklärung vor der betreffenden Version angepasst.
+Ändert sich an der Datenverarbeitung etwas – etwa wenn die App Termine in den
+Kalender schreibt oder Kalender über eine Google-Anmeldung verbindet –, wird
+diese Erklärung vor der betreffenden Version angepasst.
 
 ---
 
