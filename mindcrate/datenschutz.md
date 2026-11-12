@@ -5,7 +5,7 @@ title: Datenschutzerklärung Mindcrate
 
 # Datenschutzerklärung Mindcrate
 
-**Stand:** 11. November 2026 (Fokus-Timer, Web-App bei Cloudflare, Verbindung mit Claude/ChatGPT, Google Kalender ergänzt)
+**Stand:** 12. November 2026 (Erinnerungen, Datenexport, Problem melden, mehrere Kalender, Löschen der lokalen Kopie beim Abmelden ergänzt)
 
 Diese Erklärung gilt für **Mindcrate**, eine Aufgaben-App für iPhone und als
 Web-App im Browser. Für die anderen Apps des Anbieters gilt die
@@ -68,13 +68,17 @@ liegen auf dem Gerät (iPhone: App-Speicher, Browser: lokaler Speicher):
 - eine Kopie deiner Aufgaben, Unteraufgaben und Projekte
 - Änderungen, die noch nicht übertragen sind
 - Einstellungen: Farbschema, Hell/Dunkel, Bedienhand, Ansicht und Sortierung
-  der Liste
+  der Liste, Erinnerungen und Zahl am App-Symbol
+- die Fokus-Zeit je Aufgabe (Summe der abgeschlossenen Fokus-Minuten), nur
+  zur Anzeige in der Aufgabe
 - der Fokus-Timer: Einstellungen, aktuelle Phase, Restzeit, Zahl der Runden und
   die gewählte Aufgabe. Er wird **nicht** an den Server übertragen; es gibt
   keine Auswertung oder Statistik darüber.
 
-Nach dem Abmelden bleibt die lokale Kopie auf dem Gerät, bis du dich wieder
-anmeldest oder die App löschst bzw. die Website-Daten im Browser entfernst.
+Beim Abmelden entfernt die App die lokale Kopie vom Gerät. Ausnahme: Warten
+noch Änderungen auf die Übertragung, bleiben sie (nach einem Hinweis) auf dem
+Gerät, damit nichts verloren geht, und werden nach der nächsten Anmeldung
+übertragen.
 
 ## Zweck und Rechtsgrundlage
 
@@ -139,11 +143,11 @@ Du kannst Mindcrate als Connector in **Claude** (Anthropic) oder **ChatGPT**
 
 ## Google Kalender anzeigen (nur lesend)
 
-Der Kalender-Tab kann Termine aus einem Google Kalender anzeigen. Diese
+Der Kalender-Tab kann Termine aus einem oder mehreren Google Kalendern anzeigen. Diese
 Funktion ist derzeit nur für das Konto des Anbieters freigeschaltet; für alle
 anderen Konten ist sie ohne Wirkung.
 
-- **Quelle:** die private iCal-Adresse des Kalenders. Sie liegt ausschließlich
+- **Quelle:** die private iCal-Adresse je Kalender. Sie liegt ausschließlich
   als Geheimnis auf dem Server (Supabase, Frankfurt), nie in der App.
 - **Ablauf:** Eine Server-Funktion ruft die Adresse bei Google ab, wertet die
   Termine aus und gibt nur **Titel, Tag und Uhrzeiten** an die App weiter. Ort,
@@ -190,6 +194,35 @@ nicht weiter.
   auf dem Gerät. Ob Live-Aktivitäten erscheinen, steuerst du in den
   iOS-Einstellungen der App. Beachte: Auf dem Sperrbildschirm ist der
   Aufgabentitel auch ohne Entsperren sichtbar.
+
+### Erinnerungen und Zahl am App-Symbol (iPhone)
+
+Schaltest du unter *Mehr → Benachrichtigungen* Erinnerungen ein, plant die App
+für Aufgaben mit Frist und Uhrzeit **auf dem Gerät** Mitteilungen (Titel der
+Aufgabe und Uhrzeit). Die Zahl am App-Symbol zeigt, wie viele Aufgaben heute
+fällig oder überfällig sind. Beides berechnet das Gerät selbst; es gibt keinen
+Push-Server. Standardmäßig ist beides aus. Beachte: Mitteilungen können je
+nach iOS-Einstellung auf dem Sperrbildschirm sichtbar sein.
+
+### Daten exportieren
+
+Unter *Mehr → Daten exportieren* erzeugt die App auf dem Gerät eine Datei
+(JSON oder CSV) mit deinen Projekten, Aufgaben und Unteraufgaben. Im Browser
+wird sie heruntergeladen, auf dem iPhone über das Teilen-Menü ausgegeben. Wohin
+sie geht, entscheidest du; die App sendet sie nirgendwohin.
+
+### Problem melden
+
+*Mehr → Problem melden* öffnet dein Mailprogramm mit einer vorbereiteten
+E-Mail an die oben genannte Adresse. Sie enthält App-Version, Gerätetyp,
+Systemversion, den Stand des Abgleichs und die letzte Fehlermeldung, aber
+keine Aufgaben. Gesendet wird nur, was du selbst abschickst.
+
+### Schutz vor Missbrauch
+
+Die Server-Funktionen (Verbindung mit Claude/ChatGPT, Kalender, Konto löschen)
+zählen für etwa eine Minute im Arbeitsspeicher, wie viele Anfragen ein Konto
+stellt, und bremsen bei zu vielen. Gespeichert wird dabei nichts.
 
 ### Links in Notizen
 
