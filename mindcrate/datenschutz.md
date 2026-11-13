@@ -46,10 +46,10 @@ keine Auswertung deines Verhaltens.
   Reihenfolge und dem Weg, auf dem sie angelegt wurden (App, Web, Import,
   Claude, ChatGPT)
 - Unteraufgaben
-- Projekte mit Name, Farbe und Reihenfolge
+- Projekte mit Name, Farbe, Priorität, Beschreibung und Reihenfolge
 - Zeitpunkte des Anlegens, Änderns und Erledigens
 
-Was du in Titel und Notizen schreibst, bestimmst du selbst. Bitte trag dort
+Was du in Titel, Notizen und Projektbeschreibungen schreibst, bestimmst du selbst. Bitte trag dort
 keine Daten anderer Menschen ein, die du nicht weitergeben darfst.
 
 ### Technische Daten beim Abgleich
