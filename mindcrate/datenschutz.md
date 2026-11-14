@@ -5,7 +5,7 @@ title: Datenschutzerklärung Mindcrate
 
 # Datenschutzerklärung Mindcrate
 
-**Stand:** 12. November 2026, zweite Fassung (Papierkorb, Sicherung zurückspielen, Sicherheitsprüfung Turnstile, Passwort zurücksetzen, Morgen-Übersicht, Offline-Start der Web-App, Bewertungsanfrage, Grenzen je Konto, Kalender für alle Konten ergänzt)
+**Stand:** 14. November 2026, dritte Fassung (Mailversand über Brevo ergänzt)
 
 Diese Erklärung gilt für **Mindcrate**, eine Aufgaben-App für iPhone und als
 Web-App im Browser. Für die anderen Apps des Anbieters gilt die
@@ -27,7 +27,7 @@ Mindcrate speichert deine Aufgaben in einer Datenbank, damit sie auf iPhone und
 Computer gleich sind. Dafür brauchst du ein Konto mit E-Mail-Adresse und
 Passwort. Die Datenbank betreibt der Dienstleister **Supabase**, die Daten
 liegen in einem Rechenzentrum in **Frankfurt am Main**. Die Web-App wird über
-**Cloudflare** ausgeliefert. Verbindest du Mindcrate selbst mit **Claude** oder
+**Cloudflare** ausgeliefert, E-Mails zum Konto verschickt **Brevo**. Verbindest du Mindcrate selbst mit **Claude** oder
 **ChatGPT**, liest und ändert der gewählte Dienst deine Aufgaben – nur nach deiner
 Zustimmung und bis du sie widerrufst. Es gibt keine Werbung, kein Tracking und
 keine Auswertung deines Verhaltens.
@@ -106,9 +106,24 @@ Teil des Auftragsverarbeitungsvertrags von Supabase sind:
 <https://supabase.com/legal/dpa>
 
 E-Mails zur Bestätigung der Adresse, zum Ändern der Adresse oder zum
-Zurücksetzen des Passworts verschickt Supabase. Der Link darin öffnet die
-Web-App. Wird dafür ein eigener Mailversand-Dienst eingesetzt, steht er hier
-vor dessen Einsatz.
+Zurücksetzen des Passworts löst Supabase aus; verschickt werden sie über Brevo
+(nächster Abschnitt). Der Link darin öffnet die Web-App.
+
+## Empfänger: Brevo (E-Mails zum Konto)
+
+Die E-Mails zu deinem Konto (Adresse bestätigen, Adresse ändern, Passwort
+zurücksetzen) verschickt **Brevo SAS**, 17 rue de Salneuve, 75017 Paris,
+Frankreich (deutsche Niederlassung: Brevo GmbH, Köpenicker Str. 126, 10179
+Berlin), als Auftragsverarbeiter nach Art. 28 DSGVO. Dafür erhält Brevo deine
+E-Mail-Adresse und den Inhalt der jeweiligen Mail mit dem Link; Brevo
+protokolliert Zustellung, Zeitpunkt und technische Rückmeldungen (z. B.
+unzustellbar). Brevo erfasst bei diesen Mails außerdem technisch, ob sie
+geöffnet und ob Links darin angeklickt werden (Zählpixel, Weiterleitung der
+Links über Brevo); im genutzten Tarif lässt sich das nicht abschalten.
+Mindcrate wertet diese Angaben nicht aus. Es gibt keine Newsletter und keine
+Werbung. Die Verarbeitung findet in der EU statt. Rechtsgrundlage ist die Erfüllung des Nutzungsvertrags (Art. 6 Abs. 1
+lit. b DSGVO). Datenschutz bei Brevo: <https://www.brevo.com/legal/privacypolicy/>,
+Auftragsverarbeitung (Teil der Nutzungsbedingungen): <https://www.brevo.com/legal/termsofuse/>
 
 ## Empfänger: Cloudflare (Web-App)
 
