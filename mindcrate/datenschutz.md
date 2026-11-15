@@ -5,7 +5,7 @@ title: Datenschutzerklärung Mindcrate
 
 # Datenschutzerklärung Mindcrate
 
-**Stand:** 14. November 2026, dritte Fassung (Mailversand über Brevo ergänzt)
+**Stand:** 15. November 2026, dritte Fassung (Mailversand über Brevo, Widget und Teilen-Menü ergänzt)
 
 Diese Erklärung gilt für **Mindcrate**, eine Aufgaben-App für iPhone und als
 Web-App im Browser. Für die anderen Apps des Anbieters gilt die
@@ -242,6 +242,23 @@ Aufgabe und Uhrzeit). Die Zahl am App-Symbol zeigt, wie viele Aufgaben heute
 fällig oder überfällig sind. Beides berechnet das Gerät selbst; es gibt keinen
 Push-Server. Standardmäßig ist beides aus. Beachte: Mitteilungen können je
 nach iOS-Einstellung auf dem Sperrbildschirm sichtbar sein.
+
+### Widget „Heute“ (iPhone)
+
+Legst du das Widget auf den Homescreen oder Sperrbildschirm, schreibt die App
+die heute fälligen und überfälligen Aufgaben (Titel, Uhrzeit, Projektfarbe) in
+einen gemeinsamen Speicher von App und Widget **auf dem Gerät**
+(App-Gruppe). Nichts davon geht an einen Server. Auf dem Sperrbildschirm sind
+die Titel auch ohne Entsperren sichtbar. Nach dem Abmelden zeigt das Widget keine
+Titel mehr.
+
+### Teilen-Menü (iPhone)
+
+Über *Teilen → In Mindcrate* kannst du Text oder einen Link aus einer anderen App
+als Aufgabe übernehmen. Die Erweiterung reicht den geteilten Inhalt über den
+gemeinsamen Speicher auf dem Gerät an die App weiter; dort wird er wie eine
+selbst eingetippte Aufgabe gespeichert und abgeglichen. Bei Links übernimmt
+iOS dabei den Seitentitel der geteilten Seite.
 
 ### Morgen-Übersicht (iPhone)
 
