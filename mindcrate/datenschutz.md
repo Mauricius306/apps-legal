@@ -5,7 +5,7 @@ title: Datenschutzerklärung Mindcrate
 
 # Datenschutzerklärung Mindcrate
 
-**Stand:** 15. November 2026, dritte Fassung (Mailversand über Brevo, Widget und Teilen-Menü ergänzt)
+**Stand:** 17. November 2026, vierte Fassung (Mail an Mindcrate ergänzt)
 
 Diese Erklärung gilt für **Mindcrate**, eine Aufgaben-App für iPhone und als
 Web-App im Browser. Für die anderen Apps des Anbieters gilt die
@@ -44,7 +44,7 @@ keine Auswertung deines Verhaltens.
 
 - Aufgaben mit Titel, Notizen, Status, Priorität, Frist, Wiederholung,
   Reihenfolge und dem Weg, auf dem sie angelegt wurden (App, Web, Import,
-  Claude, ChatGPT)
+  Claude, ChatGPT, Mail)
 - Unteraufgaben
 - Projekte mit Name, Farbe, Priorität, Beschreibung und Reihenfolge
 - Zeitpunkte des Anlegens, Änderns und Erledigens
@@ -93,6 +93,9 @@ Gerät, damit nichts verloren geht, und werden nach der nächsten Anmeldung
 - **Verbindung mit Claude oder ChatGPT:** nur, wenn du sie selbst einrichtest
   und zustimmst, um die Funktion bereitzustellen, die du angefordert hast
   (Art. 6 Abs. 1 lit. b DSGVO).
+- **Mail an Mindcrate:** nur, wenn du dir eine Adresse erzeugst; für dich
+  Art. 6 Abs. 1 lit. b DSGVO, für Daten Dritter in weitergeleiteten Mails siehe
+  den Abschnitt „Mail an Mindcrate“.
 
 ## Empfänger: Supabase
 
@@ -203,6 +206,34 @@ Mehr → Kalender; ohne verbundenen Kalender passiert nichts.
 
 Andere Empfänger gibt es nicht. Der Anbieter verkauft keine Daten und gibt sie
 nicht weiter.
+
+## Mail an Mindcrate (freiwillig)
+
+Unter *Mehr → Mail an Mindcrate* kannst du dir eine persönliche, geheime
+E-Mail-Adresse erzeugen. Eine Mail an diese Adresse wird zur Aufgabe in deinem
+Eingang. Ohne erzeugte Adresse findet nichts davon statt.
+
+- **Was gespeichert wird:** der Betreff (als Titel), Name und Adresse des
+  Absenders und der Text der Mail (als Notiz, höchstens 10 000 Zeichen).
+  Anhänge werden verworfen, Bilder und Formatierung nicht übernommen.
+- **Weg der Mail:** Die Mail geht an **Cloudflare Email Routing** (Cloudflare,
+  Inc., Anschrift oben). Ein Programm bei Cloudflare (Email Worker) zerlegt sie
+  und reicht die genannten Angaben an Supabase weiter, wo die Aufgabe angelegt
+  wird. Cloudflare speichert nach eigener Angabe keine Mailinhalte; dabei fallen
+  technisch Absender- und Empfängeradresse, Zeitpunkt und die beteiligten
+  Mailserver an. Übermittlung in die USA wie im Abschnitt zu Cloudflare
+  beschrieben.
+- **Daten Dritter:** Leitest du eine Mail weiter, enthält sie oft Name, Adresse
+  und Text einer anderen Person. Diese verarbeiten wir in deinem Auftrag, damit
+  du die Mail als Aufgabe erledigen kannst; Rechtsgrundlage ist das berechtigte
+  Interesse an der Organisation deiner Aufgaben (Art. 6 Abs. 1 lit. f DSGVO).
+  Bitte leite nur Mails weiter, die du dafür verwenden darfst.
+- **Wer die Adresse kennt,** kann dir Aufgaben schicken. Du kannst jederzeit
+  eine neue Adresse erzeugen (die alte gilt dann nicht mehr) oder die Funktion
+  abschalten; die Adresse wird dabei gelöscht. Angelegte Aufgaben bleiben, bis
+  du sie löschst.
+- Missbrauchsschutz: höchstens 30 Mails je Adresse und Stunde, Mails über 1 MB
+  und an unbekannte Adressen werden abgewiesen.
 
 ## Was nicht stattfindet
 
@@ -322,8 +353,8 @@ wandern nach sieben Tagen ins Archiv, werden dabei aber nicht gelöscht.
   („Älteres Archiv laden“); auf dem Server bleiben sie bis zur Löschung.
 - **Konto vollständig löschen:** in der App unter *Mehr → Konto löschen* oder
   per E-Mail an die oben genannte Adresse. Mit dem Konto werden alle Aufgaben,
-  Unteraufgaben und Projekte sowie die Freigaben für Claude oder ChatGPT
-  gelöscht; die App entfernt außerdem die Kopie dieser Daten vom Gerät.
+  Unteraufgaben und Projekte, die Adresse für Mail an Mindcrate sowie die
+  Freigaben für Claude oder ChatGPT gelöscht; die App entfernt außerdem die Kopie dieser Daten vom Gerät.
 
 Sicherungskopien beim Dienstleister können gelöschte Daten noch für kurze
 Zeit enthalten, bis sie im normalen Ablauf überschrieben werden.
