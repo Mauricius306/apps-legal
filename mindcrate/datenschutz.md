@@ -5,7 +5,7 @@ title: Datenschutzerklärung Mindcrate
 
 # Datenschutzerklärung Mindcrate
 
-**Stand:** 17. November 2026, vierte Fassung (Mail an Mindcrate ergänzt)
+**Stand:** 17. November 2026, vierte Fassung (Mail an Mindcrate und Sprachwahl ergänzt)
 
 Diese Erklärung gilt für **Mindcrate**, eine Aufgaben-App für iPhone und als
 Web-App im Browser. Für die anderen Apps des Anbieters gilt die
@@ -67,7 +67,7 @@ liegen auf dem Gerät (iPhone: App-Speicher, Browser: lokaler Speicher):
 - deine Anmeldung (Sitzungsschlüssel)
 - eine Kopie deiner Aufgaben, Unteraufgaben und Projekte
 - Änderungen, die noch nicht übertragen sind
-- Einstellungen: Farbschema, Hell/Dunkel, Bedienhand, Ansicht und Sortierung
+- Einstellungen: Sprache, Farbschema, Hell/Dunkel, Bedienhand, Ansicht und Sortierung
   der Liste, Erinnerungen, Morgen-Übersicht und Zahl am App-Symbol
 - ein Zähler erledigter Aufgaben und ob schon nach einer Bewertung gefragt wurde
   (iPhone, siehe unten)
