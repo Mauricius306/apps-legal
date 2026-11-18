@@ -47,7 +47,8 @@ out **Mindcrate Plus**, you buy through Apple or, in the browser, through Paddle
 
 ### Content you enter
 
-- Tasks with title, notes, status, priority, due date, recurrence, order and
+- Tasks with title, notes, status, priority, due date, recurrence, reminder
+  settings (Plus), order and
   the way they were created (app, web, import, Claude, ChatGPT, mail)
 - Subtasks
 - Projects with name, colour, priority, description and order

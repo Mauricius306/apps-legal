@@ -46,7 +46,7 @@ keine Auswertung deines Verhaltens.
 ### Inhalte, die du eingibst
 
 - Aufgaben mit Titel, Notizen, Status, Priorität, Frist, Wiederholung,
-  Reihenfolge und dem Weg, auf dem sie angelegt wurden (App, Web, Import,
+  Erinnerungseinstellungen (Plus), Reihenfolge und dem Weg, auf dem sie angelegt wurden (App, Web, Import,
   Claude, ChatGPT, Mail)
 - Unteraufgaben
 - Projekte mit Name, Farbe, Priorität, Beschreibung und Reihenfolge
