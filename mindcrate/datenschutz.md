@@ -32,7 +32,7 @@ liegen in einem Rechenzentrum in **Frankfurt am Main**. Die Web-App wird über
 **Cloudflare** ausgeliefert, E-Mails zum Konto verschickt **Brevo**. Verbindest du Mindcrate selbst mit **Claude** oder
 **ChatGPT**, liest und ändert der gewählte Dienst deine Aufgaben – nur nach deiner
 Zustimmung und bis du sie widerrufst. Schließt du **Mindcrate Plus** ab, kaufst du
-über Apple; die Käufe prüft **RevenueCat**. Es gibt keine Werbung, kein Tracking und
+über Apple oder im Browser über Paddle; die Käufe prüft **RevenueCat**. Es gibt keine Werbung, kein Tracking und
 keine Auswertung deines Verhaltens.
 
 ## Welche Daten verarbeitet werden
@@ -176,12 +176,12 @@ und die Erfüllung des Nutzungsvertrags (Art. 6 Abs. 1 lit. b DSGVO).
 
 ## Mindcrate Plus (Abo, freiwillig)
 
-Mindcrate Plus ist ein Abo, das du in der iPhone-App abschließen kannst. Es
+Mindcrate Plus ist ein Abo, das du in der iPhone-App oder im Browser abschließen kannst. Es
 schaltet „Tag planen“, die Verbindung mit Claude und ChatGPT und Mail an
 Mindcrate frei. Ohne Plus bleibt die übrige App vollständig nutzbar.
 
-- **Kauf und Zahlung** laufen ausschließlich über **Apple** (App Store). Zahlungsdaten
-  erhält der Anbieter nicht; es gilt die Datenschutzerklärung von Apple.
+- **Kauf in der iPhone-App** läuft über **Apple** (App Store). Zahlungsdaten erhält
+  der Anbieter nicht; es gilt die Datenschutzerklärung von Apple.
 - **Prüfung der Käufe:** **RevenueCat, Inc.**, 1032 E Brandon Blvd #3003, Brandon,
   FL 33511, USA, prüft im Auftrag des Anbieters die Kaufbelege von Apple und teilt
   mit, ob Plus aktiv ist (Auftragsverarbeiter nach Art. 28 DSGVO). Dafür erhält
@@ -191,14 +191,24 @@ Mindcrate frei. Ohne Plus bleibt die übrige App vollständig nutzbar.
   App-Version. Für die Übermittlung in die USA gelten die
   Standardvertragsklauseln der EU-Kommission (Art. 46 Abs. 2 lit. c DSGVO) im
   Auftragsverarbeitungsvertrag: <https://www.revenuecat.com/dpa>.
-  RevenueCat wird erst eingerichtet, wenn du angemeldet bist; im Browser findet
-  kein Kauf statt.
+  RevenueCat wird erst eingerichtet, wenn du angemeldet bist.
+- **Kauf im Browser:** Kaufst du Plus im Browser, verkauft es **Paddle.com
+  Market Limited**, 30 Old Bailey, London EC4M 7AU,
+  Vereinigtes Königreich, als eigenverantwortlicher Händler (Merchant of Record).
+  Paddle verarbeitet dafür deine Zahlungs- und Rechnungsdaten (Name, E-Mail,
+  Land, Postleitzahl, Zahlungsmittel) nach seiner eigenen Datenschutzerklärung:
+  <https://www.paddle.com/legal/privacy>. An Paddle übergeben wird zusätzlich
+  deine Konto-ID bei Mindcrate, damit der Kauf deinem Konto zugeordnet wird.
+  Für das Vereinigte Königreich gilt ein Angemessenheitsbeschluss der
+  EU-Kommission (Art. 45 DSGVO). RevenueCat erhält von Paddle den Kaufverlauf
+  wie oben beschrieben.
 - **Berechtigung:** Ob und bis wann Plus aktiv ist, speichert Supabase (Frankfurt)
   zu deinem Konto, damit Plus auf allen deinen Geräten gilt.
 - **Rechtsgrundlage:** Erfüllung des Abo-Vertrags (Art. 6 Abs. 1 lit. b DSGVO);
   Aufbewahrung von Kaufdaten, soweit Handels- und Steuerrecht es verlangen
   (Art. 6 Abs. 1 lit. c DSGVO).
-- **Kündigen** kannst du nur bei Apple (Einstellungen → dein Name → Abonnements).
+- **Kündigen:** bei Apple (Einstellungen → dein Name → Abonnements) bzw. über den
+  Link in der Kaufbestätigung von Paddle.
   Beim Löschen deines Kontos wird die Berechtigung bei Supabase gelöscht; ein
   laufendes Abo bei Apple kündigt das nicht.
 
