@@ -5,7 +5,7 @@ title: Mindcrate Privacy Policy
 
 # Mindcrate Privacy Policy
 
-**Last updated:** 18 November 2026 (sixth version: Mindcrate Plus added)
+**Last updated:** 18 November 2026 (sixth version: Mindcrate Plus with attachments added)
 
 This is an English translation for convenience. The
 [German version](datenschutz.html) is the legally binding one.
@@ -51,6 +51,8 @@ out **Mindcrate Plus**, you buy through Apple or, in the browser, through Paddle
   settings (Plus), order and
   the way they were created (app, web, import, Claude, ChatGPT, mail)
 - Subtasks
+- Attachments (Plus): photos and PDF files you attach to a task yourself, with
+  file name, type and size
 - Projects with name, colour, priority, description and order
 - Times of creation, change and completion
 
@@ -160,7 +162,8 @@ is the legitimate interest in protecting accounts and the service from abuse
 So that content is not lost in case of a technical failure, the database is
 backed up once a week: your content (tasks, subtasks, projects and settings on
 the server) and your account (email address, password hash, timestamps).
-Sessions and sign-in tokens are not backed up. The backup is **encrypted**
+Sessions and sign-in tokens are not backed up, nor are attachment files (only
+their name, type and size). The backup is **encrypted**
 before it is stored; only the provider can open it, with a key that is not
 held by the storage service.
 
@@ -351,10 +354,23 @@ After 50 completed tasks, at the earliest one week after the first launch, the
 app asks **once** for a rating using Apple's dialog. The app does not learn
 whether or how you rate; Apple processes the rating.
 
+### Attachments (Plus)
+
+You can attach photos and PDF files to a task (at most 10 MB per file, 100 MB
+in total). On the iPhone you choose a photo via Apple's photo picker or a file
+from “Files”; the app only sees what you select and does not use the camera.
+The file is kept in non-public storage at Supabase (Frankfurt). Only people who
+may see the task can see and open it; to open it, the app creates a link that
+expires after 10 minutes. The legal basis is the performance of the user
+agreement (Art. 6(1)(b) GDPR). When you remove an attachment, the file is
+deleted immediately. When the task is deleted permanently, a weekly clean-up
+deletes its files.
+
 ### Export data
 
 Under *More → Export data* the app creates a file (JSON or CSV) on the device
-with your projects, tasks and subtasks. In the browser it is downloaded, on
+with your projects, tasks and subtasks; attachments are not included, you can
+open and save them one by one. In the browser it is downloaded, on
 the iPhone it is offered via the share sheet. You decide where it goes; the
 app sends it nowhere.
 
@@ -394,14 +410,15 @@ archive after seven days but are not deleted.
 
 - **Tasks** go to the **trash** first when deleted and can be restored there
   for 30 days. After that – or immediately via “Delete permanently” or “Empty
-  trash” – they are deleted permanently, including subtasks.
+  trash” – they are deleted permanently, including subtasks and attachments
+  (the files within a week at the latest).
 - **Subtasks and projects:** delete them directly in the app. The deletion is
   carried out on the server at the next sync.
 - Completed tasks older than 90 days are only loaded by the app on request
   (“Load older archive”); on the server they remain until deleted.
 - **Delete your account completely:** in the app under *More → Delete account*
   or by email to the address above. Together with the account, all tasks,
-  subtasks and projects, the address for Mail to Mindcrate, the Plus
+  subtasks, attachments (including files) and projects, the address for Mail to Mindcrate, the Plus
   entitlement and the permissions for Claude or ChatGPT are deleted; the app also removes the copy of this data
   from the device.
 

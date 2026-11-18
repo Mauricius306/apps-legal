@@ -5,7 +5,7 @@ title: Datenschutzerklärung Mindcrate
 
 # Datenschutzerklärung Mindcrate
 
-**Stand:** 18. November 2026, sechste Fassung (Mindcrate Plus ergänzt)
+**Stand:** 18. November 2026, sechste Fassung (Mindcrate Plus mit Anhängen ergänzt)
 
 [English version](privacy.html) (Übersetzung; maßgeblich ist diese deutsche Fassung)
 
@@ -49,6 +49,8 @@ keine Auswertung deines Verhaltens.
   Erinnerungseinstellungen (Plus), Reihenfolge und dem Weg, auf dem sie angelegt wurden (App, Web, Import,
   Claude, ChatGPT, Mail)
 - Unteraufgaben
+- Anhänge (Plus): Fotos und PDF-Dateien, die du selbst an eine Aufgabe hängst, mit
+  Dateiname, Typ und Größe
 - Projekte mit Name, Farbe, Priorität, Beschreibung und Reihenfolge
 - Zeitpunkte des Anlegens, Änderns und Erledigens
 
@@ -162,7 +164,8 @@ bei Cloudflare: <https://www.cloudflare.com/turnstile-privacy-policy/>
 Damit Inhalte bei einem technischen Fehler nicht verloren gehen, wird die
 Datenbank einmal pro Woche gesichert: deine Inhalte (Aufgaben, Unteraufgaben,
 Projekte und Einstellungen auf dem Server) sowie dein Konto (E-Mail-Adresse,
-Passwort-Hash, Zeitstempel). Sitzungen und Anmelde-Tokens werden nicht gesichert.
+Passwort-Hash, Zeitstempel). Sitzungen und Anmelde-Tokens werden nicht gesichert,
+Dateien von Anhängen ebenfalls nicht (nur ihr Name, Typ und ihre Größe).
 Die Sicherung wird vor dem Speichern **verschlüsselt**; öffnen kann sie nur der
 Anbieter mit einem Schlüssel, der nicht beim Speicherdienst liegt.
 
@@ -361,10 +364,23 @@ Nach 50 erledigten Aufgaben, frühestens eine Woche nach dem ersten Start, fragt
 die App **einmal** über das Fenster von Apple nach einer Bewertung. Ob und wie
 du bewertest, erfährt die App nicht; die Bewertung verarbeitet Apple.
 
+### Anhänge (Plus)
+
+An eine Aufgabe kannst du Fotos und PDF-Dateien hängen (höchstens 10 MB je Datei,
+100 MB insgesamt). Auf dem iPhone wählst du ein Foto über die Fotoauswahl von
+Apple oder eine Datei aus „Dateien“; die App sieht nur, was du auswählst, und
+nutzt die Kamera nicht. Die Datei liegt in einem nicht öffentlichen Speicher bei
+Supabase (Frankfurt). Sehen und öffnen kann sie nur, wer die Aufgabe sehen darf;
+zum Öffnen erzeugt die App einen Link, der nach 10 Minuten verfällt.
+Rechtsgrundlage ist die Erfüllung des Nutzungsvertrags (Art. 6 Abs. 1 lit. b DSGVO).
+Entfernst du einen Anhang, wird die Datei sofort gelöscht. Wird die Aufgabe
+endgültig gelöscht, löscht ein wöchentlicher Aufräumlauf ihre Dateien.
+
 ### Daten exportieren
 
 Unter *Mehr → Daten exportieren* erzeugt die App auf dem Gerät eine Datei
-(JSON oder CSV) mit deinen Projekten, Aufgaben und Unteraufgaben. Im Browser
+(JSON oder CSV) mit deinen Projekten, Aufgaben und Unteraufgaben; Anhänge sind
+nicht enthalten, du kannst sie einzeln öffnen und speichern. Im Browser
 wird sie heruntergeladen, auf dem iPhone über das Teilen-Menü ausgegeben. Wohin
 sie geht, entscheidest du; die App sendet sie nirgendwohin.
 
@@ -404,14 +420,15 @@ wandern nach sieben Tagen ins Archiv, werden dabei aber nicht gelöscht.
 
 - **Aufgaben** kommen beim Löschen zuerst in den **Papierkorb** und lassen sich
   dort 30 Tage wiederherstellen. Danach – oder sofort über „Endgültig löschen“
-  bzw. „Papierkorb leeren“ – werden sie endgültig gelöscht, samt Unteraufgaben.
+  bzw. „Papierkorb leeren“ – werden sie endgültig gelöscht, samt Unteraufgaben
+  und Anhängen (die Dateien spätestens nach einer Woche).
 - **Unteraufgaben und Projekte:** direkt in der App löschen. Die Löschung wird
   beim nächsten Abgleich auf dem Server ausgeführt.
 - Erledigte Aufgaben, die älter als 90 Tage sind, lädt die App erst auf Wunsch
   („Älteres Archiv laden“); auf dem Server bleiben sie bis zur Löschung.
 - **Konto vollständig löschen:** in der App unter *Mehr → Konto löschen* oder
   per E-Mail an die oben genannte Adresse. Mit dem Konto werden alle Aufgaben,
-  Unteraufgaben und Projekte, die Adresse für Mail an Mindcrate, die
+  Unteraufgaben, Anhänge (samt Dateien) und Projekte, die Adresse für Mail an Mindcrate, die
   Plus-Berechtigung sowie die Freigaben für Claude oder ChatGPT gelöscht; die App entfernt außerdem die Kopie dieser Daten vom Gerät.
 
 Gelöschte Daten können noch in den verschlüsselten wöchentlichen Sicherungen
