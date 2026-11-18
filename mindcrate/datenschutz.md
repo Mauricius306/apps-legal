@@ -5,7 +5,7 @@ title: Datenschutzerklärung Mindcrate
 
 # Datenschutzerklärung Mindcrate
 
-**Stand:** 18. November 2026, fünfte Fassung (verschlüsselte Sicherung ergänzt)
+**Stand:** 18. November 2026, sechste Fassung (Mindcrate Plus ergänzt)
 
 [English version](privacy.html) (Übersetzung; maßgeblich ist diese deutsche Fassung)
 
@@ -31,7 +31,8 @@ Passwort. Die Datenbank betreibt der Dienstleister **Supabase**, die Daten
 liegen in einem Rechenzentrum in **Frankfurt am Main**. Die Web-App wird über
 **Cloudflare** ausgeliefert, E-Mails zum Konto verschickt **Brevo**. Verbindest du Mindcrate selbst mit **Claude** oder
 **ChatGPT**, liest und ändert der gewählte Dienst deine Aufgaben – nur nach deiner
-Zustimmung und bis du sie widerrufst. Es gibt keine Werbung, kein Tracking und
+Zustimmung und bis du sie widerrufst. Schließt du **Mindcrate Plus** ab, kaufst du
+über Apple; die Käufe prüft **RevenueCat**. Es gibt keine Werbung, kein Tracking und
 keine Auswertung deines Verhaltens.
 
 ## Welche Daten verarbeitet werden
@@ -172,6 +173,34 @@ EU-US Data Privacy Framework zertifiziert (Art. 45 DSGVO). Jede Sicherung wird
 nach **60 Tagen** automatisch gelöscht. Rechtsgrundlage ist das berechtigte
 Interesse, deine Inhalte vor Verlust zu schützen (Art. 6 Abs. 1 lit. f DSGVO),
 und die Erfüllung des Nutzungsvertrags (Art. 6 Abs. 1 lit. b DSGVO).
+
+## Mindcrate Plus (Abo, freiwillig)
+
+Mindcrate Plus ist ein Abo, das du in der iPhone-App abschließen kannst. Es
+schaltet „Tag planen“, die Verbindung mit Claude und ChatGPT und Mail an
+Mindcrate frei. Ohne Plus bleibt die übrige App vollständig nutzbar.
+
+- **Kauf und Zahlung** laufen ausschließlich über **Apple** (App Store). Zahlungsdaten
+  erhält der Anbieter nicht; es gilt die Datenschutzerklärung von Apple.
+- **Prüfung der Käufe:** **RevenueCat, Inc.**, 1032 E Brandon Blvd #3003, Brandon,
+  FL 33511, USA, prüft im Auftrag des Anbieters die Kaufbelege von Apple und teilt
+  mit, ob Plus aktiv ist (Auftragsverarbeiter nach Art. 28 DSGVO). Dafür erhält
+  RevenueCat deine Konto-ID bei Mindcrate (eine zufällige Kennung, nicht deine
+  E-Mail-Adresse), den Kaufverlauf zu Mindcrate Plus (Produkt, Zeitpunkte,
+  Ablauf, Probezeit, Land) sowie technisch IP-Adresse, Gerätetyp und
+  App-Version. Für die Übermittlung in die USA gelten die
+  Standardvertragsklauseln der EU-Kommission (Art. 46 Abs. 2 lit. c DSGVO) im
+  Auftragsverarbeitungsvertrag: <https://www.revenuecat.com/dpa>.
+  RevenueCat wird erst eingerichtet, wenn du angemeldet bist; im Browser findet
+  kein Kauf statt.
+- **Berechtigung:** Ob und bis wann Plus aktiv ist, speichert Supabase (Frankfurt)
+  zu deinem Konto, damit Plus auf allen deinen Geräten gilt.
+- **Rechtsgrundlage:** Erfüllung des Abo-Vertrags (Art. 6 Abs. 1 lit. b DSGVO);
+  Aufbewahrung von Kaufdaten, soweit Handels- und Steuerrecht es verlangen
+  (Art. 6 Abs. 1 lit. c DSGVO).
+- **Kündigen** kannst du nur bei Apple (Einstellungen → dein Name → Abonnements).
+  Beim Löschen deines Kontos wird die Berechtigung bei Supabase gelöscht; ein
+  laufendes Abo bei Apple kündigt das nicht.
 
 ## Verbindung mit Claude oder ChatGPT (freiwillig)
 
@@ -372,8 +401,8 @@ wandern nach sieben Tagen ins Archiv, werden dabei aber nicht gelöscht.
   („Älteres Archiv laden“); auf dem Server bleiben sie bis zur Löschung.
 - **Konto vollständig löschen:** in der App unter *Mehr → Konto löschen* oder
   per E-Mail an die oben genannte Adresse. Mit dem Konto werden alle Aufgaben,
-  Unteraufgaben und Projekte, die Adresse für Mail an Mindcrate sowie die
-  Freigaben für Claude oder ChatGPT gelöscht; die App entfernt außerdem die Kopie dieser Daten vom Gerät.
+  Unteraufgaben und Projekte, die Adresse für Mail an Mindcrate, die
+  Plus-Berechtigung sowie die Freigaben für Claude oder ChatGPT gelöscht; die App entfernt außerdem die Kopie dieser Daten vom Gerät.
 
 Gelöschte Daten können noch in den verschlüsselten wöchentlichen Sicherungen
 enthalten sein (siehe „Sicherung der Server-Daten“) und verschwinden dort
