@@ -7,6 +7,8 @@ title: Datenschutzerklärung Mindcrate
 
 **Stand:** 18. November 2026, fünfte Fassung (verschlüsselte Sicherung ergänzt)
 
+[English version](privacy.html) (Übersetzung; maßgeblich ist diese deutsche Fassung)
+
 Diese Erklärung gilt für **Mindcrate**, eine Aufgaben-App für iPhone und als
 Web-App im Browser. Für die anderen Apps des Anbieters gilt die
 [allgemeine Datenschutzerklärung](../index.html).

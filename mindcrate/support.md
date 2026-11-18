@@ -37,4 +37,4 @@ Aufgaben, Unteraufgaben und Projekte gelöscht. Einzelheiten in der
 
 ---
 
-[Datenschutzerklärung](datenschutz.html) · [Impressum](../impressum.html)
+[Datenschutzerklärung](datenschutz.html) · [Privacy policy (English)](privacy.html) · [Impressum](../impressum.html)
