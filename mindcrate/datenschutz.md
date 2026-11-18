@@ -5,7 +5,7 @@ title: Datenschutzerklärung Mindcrate
 
 # Datenschutzerklärung Mindcrate
 
-**Stand:** 18. November 2026, sechste Fassung (Mindcrate Plus mit Anhängen ergänzt)
+**Stand:** 18. November 2026, sechste Fassung (Mindcrate Plus mit Anhängen und geteilten Projekten ergänzt)
 
 [English version](privacy.html) (Übersetzung; maßgeblich ist diese deutsche Fassung)
 
@@ -49,6 +49,7 @@ keine Auswertung deines Verhaltens.
   Erinnerungseinstellungen (Plus), Reihenfolge und dem Weg, auf dem sie angelegt wurden (App, Web, Import,
   Claude, ChatGPT, Mail)
 - Unteraufgaben
+- in geteilten Projekten: Mitglieder, Zuständigkeit, wer erledigt hat
 - Anhänge (Plus): Fotos und PDF-Dateien, die du selbst an eine Aufgabe hängst, mit
   Dateiname, Typ und Größe
 - Projekte mit Name, Farbe, Priorität, Beschreibung und Reihenfolge
@@ -214,6 +215,27 @@ Mindcrate frei. Ohne Plus bleibt die übrige App vollständig nutzbar.
   Link in der Kaufbestätigung von Paddle.
   Beim Löschen deines Kontos wird die Berechtigung bei Supabase gelöscht; ein
   laufendes Abo bei Apple kündigt das nicht.
+
+## Geteilte Projekte (freiwillig)
+
+Du kannst ein Projekt mit anderen Menschen teilen. Dazu erzeugst du einen
+Einladungscode (14 Tage gültig) und gibst ihn oder den Link selbst weiter;
+Mindcrate verschickt nichts. Wer mit dem Code beitritt, wird Mitglied.
+
+- **Wer was sieht:** Alle Personen eines geteilten Projekts sehen und bearbeiten
+  dessen Aufgaben, Unteraufgaben und Anhänge, sehen, wem eine Aufgabe zugewiesen
+  ist und wer sie erledigt hat, und sehen die **E-Mail-Adressen** der anderen
+  Personen im Projekt. Andere Projekte und Aufgaben bleiben privat.
+- **Verlassen und entfernen:** Mitglieder können jederzeit austreten, der
+  Besitzer kann Mitglieder entfernen und Einladungen beenden. Aufgaben, die ein
+  Mitglied im Projekt angelegt hat, bleiben dann im Projekt und gehören dem
+  Besitzer.
+- **Schutz vor Raten:** Fehlgeschlagene Beitrittsversuche werden mit deiner
+  Konto-ID und der Uhrzeit für einen Tag gespeichert und begrenzt.
+- **Rechtsgrundlage:** Erfüllung des Nutzungsvertrags (Art. 6 Abs. 1 lit. b
+  DSGVO) – du entscheidest, mit wem du teilst. Für die Inhalte, die du in ein
+  geteiltes Projekt schreibst, und für die Weitergabe der Einladung bist du
+  gegenüber den anderen selbst verantwortlich.
 
 ## Verbindung mit Claude oder ChatGPT (freiwillig)
 
@@ -430,6 +452,9 @@ wandern nach sieben Tagen ins Archiv, werden dabei aber nicht gelöscht.
   per E-Mail an die oben genannte Adresse. Mit dem Konto werden alle Aufgaben,
   Unteraufgaben, Anhänge (samt Dateien) und Projekte, die Adresse für Mail an Mindcrate, die
   Plus-Berechtigung sowie die Freigaben für Claude oder ChatGPT gelöscht; die App entfernt außerdem die Kopie dieser Daten vom Gerät.
+  Aufgaben in Projekten, die andere mit dir geteilt haben, gehen vorher an deren
+  Besitzer über; Mitglieder deiner geteilten Projekte behalten ihre eigenen
+  Aufgaben daraus.
 
 Gelöschte Daten können noch in den verschlüsselten wöchentlichen Sicherungen
 enthalten sein (siehe „Sicherung der Server-Daten“) und verschwinden dort

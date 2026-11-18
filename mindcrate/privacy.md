@@ -5,7 +5,7 @@ title: Mindcrate Privacy Policy
 
 # Mindcrate Privacy Policy
 
-**Last updated:** 18 November 2026 (sixth version: Mindcrate Plus with attachments added)
+**Last updated:** 18 November 2026 (sixth version: Mindcrate Plus with attachments and shared projects added)
 
 This is an English translation for convenience. The
 [German version](datenschutz.html) is the legally binding one.
@@ -51,6 +51,7 @@ out **Mindcrate Plus**, you buy through Apple or, in the browser, through Paddle
   settings (Plus), order and
   the way they were created (app, web, import, Claude, ChatGPT, mail)
 - Subtasks
+- in shared projects: members, assignment, who completed a task
 - Attachments (Plus): photos and PDF files you attach to a task yourself, with
   file name, type and size
 - Projects with name, colour, priority, description and order
@@ -211,6 +212,25 @@ Without Plus, the rest of the app remains fully usable.
   Paddle's purchase confirmation. Deleting
   your account deletes the entitlement in Supabase; it does not cancel an active
   subscription with Apple.
+
+## Shared projects (optional)
+
+You can share a project with other people. To do so you create an invitation
+code (valid for 14 days) and pass it or the link on yourself; Mindcrate sends
+nothing. Anyone who joins with the code becomes a member.
+
+- **Who sees what:** Everyone in a shared project sees and edits its tasks,
+  subtasks and attachments, sees who a task is assigned to and who completed
+  it, and sees the **email addresses** of the other people in the project.
+  Other projects and tasks stay private.
+- **Leaving and removing:** Members can leave at any time; the owner can remove
+  members and end invitations. Tasks a member created in the project then stay
+  in the project and belong to the owner.
+- **Protection against guessing:** Failed attempts to join are stored with your
+  account ID and the time for one day and limited.
+- **Legal basis:** performance of the user agreement (Art. 6(1)(b) GDPR) – you
+  decide whom you share with. You are responsible towards the others for the
+  content you write into a shared project and for passing on the invitation.
 
 ## Connection to Claude or ChatGPT (optional)
 
@@ -421,6 +441,8 @@ archive after seven days but are not deleted.
   subtasks, attachments (including files) and projects, the address for Mail to Mindcrate, the Plus
   entitlement and the permissions for Claude or ChatGPT are deleted; the app also removes the copy of this data
   from the device.
+  Tasks in projects others shared with you are handed over to their owners
+  first; members of your shared projects keep their own tasks from them.
 
 Deleted data may still be contained in the encrypted weekly backups (see
 “Backup of server data”) and disappears from them after 60 days at the latest.
