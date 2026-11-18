@@ -5,7 +5,7 @@ title: Datenschutzerklärung Mindcrate
 
 # Datenschutzerklärung Mindcrate
 
-**Stand:** 17. November 2026, vierte Fassung (Mail an Mindcrate und Sprachwahl ergänzt)
+**Stand:** 18. November 2026, fünfte Fassung (verschlüsselte Sicherung ergänzt)
 
 Diese Erklärung gilt für **Mindcrate**, eine Aufgaben-App für iPhone und als
 Web-App im Browser. Für die anderen Apps des Anbieters gilt die
@@ -154,6 +154,23 @@ nicht für Werbung. Rechtsgrundlage ist das berechtigte Interesse am Schutz der
 Konten und des Dienstes vor Missbrauch (Art. 6 Abs. 1 lit. f DSGVO). Datenschutz
 bei Cloudflare: <https://www.cloudflare.com/turnstile-privacy-policy/>
 
+## Sicherung der Server-Daten
+
+Damit Inhalte bei einem technischen Fehler nicht verloren gehen, wird die
+Datenbank einmal pro Woche gesichert: deine Inhalte (Aufgaben, Unteraufgaben,
+Projekte und Einstellungen auf dem Server) sowie dein Konto (E-Mail-Adresse,
+Passwort-Hash, Zeitstempel). Sitzungen und Anmelde-Tokens werden nicht gesichert.
+Die Sicherung wird vor dem Speichern **verschlüsselt**; öffnen kann sie nur der
+Anbieter mit einem Schlüssel, der nicht beim Speicherdienst liegt.
+
+Gespeichert wird die verschlüsselte Datei bei **GitHub, Inc.**, 88 Colin P. Kelly
+Jr. Street, San Francisco, CA 94107, USA, im privaten Bereich des Anbieters
+(GitHub Actions). GitHub sieht nur die verschlüsselte Datei. GitHub ist unter dem
+EU-US Data Privacy Framework zertifiziert (Art. 45 DSGVO). Jede Sicherung wird
+nach **60 Tagen** automatisch gelöscht. Rechtsgrundlage ist das berechtigte
+Interesse, deine Inhalte vor Verlust zu schützen (Art. 6 Abs. 1 lit. f DSGVO),
+und die Erfüllung des Nutzungsvertrags (Art. 6 Abs. 1 lit. b DSGVO).
+
 ## Verbindung mit Claude oder ChatGPT (freiwillig)
 
 Du kannst Mindcrate als Connector in **Claude** (Anthropic) oder **ChatGPT**
@@ -274,7 +291,7 @@ fällig oder überfällig sind. Beides berechnet das Gerät selbst; es gibt kein
 Push-Server. Standardmäßig ist beides aus. Beachte: Mitteilungen können je
 nach iOS-Einstellung auf dem Sperrbildschirm sichtbar sein.
 
-### Widget „Heute“ (iPhone)
+### Widget „Mindcrate Heute“ (iPhone)
 
 Legst du das Widget auf den Homescreen oder Sperrbildschirm, schreibt die App
 die heute fälligen und überfälligen Aufgaben (Titel, Uhrzeit, Projektfarbe) in
@@ -356,8 +373,9 @@ wandern nach sieben Tagen ins Archiv, werden dabei aber nicht gelöscht.
   Unteraufgaben und Projekte, die Adresse für Mail an Mindcrate sowie die
   Freigaben für Claude oder ChatGPT gelöscht; die App entfernt außerdem die Kopie dieser Daten vom Gerät.
 
-Sicherungskopien beim Dienstleister können gelöschte Daten noch für kurze
-Zeit enthalten, bis sie im normalen Ablauf überschrieben werden.
+Gelöschte Daten können noch in den verschlüsselten wöchentlichen Sicherungen
+enthalten sein (siehe „Sicherung der Server-Daten“) und verschwinden dort
+spätestens nach 60 Tagen.
 
 ## Deine Rechte
 
