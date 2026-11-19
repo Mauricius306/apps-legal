@@ -5,7 +5,7 @@ title: Nutzungsbedingungen Mindcrate
 
 # Nutzungsbedingungen Mindcrate
 
-**Stand:** 12. November 2026
+**Stand:** 18. November 2026 (Mindcrate Plus, Kauf im Browser)
 
 Diese Bedingungen gelten für die Nutzung von **Mindcrate** (App für iPhone und
 iPad sowie Web-App). Anbieter ist Carl Maurice Pötter, Anschrift im
@@ -38,7 +38,7 @@ nötig sind, um die Inhalte zu speichern, abzugleichen und dir anzuzeigen. Trag
 keine rechtswidrigen Inhalte und keine Daten anderer Menschen ein, die du nicht
 verwenden darfst.
 
-Sichere Wichtiges zusätzlich über *Mehr → Daten exportieren*. Gelöschte
+Sichere Wichtiges zusätzlich über *Mehr → Importieren und sichern*. Gelöschte
 Aufgaben liegen 30 Tage im Papierkorb; danach sind sie endgültig weg.
 
 ## 4. Faire Nutzung
@@ -56,15 +56,26 @@ deren eigene Bedingungen. Der Anbieter ist nicht verantwortlich dafür, was ein
 KI-Assistent mit deiner Erlaubnis in deiner Liste anlegt oder ändert. Löschen
 können diese Assistenten nicht.
 
-## 6. Kostenpflichtige Funktionen
+## 6. Kostenpflichtige Funktionen (Mindcrate Plus)
 
-Sollte es kostenpflichtige Funktionen oder ein Abo geben, werden Preis,
-Laufzeit und Umfang vor dem Kauf in der App angezeigt. Gekauft und abgerechnet
-wird über Apple; dafür gelten die Bedingungen von Apple (Standard-EULA:
-<https://www.apple.com/legal/internet-services/itunes/dev/stdeula/>), auch für
-Kündigung und Erstattung. Ein Abo verlängert sich automatisch, wenn es nicht
-spätestens 24 Stunden vor Ablauf in den Einstellungen der Apple-ID gekündigt
-wird.
+Mindcrate Plus ist ein Abo mit zusätzlichen Funktionen. Preis, Laufzeit,
+Probezeit und Umfang werden vor dem Kauf angezeigt. Ein Abo verlängert sich
+automatisch, bis es gekündigt wird; nach der Kündigung bleibt Plus bis zum Ende
+der bezahlten Laufzeit aktiv. Plus gilt für dein Mindcrate-Konto – auf dem
+iPhone und im Browser, egal wo du es gekauft hast.
+
+- **Kauf in der iPhone-App:** Verkauf und Abrechnung über Apple; es gelten die
+  Bedingungen von Apple (Standard-EULA:
+  <https://www.apple.com/legal/internet-services/itunes/dev/stdeula/>), auch für
+  Kündigung und Erstattung. Kündigen spätestens 24 Stunden vor Ablauf in den
+  Einstellungen deines Apple-Accounts.
+- **Kauf im Browser:** Verkäufer ist **Paddle.com** als Wiederverkäufer
+  (Merchant of Record), der auch die Zahlung, die Rechnung und die Umsatzsteuer
+  übernimmt; es gelten zusätzlich die Bedingungen von Paddle
+  (<https://www.paddle.com/legal/buyer-terms>). Kündigen kannst du
+  über den Link in der Kaufbestätigung von Paddle. Erstattung gibt es
+  innerhalb von 14 Tagen nach dem Kauf ohne Angabe von Gründen – über
+  <https://paddle.net> oder per Mail an die Adresse im Impressum.
 
 ## 7. Haftung
 

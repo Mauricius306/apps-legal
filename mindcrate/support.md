@@ -10,7 +10,7 @@ Fragen, Fehler oder ein Vorschlag? Schreib mir eine E-Mail:
 **<mp.appstudio@gmail.com>**
 
 Hilfreich sind dabei: iPhone-Modell oder Browser, die iOS-Version und die
-Versionsnummer der App – die steht unter „Mehr → Über → Version".
+Versionsnummer der App – die steht ganz unten in „Mehr".
 
 ## Aufgaben schnell erfassen
 
@@ -26,7 +26,7 @@ Im Eingabefeld versteht Mindcrate ein paar Kürzel, alles andere bleibt Titel:
 ## Synchronisierung
 
 Mindcrate speichert jede Eingabe zuerst auf dem Gerät und überträgt sie, sobald
-eine Verbindung besteht. Steht unter „Mehr → Konto & Sync" eine Zahl
+eine Verbindung besteht. Steht unter „Mehr → Daten → Synchronisierung" eine Zahl
 wartender Änderungen, ist das Gerät gerade offline – nichts geht verloren.
 
 ## Konto löschen
@@ -37,4 +37,4 @@ Aufgaben, Unteraufgaben und Projekte gelöscht. Einzelheiten in der
 
 ---
 
-[Datenschutzerklärung](datenschutz.html) · [Impressum](../impressum.html)
+[Datenschutzerklärung](datenschutz.html) · [Privacy policy (English)](privacy.html) · [Impressum](../impressum.html)

@@ -5,7 +5,9 @@ title: Datenschutzerklärung Mindcrate
 
 # Datenschutzerklärung Mindcrate
 
-**Stand:** 17. November 2026, vierte Fassung (Mail an Mindcrate und Sprachwahl ergänzt)
+**Stand:** 19. November 2026, siebte Fassung (Name und Kürzel, Mitteilungen bei Zuweisung, Projekt-Bereiche, Vorlagen ergänzt)
+
+[English version](privacy.html) (Übersetzung; maßgeblich ist diese deutsche Fassung)
 
 Diese Erklärung gilt für **Mindcrate**, eine Aufgaben-App für iPhone und als
 Web-App im Browser. Für die anderen Apps des Anbieters gilt die
@@ -29,7 +31,8 @@ Passwort. Die Datenbank betreibt der Dienstleister **Supabase**, die Daten
 liegen in einem Rechenzentrum in **Frankfurt am Main**. Die Web-App wird über
 **Cloudflare** ausgeliefert, E-Mails zum Konto verschickt **Brevo**. Verbindest du Mindcrate selbst mit **Claude** oder
 **ChatGPT**, liest und ändert der gewählte Dienst deine Aufgaben – nur nach deiner
-Zustimmung und bis du sie widerrufst. Es gibt keine Werbung, kein Tracking und
+Zustimmung und bis du sie widerrufst. Schließt du **Mindcrate Plus** ab, kaufst du
+über Apple oder im Browser über Paddle; die Käufe prüft **RevenueCat**. Es gibt keine Werbung, kein Tracking und
 keine Auswertung deines Verhaltens.
 
 ## Welche Daten verarbeitet werden
@@ -43,9 +46,16 @@ keine Auswertung deines Verhaltens.
 ### Inhalte, die du eingibst
 
 - Aufgaben mit Titel, Notizen, Status, Priorität, Frist, Wiederholung,
-  Reihenfolge und dem Weg, auf dem sie angelegt wurden (App, Web, Import,
+  Erinnerungseinstellungen (Plus), Reihenfolge und dem Weg, auf dem sie angelegt wurden (App, Web, Import,
   Claude, ChatGPT, Mail)
 - Unteraufgaben
+- in geteilten Projekten: Mitglieder, Zuständige (auch mehrere), wer erledigt hat
+- freiwillig: dein Name und Kürzel (Mehr → Name und Kürzel)
+- je Projekt freiwillig ein Bereich (z. B. Arbeit, Privat)
+- je Aufgabe freiwillig ein Tag, ab dem sie erscheint („erst ab“)
+- freiwillig: Vorlagen (Kurzname, Titel, Notiz, Priorität, Projekt, Dauer, Schritte)
+- Anhänge (Plus): Fotos und PDF-Dateien, die du selbst an eine Aufgabe hängst, mit
+  Dateiname, Typ und Größe
 - Projekte mit Name, Farbe, Priorität, Beschreibung und Reihenfolge
 - Zeitpunkte des Anlegens, Änderns und Erledigens
 
@@ -115,7 +125,7 @@ Zurücksetzen des Passworts löst Supabase aus; verschickt werden sie über Brev
 ## Empfänger: Brevo (E-Mails zum Konto)
 
 Die E-Mails zu deinem Konto (Adresse bestätigen, Adresse ändern, Passwort
-zurücksetzen) verschickt **Brevo SAS**, 17 rue de Salneuve, 75017 Paris,
+zurücksetzen; auf Wunsch Mitteilungen bei Zuweisung) verschickt **Brevo SAS**, 17 rue de Salneuve, 75017 Paris,
 Frankreich (deutsche Niederlassung: Brevo GmbH, Köpenicker Str. 126, 10179
 Berlin), als Auftragsverarbeiter nach Art. 28 DSGVO. Dafür erhält Brevo deine
 E-Mail-Adresse und den Inhalt der jeweiligen Mail mit dem Link; Brevo
@@ -154,6 +164,113 @@ nicht für Werbung. Rechtsgrundlage ist das berechtigte Interesse am Schutz der
 Konten und des Dienstes vor Missbrauch (Art. 6 Abs. 1 lit. f DSGVO). Datenschutz
 bei Cloudflare: <https://www.cloudflare.com/turnstile-privacy-policy/>
 
+## Sicherung der Server-Daten
+
+Damit Inhalte bei einem technischen Fehler nicht verloren gehen, wird die
+Datenbank einmal pro Woche gesichert: deine Inhalte (Aufgaben, Unteraufgaben,
+Projekte und Einstellungen auf dem Server) sowie dein Konto (E-Mail-Adresse,
+Passwort-Hash, Zeitstempel). Sitzungen und Anmelde-Tokens werden nicht gesichert,
+Dateien von Anhängen ebenfalls nicht (nur ihr Name, Typ und ihre Größe).
+Die Sicherung wird vor dem Speichern **verschlüsselt**; öffnen kann sie nur der
+Anbieter mit einem Schlüssel, der nicht beim Speicherdienst liegt.
+
+Gespeichert wird die verschlüsselte Datei bei **GitHub, Inc.**, 88 Colin P. Kelly
+Jr. Street, San Francisco, CA 94107, USA, im privaten Bereich des Anbieters
+(GitHub Actions). GitHub sieht nur die verschlüsselte Datei. GitHub ist unter dem
+EU-US Data Privacy Framework zertifiziert (Art. 45 DSGVO). Jede Sicherung wird
+nach **60 Tagen** automatisch gelöscht. Rechtsgrundlage ist das berechtigte
+Interesse, deine Inhalte vor Verlust zu schützen (Art. 6 Abs. 1 lit. f DSGVO),
+und die Erfüllung des Nutzungsvertrags (Art. 6 Abs. 1 lit. b DSGVO).
+
+## Mindcrate Plus (Abo, freiwillig)
+
+Mindcrate Plus ist ein Abo, das du in der iPhone-App oder im Browser abschließen kannst. Es
+schaltet „Tag planen“, die Verbindung mit Claude und ChatGPT und Mail an
+Mindcrate frei. Ohne Plus bleibt die übrige App vollständig nutzbar.
+
+- **Kauf in der iPhone-App** läuft über **Apple** (App Store). Zahlungsdaten erhält
+  der Anbieter nicht; es gilt die Datenschutzerklärung von Apple.
+- **Prüfung der Käufe:** **RevenueCat, Inc.**, 1032 E Brandon Blvd #3003, Brandon,
+  FL 33511, USA, prüft im Auftrag des Anbieters die Kaufbelege von Apple und teilt
+  mit, ob Plus aktiv ist (Auftragsverarbeiter nach Art. 28 DSGVO). Dafür erhält
+  RevenueCat deine Konto-ID bei Mindcrate (eine zufällige Kennung, nicht deine
+  E-Mail-Adresse), den Kaufverlauf zu Mindcrate Plus (Produkt, Zeitpunkte,
+  Ablauf, Probezeit, Land) sowie technisch IP-Adresse, Gerätetyp und
+  App-Version. Für die Übermittlung in die USA gelten die
+  Standardvertragsklauseln der EU-Kommission (Art. 46 Abs. 2 lit. c DSGVO) im
+  Auftragsverarbeitungsvertrag: <https://www.revenuecat.com/dpa>.
+  RevenueCat wird erst eingerichtet, wenn du angemeldet bist.
+- **Kauf im Browser:** Kaufst du Plus im Browser, verkauft es **Paddle.com
+  Market Limited**, 30 Old Bailey, London EC4M 7AU,
+  Vereinigtes Königreich, als eigenverantwortlicher Händler (Merchant of Record).
+  Paddle verarbeitet dafür deine Zahlungs- und Rechnungsdaten (Name, E-Mail,
+  Land, Postleitzahl, Zahlungsmittel) nach seiner eigenen Datenschutzerklärung:
+  <https://www.paddle.com/legal/privacy>. An Paddle übergeben wird zusätzlich
+  deine Konto-ID bei Mindcrate, damit der Kauf deinem Konto zugeordnet wird.
+  Für das Vereinigte Königreich gilt ein Angemessenheitsbeschluss der
+  EU-Kommission (Art. 45 DSGVO). RevenueCat erhält von Paddle den Kaufverlauf
+  wie oben beschrieben.
+- **Berechtigung:** Ob und bis wann Plus aktiv ist, speichert Supabase (Frankfurt)
+  zu deinem Konto, damit Plus auf allen deinen Geräten gilt.
+- **Rechtsgrundlage:** Erfüllung des Abo-Vertrags (Art. 6 Abs. 1 lit. b DSGVO);
+  Aufbewahrung von Kaufdaten, soweit Handels- und Steuerrecht es verlangen
+  (Art. 6 Abs. 1 lit. c DSGVO).
+- **Kündigen:** bei Apple (Einstellungen → dein Name → Abonnements) bzw. über den
+  Link in der Kaufbestätigung von Paddle.
+  Beim Löschen deines Kontos wird die Berechtigung bei Supabase gelöscht; ein
+  laufendes Abo bei Apple kündigt das nicht.
+
+## Geteilte Projekte (freiwillig)
+
+Du kannst ein Projekt mit anderen Menschen teilen. Dazu erzeugst du einen
+Einladungscode (14 Tage gültig) und gibst ihn oder den Link selbst weiter;
+Mindcrate verschickt nichts. Wer mit dem Code beitritt, wird Mitglied.
+
+- **Wer was sieht:** Alle Personen eines geteilten Projekts sehen und bearbeiten
+  dessen Aufgaben, Unteraufgaben und Anhänge, sehen, wem eine Aufgabe zugewiesen
+  ist und wer sie erledigt hat, und sehen die **E-Mail-Adressen** der anderen
+  Personen im Projekt sowie deren Name und Kürzel, falls hinterlegt. Andere
+  Projekte und Aufgaben bleiben privat. Neue Aufgaben in einem geteilten Projekt
+  sind zunächst der Person zugewiesen, die sie anlegt.
+- **Mitteilung bei Zuweisung:** Weist dir jemand eine Aufgabe zu, bekommst du
+  eine Mitteilung aufs iPhone und, wenn du es einschaltest, eine E-Mail.
+  Einstellbar unter Mehr → Mitteilungen (iPhone standardmäßig an, E-Mail aus).
+  Details unter „Push-Mitteilungen bei Zuweisung“.
+- **Verlassen und entfernen:** Mitglieder können jederzeit austreten, der
+  Besitzer kann Mitglieder entfernen und Einladungen beenden. Aufgaben, die ein
+  Mitglied im Projekt angelegt hat, bleiben dann im Projekt und gehören dem
+  Besitzer.
+- **Schutz vor Raten:** Fehlgeschlagene Beitrittsversuche werden mit deiner
+  Konto-ID und der Uhrzeit für einen Tag gespeichert und begrenzt.
+- **Rechtsgrundlage:** Erfüllung des Nutzungsvertrags (Art. 6 Abs. 1 lit. b
+  DSGVO) – du entscheidest, mit wem du teilst. Für die Inhalte, die du in ein
+  geteiltes Projekt schreibst, und für die Weitergabe der Einladung bist du
+  gegenüber den anderen selbst verantwortlich.
+
+## Push-Mitteilungen bei Zuweisung (iPhone, nur in geteilten Projekten)
+
+Sobald du in einem geteilten Projekt bist, fragt die iPhone-App, ob sie dir
+Mitteilungen senden darf. Erlaubst du es, speichert Mindcrate ein
+**Gerätekennzeichen** (Expo-Push-Token, höchstens 5 Geräte je Konto) und die
+Sprache des Geräts bei Supabase. Weist dir jemand eine Aufgabe zu, schickt der
+Server über den **Expo-Push-Dienst** von **650 Industries, Inc.** (Expo),
+Palo Alto, USA, an den Push-Dienst von Apple: Titel der Aufgabe, Projektname
+und Name (oder der Teil vor dem @ der Mail-Adresse) der Person, die zuweist.
+Expo verarbeitet diese Angaben nur zur Zustellung als Auftragsverarbeiter; die
+Übermittlung in die USA stützt sich auf das EU-US Data Privacy Framework bzw.
+Standardvertragsklauseln. Datenschutz bei Expo: <https://expo.dev/privacy>
+
+- **Per E-Mail (freiwillig, standardmäßig aus):** Schaltest du „Zuweisungen per
+  E-Mail“ ein, geht dieselbe Mitteilung als Mail über Brevo (siehe oben) an
+  deine Konto-Adresse.
+- **Warteschlange:** Auf dem Server wird je Mitteilung nur vermerkt, wer, welche
+  Aufgabe, von wem und wann – nach 7 Tagen gelöscht.
+- **Abschalten:** Mehr → Mitteilungen, oder in den iPhone-Einstellungen.
+  Abmelden löscht das Gerätekennzeichen; Konto löschen löscht alles.
+- **Rechtsgrundlage:** Art. 6 Abs. 1 lit. b DSGVO (Funktion geteilter Projekte),
+  für das Gerätekennzeichen deine Einwilligung über die iOS-Abfrage (§ 25 Abs. 1
+  TDDDG).
+
 ## Verbindung mit Claude oder ChatGPT (freiwillig)
 
 Du kannst Mindcrate als Connector in **Claude** (Anthropic) oder **ChatGPT**
@@ -170,11 +287,15 @@ Du kannst Mindcrate als Connector in **Claude** (Anthropic) oder **ChatGPT**
   die abgefragten Inhalte (Titel, Notizen, Status, Priorität, Frist, Projekt)
   an ihn. Neue Aufgaben werden mit der Herkunft „Claude" bzw. „ChatGPT"
   gespeichert.
+- **Tag planen im Chat:** Bittest du den Dienst, deinen Tag zu planen, gehen
+  zusätzlich die **Termine dieses Tages** aus deinen verbundenen Kalendern an
+  ihn (Titel, Beginn, Ende – kein Ort, keine Teilnehmer). Ohne verbundenen
+  Kalender oder ohne diese Bitte passiert das nicht.
 - **Verantwortung:** Was Anthropic bzw. OpenAI mit diesen Inhalten tun, richtet
   sich nach deinem Vertrag mit dem jeweiligen Dienst und dessen
   Datenschutzerklärung; der Anbieter von Mindcrate hat darauf keinen Einfluss.
   Beide Unternehmen sitzen in den USA.
-- **Widerruf:** jederzeit in der App unter *Mehr → Verknüpfungen → Trennen*.
+- **Widerruf:** jederzeit in der App unter *Mehr → Verbindungen → Trennen*.
   Danach ist der Schlüssel ungültig. Verbundene Dienste und den Zeitpunkt der
   Zustimmung speichert Supabase, bis du sie trennst.
 
@@ -242,7 +363,8 @@ Eingang. Ohne erzeugte Adresse findet nichts davon statt.
 - **Keine Cookies zu Werbe- oder Analysezwecken.** Die Web-App nutzt nur den
   lokalen Speicher des Browsers für die oben genannten Zwecke, die für den
   Betrieb nötig sind.
-- **Keine Push-Nachrichten vom Server, kein Standort, keine Kontakte, kein
+- **Keine Push-Nachrichten vom Server** außer bei Zuweisung in geteilten
+  Projekten (siehe oben), **kein Standort, keine Kontakte, kein
   Zugriff auf den Kalender des Geräts, keine Kamera.**
 - **Keine Weitergabe an KI-Dienste ohne dich.** Nur ein Dienst, den du selbst
   verbindest, bekommt Zugriff (siehe oben).
@@ -267,21 +389,22 @@ Eingang. Ohne erzeugte Adresse findet nichts davon statt.
 
 ### Erinnerungen und Zahl am App-Symbol (iPhone)
 
-Schaltest du unter *Mehr → Benachrichtigungen* Erinnerungen ein, plant die App
+Schaltest du unter *Mehr → Mitteilungen* Erinnerungen ein, plant die App
 für Aufgaben mit Frist und Uhrzeit **auf dem Gerät** Mitteilungen (Titel der
 Aufgabe und Uhrzeit). Die Zahl am App-Symbol zeigt, wie viele Aufgaben heute
 fällig oder überfällig sind. Beides berechnet das Gerät selbst; es gibt keinen
 Push-Server. Standardmäßig ist beides aus. Beachte: Mitteilungen können je
 nach iOS-Einstellung auf dem Sperrbildschirm sichtbar sein.
 
-### Widget „Heute“ (iPhone)
+### Widget „Mindcrate Heute“ (iPhone)
 
 Legst du das Widget auf den Homescreen oder Sperrbildschirm, schreibt die App
 die heute fälligen und überfälligen Aufgaben (Titel, Uhrzeit, Projektfarbe) in
 einen gemeinsamen Speicher von App und Widget **auf dem Gerät**
 (App-Gruppe). Nichts davon geht an einen Server. Auf dem Sperrbildschirm sind
-die Titel auch ohne Entsperren sichtbar. Nach dem Abmelden zeigt das Widget keine
-Titel mehr.
+die Titel auch ohne Entsperren sichtbar. Hakst du im Widget etwas ab, merkt es
+sich das auf dem Gerät, bis die App es übernimmt. Nach dem Abmelden zeigt das
+Widget keine Titel mehr.
 
 ### Teilen-Menü (iPhone)
 
@@ -303,16 +426,29 @@ Nach 50 erledigten Aufgaben, frühestens eine Woche nach dem ersten Start, fragt
 die App **einmal** über das Fenster von Apple nach einer Bewertung. Ob und wie
 du bewertest, erfährt die App nicht; die Bewertung verarbeitet Apple.
 
+### Anhänge (Plus)
+
+An eine Aufgabe kannst du Fotos und PDF-Dateien hängen (höchstens 10 MB je Datei,
+100 MB insgesamt). Auf dem iPhone wählst du ein Foto über die Fotoauswahl von
+Apple oder eine Datei aus „Dateien“; die App sieht nur, was du auswählst, und
+nutzt die Kamera nicht. Die Datei liegt in einem nicht öffentlichen Speicher bei
+Supabase (Frankfurt). Sehen und öffnen kann sie nur, wer die Aufgabe sehen darf;
+zum Öffnen erzeugt die App einen Link, der nach 10 Minuten verfällt.
+Rechtsgrundlage ist die Erfüllung des Nutzungsvertrags (Art. 6 Abs. 1 lit. b DSGVO).
+Entfernst du einen Anhang, wird die Datei sofort gelöscht. Wird die Aufgabe
+endgültig gelöscht, löscht ein wöchentlicher Aufräumlauf ihre Dateien.
+
 ### Daten exportieren
 
-Unter *Mehr → Daten exportieren* erzeugt die App auf dem Gerät eine Datei
-(JSON oder CSV) mit deinen Projekten, Aufgaben und Unteraufgaben. Im Browser
+Unter *Mehr → Importieren und sichern* erzeugt die App auf dem Gerät eine Datei
+(JSON oder CSV) mit deinen Projekten, Aufgaben und Unteraufgaben; Anhänge sind
+nicht enthalten, du kannst sie einzeln öffnen und speichern. Im Browser
 wird sie heruntergeladen, auf dem iPhone über das Teilen-Menü ausgegeben. Wohin
 sie geht, entscheidest du; die App sendet sie nirgendwohin.
 
 ### Sicherung zurückspielen
 
-Unter *Mehr → Sicherung zurückspielen* liest die App eine zuvor exportierte
+Unter *Mehr → Importieren und sichern* liest die App eine zuvor exportierte
 JSON-Datei, die du auswählst, und legt daraus nur an, was in deinem Konto fehlt.
 Die Datei selbst wird nicht hochgeladen, nur die daraus angelegten Einträge wie
 bei jeder anderen Eingabe.
@@ -346,18 +482,23 @@ wandern nach sieben Tagen ins Archiv, werden dabei aber nicht gelöscht.
 
 - **Aufgaben** kommen beim Löschen zuerst in den **Papierkorb** und lassen sich
   dort 30 Tage wiederherstellen. Danach – oder sofort über „Endgültig löschen“
-  bzw. „Papierkorb leeren“ – werden sie endgültig gelöscht, samt Unteraufgaben.
+  bzw. „Papierkorb leeren“ – werden sie endgültig gelöscht, samt Unteraufgaben
+  und Anhängen (die Dateien spätestens nach einer Woche).
 - **Unteraufgaben und Projekte:** direkt in der App löschen. Die Löschung wird
   beim nächsten Abgleich auf dem Server ausgeführt.
 - Erledigte Aufgaben, die älter als 90 Tage sind, lädt die App erst auf Wunsch
   („Älteres Archiv laden“); auf dem Server bleiben sie bis zur Löschung.
 - **Konto vollständig löschen:** in der App unter *Mehr → Konto löschen* oder
   per E-Mail an die oben genannte Adresse. Mit dem Konto werden alle Aufgaben,
-  Unteraufgaben und Projekte, die Adresse für Mail an Mindcrate sowie die
-  Freigaben für Claude oder ChatGPT gelöscht; die App entfernt außerdem die Kopie dieser Daten vom Gerät.
+  Unteraufgaben, Anhänge (samt Dateien) und Projekte, die Adresse für Mail an Mindcrate, die
+  Plus-Berechtigung sowie die Freigaben für Claude oder ChatGPT gelöscht; die App entfernt außerdem die Kopie dieser Daten vom Gerät.
+  Aufgaben in Projekten, die andere mit dir geteilt haben, gehen vorher an deren
+  Besitzer über; Mitglieder deiner geteilten Projekte behalten ihre eigenen
+  Aufgaben daraus.
 
-Sicherungskopien beim Dienstleister können gelöschte Daten noch für kurze
-Zeit enthalten, bis sie im normalen Ablauf überschrieben werden.
+Gelöschte Daten können noch in den verschlüsselten wöchentlichen Sicherungen
+enthalten sein (siehe „Sicherung der Server-Daten“) und verschwinden dort
+spätestens nach 60 Tagen.
 
 ## Deine Rechte
 
