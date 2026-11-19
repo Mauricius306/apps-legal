@@ -5,7 +5,7 @@ title: Mindcrate Privacy Policy
 
 # Mindcrate Privacy Policy
 
-**Last updated:** 18 November 2026 (fifth version: encrypted backup added)
+**Last updated:** 19 November 2026 (seventh version: name and initials, assignment notifications, project areas, templates added)
 
 This is an English translation for convenience. The
 [German version](datenschutz.html) is the legally binding one.
@@ -33,8 +33,9 @@ The database is run by the service provider **Supabase**; the data is stored
 in a data centre in **Frankfurt am Main, Germany**. The web app is delivered
 via **Cloudflare**, and account emails are sent by **Brevo**. If you connect
 Mindcrate to **Claude** or **ChatGPT** yourself, the chosen service reads and
-changes your tasks – only with your consent and until you revoke it. There are
-no ads, no tracking and no analysis of your behaviour.
+changes your tasks – only with your consent and until you revoke it. If you take
+out **Mindcrate Plus**, you buy through Apple or, in the browser, through Paddle; purchases are verified by
+**RevenueCat**. There are no ads, no tracking and no analysis of your behaviour.
 
 ## What data is processed
 
@@ -46,9 +47,17 @@ no ads, no tracking and no analysis of your behaviour.
 
 ### Content you enter
 
-- Tasks with title, notes, status, priority, due date, recurrence, order and
+- Tasks with title, notes, status, priority, due date, recurrence, reminder
+  settings (Plus), order and
   the way they were created (app, web, import, Claude, ChatGPT, mail)
 - Subtasks
+- in shared projects: members, assignees (several possible), who completed a task
+- optional: your name and initials (More → Name and initials)
+- optional per project: an area (e.g. work, private)
+- optional per task: a day from which it shows up (“show from”)
+- optional: templates (short name, title, note, priority, project, duration, steps)
+- Attachments (Plus): photos and PDF files you attach to a task yourself, with
+  file name, type and size
 - Projects with name, colour, priority, description and order
 - Times of creation, change and completion
 
@@ -114,7 +123,7 @@ opens the web app.
 ## Recipient: Brevo (account emails)
 
 The emails about your account (confirm address, change address, reset
-password) are sent by **Brevo SAS**, 17 rue de Salneuve, 75017 Paris, France
+password; on request, notifications on assignment) are sent by **Brevo SAS**, 17 rue de Salneuve, 75017 Paris, France
 (German branch: Brevo GmbH, Köpenicker Str. 126, 10179 Berlin), as a processor
 under Art. 28 GDPR. Brevo receives your email address and the content of the
 respective email with the link; Brevo logs delivery, time and technical
@@ -158,7 +167,8 @@ is the legitimate interest in protecting accounts and the service from abuse
 So that content is not lost in case of a technical failure, the database is
 backed up once a week: your content (tasks, subtasks, projects and settings on
 the server) and your account (email address, password hash, timestamps).
-Sessions and sign-in tokens are not backed up. The backup is **encrypted**
+Sessions and sign-in tokens are not backed up, nor are attachment files (only
+their name, type and size). The backup is **encrypted**
 before it is stored; only the provider can open it, with a key that is not
 held by the storage service.
 
@@ -169,6 +179,90 @@ EU-US Data Privacy Framework (Art. 45 GDPR). Each backup is deleted
 automatically after **60 days**. The legal basis is the legitimate interest in
 protecting your content from loss (Art. 6(1)(f) GDPR) and the performance of
 the terms of use (Art. 6(1)(b) GDPR).
+
+## Mindcrate Plus (subscription, optional)
+
+Mindcrate Plus is a subscription you can take out in the iPhone app or in the browser. It unlocks
+“Plan your day”, the connection to Claude and ChatGPT and Mail to Mindcrate.
+Without Plus, the rest of the app remains fully usable.
+
+- **Purchase in the iPhone app** is handled by **Apple** (App Store). The provider
+  does not receive payment data; Apple's privacy policy applies.
+- **Purchase verification:** **RevenueCat, Inc.**, 1032 E Brandon Blvd #3003,
+  Brandon, FL 33511, USA, verifies Apple's purchase receipts on behalf of the
+  provider and reports whether Plus is active (processor under Art. 28 GDPR).
+  RevenueCat receives your Mindcrate account ID (a random identifier, not your
+  email address), the purchase history for Mindcrate Plus (product, times,
+  expiry, trial, country) and, technically, IP address, device type and app
+  version. For the transfer to the USA, the EU Commission's Standard Contractual
+  Clauses (Art. 46(2)(c) GDPR) in the data processing agreement apply:
+  <https://www.revenuecat.com/dpa>. RevenueCat is only set up once you are
+  signed in.
+- **Purchase in the browser:** If you buy Plus in the browser, it is sold by
+  **Paddle.com Market Limited**, 30 Old Bailey, London EC4M 7AU,
+  United Kingdom, as an independent seller (merchant of record). Paddle processes
+  your payment and billing data (name, email, country, postcode, payment method)
+  under its own privacy policy: <https://www.paddle.com/legal/privacy>. Your
+  Mindcrate account ID is also passed to Paddle so the purchase is linked to
+  your account. An EU adequacy decision applies to the United Kingdom
+  (Art. 45 GDPR). RevenueCat receives the purchase history from Paddle as
+  described above.
+- **Entitlement:** Whether and until when Plus is active is stored with your
+  account in Supabase (Frankfurt) so Plus works on all your devices.
+- **Legal basis:** performance of the subscription contract (Art. 6(1)(b) GDPR);
+  retention of purchase data where commercial and tax law require it
+  (Art. 6(1)(c) GDPR).
+- **Cancel** with Apple (Settings → your name → Subscriptions) or via the link in
+  Paddle's purchase confirmation. Deleting
+  your account deletes the entitlement in Supabase; it does not cancel an active
+  subscription with Apple.
+
+## Shared projects (optional)
+
+You can share a project with other people. To do so you create an invitation
+code (valid for 14 days) and pass it or the link on yourself; Mindcrate sends
+nothing. Anyone who joins with the code becomes a member.
+
+- **Who sees what:** Everyone in a shared project sees and edits its tasks,
+  subtasks and attachments, sees who a task is assigned to and who completed
+  it, and sees the **email addresses** of the other people in the project and
+  their name and initials, if set. Other projects and tasks stay private. New
+  tasks in a shared project are first assigned to the person who creates them.
+- **Notification on assignment:** If someone assigns a task to you, you get a
+  notification on your iPhone and, if you switch it on, an email. Adjustable
+  under More → Notifications (iPhone on by default, email off). Details under
+  “Push notifications on assignment”.
+- **Leaving and removing:** Members can leave at any time; the owner can remove
+  members and end invitations. Tasks a member created in the project then stay
+  in the project and belong to the owner.
+- **Protection against guessing:** Failed attempts to join are stored with your
+  account ID and the time for one day and limited.
+- **Legal basis:** performance of the user agreement (Art. 6(1)(b) GDPR) – you
+  decide whom you share with. You are responsible towards the others for the
+  content you write into a shared project and for passing on the invitation.
+
+## Push notifications on assignment (iPhone, shared projects only)
+
+Once you are in a shared project, the iPhone app asks whether it may send you
+notifications. If you allow it, Mindcrate stores a **device identifier** (Expo
+push token, at most 5 devices per account) and the device language at
+Supabase. When someone assigns a task to you, the server sends via the **Expo
+push service** of **650 Industries, Inc.** (Expo), Palo Alto, USA, to Apple's
+push service: the task title, the project name and the name (or the part of the
+email address before the @) of the person assigning it. Expo processes this
+only for delivery, as a processor; the transfer to the USA relies on the EU-US
+Data Privacy Framework or standard contractual clauses. Privacy at Expo:
+<https://expo.dev/privacy>
+
+- **By email (optional, off by default):** If you switch on “Assignments by
+  email”, the same notification is sent as an email via Brevo (see above) to
+  your account address.
+- **Queue:** For each notification the server only records who, which task, by
+  whom and when – deleted after 7 days.
+- **Switching off:** More → Notifications, or in the iPhone settings. Signing
+  out deletes the device identifier; deleting your account deletes everything.
+- **Legal basis:** Art. 6(1)(b) GDPR (shared projects feature), for the device
+  identifier your consent via the iOS prompt (Section 25(1) TDDDG).
 
 ## Connection to Claude or ChatGPT (optional)
 
@@ -185,6 +279,10 @@ You can add Mindcrate as a connector in **Claude** (Anthropic) or **ChatGPT**
 - **Which data flows:** If you ask the service about your tasks, the requested
   content (title, notes, status, priority, due date, project) goes to it. New
   tasks are stored with the origin “Claude” or “ChatGPT”.
+- **Planning your day in chat:** If you ask the service to plan your day, the
+  **events of that day** from your connected calendars also go to it (title,
+  start, end – no location, no attendees). Without a connected calendar or
+  without that request this does not happen.
 - **Responsibility:** What Anthropic or OpenAI do with this content depends on
   your contract with the respective service and its privacy policy; the
   provider of Mindcrate has no influence on this. Both companies are based in
@@ -253,7 +351,8 @@ created address none of this happens.
 - **No cookies for advertising or analytics.** The web app only uses the
   browser's local storage for the purposes above, which are necessary to run
   it.
-- **No push messages from a server, no location, no contacts, no access to the
+- **No push messages from a server** except on assignment in shared projects
+  (see above), **no location, no contacts, no access to the
   device calendar, no camera.**
 - **No sharing with AI services without you.** Only a service you connect
   yourself gets access (see above).
@@ -290,8 +389,9 @@ on the lock screen.
 If you place the widget on the home or lock screen, the app writes the tasks
 due today and overdue (title, time, project colour) to storage shared by app
 and widget **on the device** (app group). None of it goes to a server. On the
-lock screen the titles are visible without unlocking. After signing out, the
-widget no longer shows titles.
+lock screen the titles are visible without unlocking. If you tick something off
+in the widget, it is kept on the device until the app takes it over. After
+signing out, the widget no longer shows titles.
 
 ### Share sheet (iPhone)
 
@@ -312,16 +412,29 @@ After 50 completed tasks, at the earliest one week after the first launch, the
 app asks **once** for a rating using Apple's dialog. The app does not learn
 whether or how you rate; Apple processes the rating.
 
+### Attachments (Plus)
+
+You can attach photos and PDF files to a task (at most 10 MB per file, 100 MB
+in total). On the iPhone you choose a photo via Apple's photo picker or a file
+from “Files”; the app only sees what you select and does not use the camera.
+The file is kept in non-public storage at Supabase (Frankfurt). Only people who
+may see the task can see and open it; to open it, the app creates a link that
+expires after 10 minutes. The legal basis is the performance of the user
+agreement (Art. 6(1)(b) GDPR). When you remove an attachment, the file is
+deleted immediately. When the task is deleted permanently, a weekly clean-up
+deletes its files.
+
 ### Export data
 
-Under *More → Export data* the app creates a file (JSON or CSV) on the device
-with your projects, tasks and subtasks. In the browser it is downloaded, on
+Under *More → Import and back up* the app creates a file (JSON or CSV) on the device
+with your projects, tasks and subtasks; attachments are not included, you can
+open and save them one by one. In the browser it is downloaded, on
 the iPhone it is offered via the share sheet. You decide where it goes; the
 app sends it nowhere.
 
 ### Restore backup
 
-Under *More → Restore backup* the app reads a previously exported JSON file
+Under *More → Import and back up* the app reads a previously exported JSON file
 that you select and creates only what is missing in your account. The file
 itself is not uploaded, only the entries created from it, like any other
 input.
@@ -355,16 +468,19 @@ archive after seven days but are not deleted.
 
 - **Tasks** go to the **trash** first when deleted and can be restored there
   for 30 days. After that – or immediately via “Delete permanently” or “Empty
-  trash” – they are deleted permanently, including subtasks.
+  trash” – they are deleted permanently, including subtasks and attachments
+  (the files within a week at the latest).
 - **Subtasks and projects:** delete them directly in the app. The deletion is
   carried out on the server at the next sync.
 - Completed tasks older than 90 days are only loaded by the app on request
   (“Load older archive”); on the server they remain until deleted.
 - **Delete your account completely:** in the app under *More → Delete account*
   or by email to the address above. Together with the account, all tasks,
-  subtasks and projects, the address for Mail to Mindcrate and the permissions
-  for Claude or ChatGPT are deleted; the app also removes the copy of this data
+  subtasks, attachments (including files) and projects, the address for Mail to Mindcrate, the Plus
+  entitlement and the permissions for Claude or ChatGPT are deleted; the app also removes the copy of this data
   from the device.
+  Tasks in projects others shared with you are handed over to their owners
+  first; members of your shared projects keep their own tasks from them.
 
 Deleted data may still be contained in the encrypted weekly backups (see
 “Backup of server data”) and disappears from them after 60 days at the latest.
