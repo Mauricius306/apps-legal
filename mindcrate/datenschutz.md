@@ -5,7 +5,7 @@ title: Datenschutzerklärung Mindcrate
 
 # Datenschutzerklärung Mindcrate
 
-**Stand:** 18. November 2026, sechste Fassung (Mindcrate Plus mit Anhängen und geteilten Projekten ergänzt)
+**Stand:** 19. November 2026, siebte Fassung (Name und Kürzel, Mitteilungen bei Zuweisung, Projekt-Bereiche ergänzt)
 
 [English version](privacy.html) (Übersetzung; maßgeblich ist diese deutsche Fassung)
 
@@ -49,7 +49,9 @@ keine Auswertung deines Verhaltens.
   Erinnerungseinstellungen (Plus), Reihenfolge und dem Weg, auf dem sie angelegt wurden (App, Web, Import,
   Claude, ChatGPT, Mail)
 - Unteraufgaben
-- in geteilten Projekten: Mitglieder, Zuständigkeit, wer erledigt hat
+- in geteilten Projekten: Mitglieder, Zuständige (auch mehrere), wer erledigt hat
+- freiwillig: dein Name und Kürzel (Mehr → Name und Kürzel)
+- je Projekt freiwillig ein Bereich (z. B. Arbeit, Privat)
 - Anhänge (Plus): Fotos und PDF-Dateien, die du selbst an eine Aufgabe hängst, mit
   Dateiname, Typ und Größe
 - Projekte mit Name, Farbe, Priorität, Beschreibung und Reihenfolge
@@ -121,7 +123,7 @@ Zurücksetzen des Passworts löst Supabase aus; verschickt werden sie über Brev
 ## Empfänger: Brevo (E-Mails zum Konto)
 
 Die E-Mails zu deinem Konto (Adresse bestätigen, Adresse ändern, Passwort
-zurücksetzen) verschickt **Brevo SAS**, 17 rue de Salneuve, 75017 Paris,
+zurücksetzen; auf Wunsch Mitteilungen bei Zuweisung) verschickt **Brevo SAS**, 17 rue de Salneuve, 75017 Paris,
 Frankreich (deutsche Niederlassung: Brevo GmbH, Köpenicker Str. 126, 10179
 Berlin), als Auftragsverarbeiter nach Art. 28 DSGVO. Dafür erhält Brevo deine
 E-Mail-Adresse und den Inhalt der jeweiligen Mail mit dem Link; Brevo
@@ -225,7 +227,13 @@ Mindcrate verschickt nichts. Wer mit dem Code beitritt, wird Mitglied.
 - **Wer was sieht:** Alle Personen eines geteilten Projekts sehen und bearbeiten
   dessen Aufgaben, Unteraufgaben und Anhänge, sehen, wem eine Aufgabe zugewiesen
   ist und wer sie erledigt hat, und sehen die **E-Mail-Adressen** der anderen
-  Personen im Projekt. Andere Projekte und Aufgaben bleiben privat.
+  Personen im Projekt sowie deren Name und Kürzel, falls hinterlegt. Andere
+  Projekte und Aufgaben bleiben privat. Neue Aufgaben in einem geteilten Projekt
+  sind zunächst der Person zugewiesen, die sie anlegt.
+- **Mitteilung bei Zuweisung:** Weist dir jemand eine Aufgabe zu, bekommst du
+  eine Mitteilung aufs iPhone und, wenn du es einschaltest, eine E-Mail.
+  Einstellbar unter Mehr → Mitteilungen (iPhone standardmäßig an, E-Mail aus).
+  Details unter „Push-Mitteilungen bei Zuweisung“.
 - **Verlassen und entfernen:** Mitglieder können jederzeit austreten, der
   Besitzer kann Mitglieder entfernen und Einladungen beenden. Aufgaben, die ein
   Mitglied im Projekt angelegt hat, bleiben dann im Projekt und gehören dem
@@ -236,6 +244,30 @@ Mindcrate verschickt nichts. Wer mit dem Code beitritt, wird Mitglied.
   DSGVO) – du entscheidest, mit wem du teilst. Für die Inhalte, die du in ein
   geteiltes Projekt schreibst, und für die Weitergabe der Einladung bist du
   gegenüber den anderen selbst verantwortlich.
+
+## Push-Mitteilungen bei Zuweisung (iPhone, nur in geteilten Projekten)
+
+Sobald du in einem geteilten Projekt bist, fragt die iPhone-App, ob sie dir
+Mitteilungen senden darf. Erlaubst du es, speichert Mindcrate ein
+**Gerätekennzeichen** (Expo-Push-Token, höchstens 5 Geräte je Konto) und die
+Sprache des Geräts bei Supabase. Weist dir jemand eine Aufgabe zu, schickt der
+Server über den **Expo-Push-Dienst** von **650 Industries, Inc.** (Expo),
+Palo Alto, USA, an den Push-Dienst von Apple: Titel der Aufgabe, Projektname
+und Name (oder der Teil vor dem @ der Mail-Adresse) der Person, die zuweist.
+Expo verarbeitet diese Angaben nur zur Zustellung als Auftragsverarbeiter; die
+Übermittlung in die USA stützt sich auf das EU-US Data Privacy Framework bzw.
+Standardvertragsklauseln. Datenschutz bei Expo: <https://expo.dev/privacy>
+
+- **Per E-Mail (freiwillig, standardmäßig aus):** Schaltest du „Zuweisungen per
+  E-Mail“ ein, geht dieselbe Mitteilung als Mail über Brevo (siehe oben) an
+  deine Konto-Adresse.
+- **Warteschlange:** Auf dem Server wird je Mitteilung nur vermerkt, wer, welche
+  Aufgabe, von wem und wann – nach 7 Tagen gelöscht.
+- **Abschalten:** Mehr → Mitteilungen, oder in den iPhone-Einstellungen.
+  Abmelden löscht das Gerätekennzeichen; Konto löschen löscht alles.
+- **Rechtsgrundlage:** Art. 6 Abs. 1 lit. b DSGVO (Funktion geteilter Projekte),
+  für das Gerätekennzeichen deine Einwilligung über die iOS-Abfrage (§ 25 Abs. 1
+  TDDDG).
 
 ## Verbindung mit Claude oder ChatGPT (freiwillig)
 
@@ -325,7 +357,8 @@ Eingang. Ohne erzeugte Adresse findet nichts davon statt.
 - **Keine Cookies zu Werbe- oder Analysezwecken.** Die Web-App nutzt nur den
   lokalen Speicher des Browsers für die oben genannten Zwecke, die für den
   Betrieb nötig sind.
-- **Keine Push-Nachrichten vom Server, kein Standort, keine Kontakte, kein
+- **Keine Push-Nachrichten vom Server** außer bei Zuweisung in geteilten
+  Projekten (siehe oben), **kein Standort, keine Kontakte, kein
   Zugriff auf den Kalender des Geräts, keine Kamera.**
 - **Keine Weitergabe an KI-Dienste ohne dich.** Nur ein Dienst, den du selbst
   verbindest, bekommt Zugriff (siehe oben).
@@ -363,8 +396,9 @@ Legst du das Widget auf den Homescreen oder Sperrbildschirm, schreibt die App
 die heute fälligen und überfälligen Aufgaben (Titel, Uhrzeit, Projektfarbe) in
 einen gemeinsamen Speicher von App und Widget **auf dem Gerät**
 (App-Gruppe). Nichts davon geht an einen Server. Auf dem Sperrbildschirm sind
-die Titel auch ohne Entsperren sichtbar. Nach dem Abmelden zeigt das Widget keine
-Titel mehr.
+die Titel auch ohne Entsperren sichtbar. Hakst du im Widget etwas ab, merkt es
+sich das auf dem Gerät, bis die App es übernimmt. Nach dem Abmelden zeigt das
+Widget keine Titel mehr.
 
 ### Teilen-Menü (iPhone)
 

@@ -5,7 +5,7 @@ title: Mindcrate Privacy Policy
 
 # Mindcrate Privacy Policy
 
-**Last updated:** 18 November 2026 (sixth version: Mindcrate Plus with attachments and shared projects added)
+**Last updated:** 19 November 2026 (seventh version: name and initials, assignment notifications, project areas added)
 
 This is an English translation for convenience. The
 [German version](datenschutz.html) is the legally binding one.
@@ -51,7 +51,9 @@ out **Mindcrate Plus**, you buy through Apple or, in the browser, through Paddle
   settings (Plus), order and
   the way they were created (app, web, import, Claude, ChatGPT, mail)
 - Subtasks
-- in shared projects: members, assignment, who completed a task
+- in shared projects: members, assignees (several possible), who completed a task
+- optional: your name and initials (More → Name and initials)
+- optional per project: an area (e.g. work, private)
 - Attachments (Plus): photos and PDF files you attach to a task yourself, with
   file name, type and size
 - Projects with name, colour, priority, description and order
@@ -119,7 +121,7 @@ opens the web app.
 ## Recipient: Brevo (account emails)
 
 The emails about your account (confirm address, change address, reset
-password) are sent by **Brevo SAS**, 17 rue de Salneuve, 75017 Paris, France
+password; on request, notifications on assignment) are sent by **Brevo SAS**, 17 rue de Salneuve, 75017 Paris, France
 (German branch: Brevo GmbH, Köpenicker Str. 126, 10179 Berlin), as a processor
 under Art. 28 GDPR. Brevo receives your email address and the content of the
 respective email with the link; Brevo logs delivery, time and technical
@@ -221,8 +223,13 @@ nothing. Anyone who joins with the code becomes a member.
 
 - **Who sees what:** Everyone in a shared project sees and edits its tasks,
   subtasks and attachments, sees who a task is assigned to and who completed
-  it, and sees the **email addresses** of the other people in the project.
-  Other projects and tasks stay private.
+  it, and sees the **email addresses** of the other people in the project and
+  their name and initials, if set. Other projects and tasks stay private. New
+  tasks in a shared project are first assigned to the person who creates them.
+- **Notification on assignment:** If someone assigns a task to you, you get a
+  notification on your iPhone and, if you switch it on, an email. Adjustable
+  under More → Notifications (iPhone on by default, email off). Details under
+  “Push notifications on assignment”.
 - **Leaving and removing:** Members can leave at any time; the owner can remove
   members and end invitations. Tasks a member created in the project then stay
   in the project and belong to the owner.
@@ -231,6 +238,29 @@ nothing. Anyone who joins with the code becomes a member.
 - **Legal basis:** performance of the user agreement (Art. 6(1)(b) GDPR) – you
   decide whom you share with. You are responsible towards the others for the
   content you write into a shared project and for passing on the invitation.
+
+## Push notifications on assignment (iPhone, shared projects only)
+
+Once you are in a shared project, the iPhone app asks whether it may send you
+notifications. If you allow it, Mindcrate stores a **device identifier** (Expo
+push token, at most 5 devices per account) and the device language at
+Supabase. When someone assigns a task to you, the server sends via the **Expo
+push service** of **650 Industries, Inc.** (Expo), Palo Alto, USA, to Apple's
+push service: the task title, the project name and the name (or the part of the
+email address before the @) of the person assigning it. Expo processes this
+only for delivery, as a processor; the transfer to the USA relies on the EU-US
+Data Privacy Framework or standard contractual clauses. Privacy at Expo:
+<https://expo.dev/privacy>
+
+- **By email (optional, off by default):** If you switch on “Assignments by
+  email”, the same notification is sent as an email via Brevo (see above) to
+  your account address.
+- **Queue:** For each notification the server only records who, which task, by
+  whom and when – deleted after 7 days.
+- **Switching off:** More → Notifications, or in the iPhone settings. Signing
+  out deletes the device identifier; deleting your account deletes everything.
+- **Legal basis:** Art. 6(1)(b) GDPR (shared projects feature), for the device
+  identifier your consent via the iOS prompt (Section 25(1) TDDDG).
 
 ## Connection to Claude or ChatGPT (optional)
 
@@ -315,7 +345,8 @@ created address none of this happens.
 - **No cookies for advertising or analytics.** The web app only uses the
   browser's local storage for the purposes above, which are necessary to run
   it.
-- **No push messages from a server, no location, no contacts, no access to the
+- **No push messages from a server** except on assignment in shared projects
+  (see above), **no location, no contacts, no access to the
   device calendar, no camera.**
 - **No sharing with AI services without you.** Only a service you connect
   yourself gets access (see above).
@@ -352,8 +383,9 @@ on the lock screen.
 If you place the widget on the home or lock screen, the app writes the tasks
 due today and overdue (title, time, project colour) to storage shared by app
 and widget **on the device** (app group). None of it goes to a server. On the
-lock screen the titles are visible without unlocking. After signing out, the
-widget no longer shows titles.
+lock screen the titles are visible without unlocking. If you tick something off
+in the widget, it is kept on the device until the app takes it over. After
+signing out, the widget no longer shows titles.
 
 ### Share sheet (iPhone)
 
