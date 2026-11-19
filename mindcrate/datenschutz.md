@@ -289,7 +289,7 @@ Du kannst Mindcrate als Connector in **Claude** (Anthropic) oder **ChatGPT**
   sich nach deinem Vertrag mit dem jeweiligen Dienst und dessen
   Datenschutzerklärung; der Anbieter von Mindcrate hat darauf keinen Einfluss.
   Beide Unternehmen sitzen in den USA.
-- **Widerruf:** jederzeit in der App unter *Mehr → Verknüpfungen → Trennen*.
+- **Widerruf:** jederzeit in der App unter *Mehr → Verbindungen → Trennen*.
   Danach ist der Schlüssel ungültig. Verbundene Dienste und den Zeitpunkt der
   Zustimmung speichert Supabase, bis du sie trennst.
 
@@ -383,7 +383,7 @@ Eingang. Ohne erzeugte Adresse findet nichts davon statt.
 
 ### Erinnerungen und Zahl am App-Symbol (iPhone)
 
-Schaltest du unter *Mehr → Benachrichtigungen* Erinnerungen ein, plant die App
+Schaltest du unter *Mehr → Mitteilungen* Erinnerungen ein, plant die App
 für Aufgaben mit Frist und Uhrzeit **auf dem Gerät** Mitteilungen (Titel der
 Aufgabe und Uhrzeit). Die Zahl am App-Symbol zeigt, wie viele Aufgaben heute
 fällig oder überfällig sind. Beides berechnet das Gerät selbst; es gibt keinen
@@ -434,7 +434,7 @@ endgültig gelöscht, löscht ein wöchentlicher Aufräumlauf ihre Dateien.
 
 ### Daten exportieren
 
-Unter *Mehr → Daten exportieren* erzeugt die App auf dem Gerät eine Datei
+Unter *Mehr → Importieren und sichern* erzeugt die App auf dem Gerät eine Datei
 (JSON oder CSV) mit deinen Projekten, Aufgaben und Unteraufgaben; Anhänge sind
 nicht enthalten, du kannst sie einzeln öffnen und speichern. Im Browser
 wird sie heruntergeladen, auf dem iPhone über das Teilen-Menü ausgegeben. Wohin
@@ -442,7 +442,7 @@ sie geht, entscheidest du; die App sendet sie nirgendwohin.
 
 ### Sicherung zurückspielen
 
-Unter *Mehr → Sicherung zurückspielen* liest die App eine zuvor exportierte
+Unter *Mehr → Importieren und sichern* liest die App eine zuvor exportierte
 JSON-Datei, die du auswählst, und legt daraus nur an, was in deinem Konto fehlt.
 Die Datei selbst wird nicht hochgeladen, nur die daraus angelegten Einträge wie
 bei jeder anderen Eingabe.

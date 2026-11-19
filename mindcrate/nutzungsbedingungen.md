@@ -38,7 +38,7 @@ nötig sind, um die Inhalte zu speichern, abzugleichen und dir anzuzeigen. Trag
 keine rechtswidrigen Inhalte und keine Daten anderer Menschen ein, die du nicht
 verwenden darfst.
 
-Sichere Wichtiges zusätzlich über *Mehr → Daten exportieren*. Gelöschte
+Sichere Wichtiges zusätzlich über *Mehr → Importieren und sichern*. Gelöschte
 Aufgaben liegen 30 Tage im Papierkorb; danach sind sie endgültig weg.
 
 ## 4. Faire Nutzung

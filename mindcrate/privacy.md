@@ -420,7 +420,7 @@ deletes its files.
 
 ### Export data
 
-Under *More → Export data* the app creates a file (JSON or CSV) on the device
+Under *More → Import and back up* the app creates a file (JSON or CSV) on the device
 with your projects, tasks and subtasks; attachments are not included, you can
 open and save them one by one. In the browser it is downloaded, on
 the iPhone it is offered via the share sheet. You decide where it goes; the
@@ -428,7 +428,7 @@ app sends it nowhere.
 
 ### Restore backup
 
-Under *More → Restore backup* the app reads a previously exported JSON file
+Under *More → Import and back up* the app reads a previously exported JSON file
 that you select and creates only what is missing in your account. The file
 itself is not uploaded, only the entries created from it, like any other
 input.
