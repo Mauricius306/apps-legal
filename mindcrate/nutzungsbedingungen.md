@@ -73,7 +73,9 @@ iPhone und im Browser, egal wo du es gekauft hast.
   (Merchant of Record), der auch die Zahlung, die Rechnung und die Umsatzsteuer
   übernimmt; es gelten zusätzlich die Bedingungen von Paddle
   (<https://www.paddle.com/legal/buyer-terms>). Kündigen kannst du
-  über den Link in der Kaufbestätigung von Paddle.
+  über den Link in der Kaufbestätigung von Paddle. Erstattung gibt es
+  innerhalb von 14 Tagen nach dem Kauf ohne Angabe von Gründen – über
+  <https://paddle.net> oder per Mail an die Adresse im Impressum.
 
 ## 7. Haftung
 
