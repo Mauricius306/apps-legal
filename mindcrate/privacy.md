@@ -5,7 +5,7 @@ title: Mindcrate Privacy Policy
 
 # Mindcrate Privacy Policy
 
-**Last updated:** 19 November 2026 (seventh version: name and initials, assignment notifications, project areas added)
+**Last updated:** 19 November 2026 (seventh version: name and initials, assignment notifications, project areas, templates added)
 
 This is an English translation for convenience. The
 [German version](datenschutz.html) is the legally binding one.
@@ -54,6 +54,8 @@ out **Mindcrate Plus**, you buy through Apple or, in the browser, through Paddle
 - in shared projects: members, assignees (several possible), who completed a task
 - optional: your name and initials (More → Name and initials)
 - optional per project: an area (e.g. work, private)
+- optional per task: a day from which it shows up (“show from”)
+- optional: templates (short name, title, note, priority, project, duration, steps)
 - Attachments (Plus): photos and PDF files you attach to a task yourself, with
   file name, type and size
 - Projects with name, colour, priority, description and order

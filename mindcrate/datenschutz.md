@@ -5,7 +5,7 @@ title: Datenschutzerklärung Mindcrate
 
 # Datenschutzerklärung Mindcrate
 
-**Stand:** 19. November 2026, siebte Fassung (Name und Kürzel, Mitteilungen bei Zuweisung, Projekt-Bereiche ergänzt)
+**Stand:** 19. November 2026, siebte Fassung (Name und Kürzel, Mitteilungen bei Zuweisung, Projekt-Bereiche, Vorlagen ergänzt)
 
 [English version](privacy.html) (Übersetzung; maßgeblich ist diese deutsche Fassung)
 
@@ -52,6 +52,8 @@ keine Auswertung deines Verhaltens.
 - in geteilten Projekten: Mitglieder, Zuständige (auch mehrere), wer erledigt hat
 - freiwillig: dein Name und Kürzel (Mehr → Name und Kürzel)
 - je Projekt freiwillig ein Bereich (z. B. Arbeit, Privat)
+- je Aufgabe freiwillig ein Tag, ab dem sie erscheint („erst ab“)
+- freiwillig: Vorlagen (Kurzname, Titel, Notiz, Priorität, Projekt, Dauer, Schritte)
 - Anhänge (Plus): Fotos und PDF-Dateien, die du selbst an eine Aufgabe hängst, mit
   Dateiname, Typ und Größe
 - Projekte mit Name, Farbe, Priorität, Beschreibung und Reihenfolge
