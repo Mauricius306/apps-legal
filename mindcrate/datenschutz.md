@@ -285,6 +285,10 @@ Du kannst Mindcrate als Connector in **Claude** (Anthropic) oder **ChatGPT**
   die abgefragten Inhalte (Titel, Notizen, Status, Priorität, Frist, Projekt)
   an ihn. Neue Aufgaben werden mit der Herkunft „Claude" bzw. „ChatGPT"
   gespeichert.
+- **Tag planen im Chat:** Bittest du den Dienst, deinen Tag zu planen, gehen
+  zusätzlich die **Termine dieses Tages** aus deinen verbundenen Kalendern an
+  ihn (Titel, Beginn, Ende – kein Ort, keine Teilnehmer). Ohne verbundenen
+  Kalender oder ohne diese Bitte passiert das nicht.
 - **Verantwortung:** Was Anthropic bzw. OpenAI mit diesen Inhalten tun, richtet
   sich nach deinem Vertrag mit dem jeweiligen Dienst und dessen
   Datenschutzerklärung; der Anbieter von Mindcrate hat darauf keinen Einfluss.

@@ -277,6 +277,10 @@ You can add Mindcrate as a connector in **Claude** (Anthropic) or **ChatGPT**
 - **Which data flows:** If you ask the service about your tasks, the requested
   content (title, notes, status, priority, due date, project) goes to it. New
   tasks are stored with the origin “Claude” or “ChatGPT”.
+- **Planning your day in chat:** If you ask the service to plan your day, the
+  **events of that day** from your connected calendars also go to it (title,
+  start, end – no location, no attendees). Without a connected calendar or
+  without that request this does not happen.
 - **Responsibility:** What Anthropic or OpenAI do with this content depends on
   your contract with the respective service and its privacy policy; the
   provider of Mindcrate has no influence on this. Both companies are based in
