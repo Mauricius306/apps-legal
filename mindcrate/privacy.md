@@ -5,7 +5,7 @@ title: Mindcrate Privacy Policy
 
 # Mindcrate Privacy Policy
 
-**Last updated:** 19 November 2026 (seventh version: name and initials, assignment notifications, project areas, templates added)
+**Last updated:** 23 November 2026 (eighth version: check of new passwords against known data breaches added)
 
 This is an English translation for convenience. The
 [German version](datenschutz.html) is the legally binding one.
@@ -161,6 +161,20 @@ advertising cookies and does not use the data for advertising. The legal basis
 is the legitimate interest in protecting accounts and the service from abuse
 (Art. 6(1)(f) GDPR). Privacy at Cloudflare:
 <https://www.cloudflare.com/turnstile-privacy-policy/>
+
+### Checking new passwords against data breaches
+
+When you register or change your password, the app checks whether the chosen
+password appears in known data breaches and rejects it if so. To do this, the
+app computes a check value (SHA-1 hash) of the password **on your device** and
+sends only its **first five characters** to a function at Supabase. That
+function queries the **Have I Been Pwned** service (Troy Hunt, Australia;
+delivered via Cloudflare) and receives a list of many check values with this
+beginning; your app then does the comparison. Neither the password nor the full
+check value, your email address or your IP address reach Have I Been Pwned;
+nothing is stored. The legal basis is the legitimate interest in protecting your
+account (Art. 6(1)(f) GDPR). If the service is unreachable, the check is
+skipped. More: <https://haveibeenpwned.com/Privacy>
 
 ## Backup of server data
 

@@ -5,7 +5,7 @@ title: Datenschutzerklärung Mindcrate
 
 # Datenschutzerklärung Mindcrate
 
-**Stand:** 19. November 2026, siebte Fassung (Name und Kürzel, Mitteilungen bei Zuweisung, Projekt-Bereiche, Vorlagen ergänzt)
+**Stand:** 23. November 2026, achte Fassung (Prüfung neuer Passwörter gegen bekannte Datenlecks ergänzt)
 
 [English version](privacy.html) (Übersetzung; maßgeblich ist diese deutsche Fassung)
 
@@ -163,6 +163,20 @@ Angabe von Cloudflare keine Cookies zu Werbezwecken und verwendet die Daten
 nicht für Werbung. Rechtsgrundlage ist das berechtigte Interesse am Schutz der
 Konten und des Dienstes vor Missbrauch (Art. 6 Abs. 1 lit. f DSGVO). Datenschutz
 bei Cloudflare: <https://www.cloudflare.com/turnstile-privacy-policy/>
+
+### Prüfung neuer Passwörter gegen Datenlecks
+
+Beim Registrieren und beim Ändern des Passworts prüft die App, ob das gewählte
+Passwort in bekannten Datenlecks vorkommt, und lehnt es dann ab. Dafür bildet
+die App **auf deinem Gerät** einen Prüfwert (SHA-1-Hash) des Passworts und
+sendet nur dessen **erste fünf Zeichen** an eine Funktion bei Supabase. Diese
+fragt damit den Dienst **Have I Been Pwned** (Troy Hunt, Australien;
+ausgeliefert über Cloudflare) ab und erhält eine Liste vieler Prüfwerte mit
+diesem Anfang; den Abgleich macht wieder deine App. Weder das Passwort noch der
+vollständige Prüfwert, deine E-Mail-Adresse oder deine IP-Adresse erreichen
+Have I Been Pwned; gespeichert wird nichts. Rechtsgrundlage ist das berechtigte
+Interesse am Schutz deines Kontos (Art. 6 Abs. 1 lit. f DSGVO). Ist der Dienst
+nicht erreichbar, entfällt die Prüfung. Mehr: <https://haveibeenpwned.com/Privacy>
 
 ## Sicherung der Server-Daten
 
