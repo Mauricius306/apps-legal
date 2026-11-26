@@ -7,7 +7,7 @@ title: Support Mindcrate
 
 Fragen, Fehler oder ein Vorschlag? Schreib mir eine E-Mail:
 
-**<mp.appstudio@gmail.com>**
+**<support@poetterworks.com>**
 
 Hilfreich sind dabei: iPhone-Modell oder Browser, die iOS-Version und die
 Versionsnummer der App – die steht ganz unten in „Mehr".
@@ -37,4 +37,4 @@ Aufgaben, Unteraufgaben und Projekte gelöscht. Einzelheiten in der
 
 ---
 
-[Datenschutzerklärung](datenschutz.html) · [Privacy policy (English)](privacy.html) · [Impressum](../impressum.html)
+[Datenschutzerklärung](datenschutz.html) · [Privacy policy (English)](privacy.html) · [Impressum](https://poetterworks.com/imprint/)

@@ -5,7 +5,7 @@ title: Mindcrate Privacy Policy
 
 # Mindcrate Privacy Policy
 
-**Last updated:** 23 November 2026 (eighth version: check of new passwords against known data breaches added)
+**Last updated:** 26 November 2026 (ninth version: address and contact as in the Pötter Works imprint)
 
 This is an English translation for convenience. The
 [German version](datenschutz.html) is the legally binding one.
@@ -17,12 +17,13 @@ browser. The provider's other apps are covered by the
 ## Controller
 
 ```
-Carl Maurice Pötter
-Ravensberger Str. 51
-42117 Wuppertal
+Pötter Works, Carl Maurice Pötter
+c/o Impressumservice Dein-Impressum
+Stettiner Str. 41
+35410 Hungen
 Germany
 
-Email: mp.appstudio@gmail.com
+Email: support@poetterworks.com
 ```
 
 ## In short
@@ -533,4 +534,4 @@ policy will be updated before the respective version.
 
 ---
 
-[Support](support.html) · [Imprint](../impressum.html) (German) · [Datenschutzerklärung (German, binding)](datenschutz.html)
+[Support](support.html) · [Imprint](https://poetterworks.com/imprint/) · [Datenschutzerklärung (German, binding)](datenschutz.html)

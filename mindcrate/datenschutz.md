@@ -5,7 +5,7 @@ title: Datenschutzerklärung Mindcrate
 
 # Datenschutzerklärung Mindcrate
 
-**Stand:** 23. November 2026, achte Fassung (Prüfung neuer Passwörter gegen bekannte Datenlecks ergänzt)
+**Stand:** 26. November 2026, neunte Fassung (Anschrift und Kontakt wie im Impressum von Pötter Works)
 
 [English version](privacy.html) (Übersetzung; maßgeblich ist diese deutsche Fassung)
 
@@ -16,11 +16,13 @@ Web-App im Browser. Für die anderen Apps des Anbieters gilt die
 ## Verantwortlicher
 
 ```
-Carl Maurice Pötter
-Ravensberger Str. 51
-42117 Wuppertal
+Pötter Works, Carl Maurice Pötter
+c/o Impressumservice Dein-Impressum
+Stettiner Str. 41
+35410 Hungen
+Deutschland
 
-E-Mail: mp.appstudio@gmail.com
+E-Mail: support@poetterworks.com
 ```
 
 ## Kurz gesagt
@@ -548,4 +550,4 @@ diese Erklärung vor der betreffenden Version angepasst.
 
 ---
 
-[Support](support.html) · [Impressum](../impressum.html) · [Datenschutzerklärung der anderen Apps](../index.html)
+[Support](support.html) · [Impressum](https://poetterworks.com/imprint/) · [Datenschutzerklärung der anderen Apps](../index.html)
